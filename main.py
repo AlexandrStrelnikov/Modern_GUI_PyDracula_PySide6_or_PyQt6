@@ -41,12 +41,12 @@ class MainWindow(QMainWindow):
 
         # USE CUSTOM TITLE BAR | USE AS "False" FOR MAC OR LINUX
         # ///////////////////////////////////////////////////////////////
-        Settings.ENABLE_CUSTOM_TITLE_BAR = True
+        Settings.ENABLE_CUSTOM_TITLE_BAR = False
 
         # APP NAME
         # ///////////////////////////////////////////////////////////////
-        title = "PyDracula - Modern GUI"
-        description = "PyDracula APP - Theme with colors based on Dracula for Python."
+        title = "Фотон-Био вер. ХХХ"
+        description = ""
         # APPLY TEXTS
         self.setWindowTitle(title)
         widgets.titleRightInfo.setText(description)
@@ -67,10 +67,10 @@ class MainWindow(QMainWindow):
         # ///////////////////////////////////////////////////////////////
 
         # LEFT MENUS
-        widgets.btn_home.clicked.connect(self.buttonClick)
-        widgets.btn_widgets.clicked.connect(self.buttonClick)
-        widgets.btn_new.clicked.connect(self.buttonClick)
-        widgets.btn_save.clicked.connect(self.buttonClick)
+        widgets.btn_anamnes.clicked.connect(self.buttonClick)
+        widgets.btn_visits.clicked.connect(self.buttonClick)
+        widgets.btn_diagnostics.clicked.connect(self.buttonClick)
+        widgets.btn_try_page.clicked.connect(self.buttonClick)
 
         # EXTRA LEFT BOX
         def openCloseLeftBox():
@@ -102,8 +102,8 @@ class MainWindow(QMainWindow):
 
         # SET HOME PAGE AND SELECT MENU
         # ///////////////////////////////////////////////////////////////
-        widgets.stackedWidget.setCurrentWidget(widgets.home)
-        widgets.btn_home.setStyleSheet(UIFunctions.selectMenu(widgets.btn_home.styleSheet()))
+        widgets.stackedWidget.setCurrentWidget(widgets.anamnes)
+        widgets.btn_anamnes.setStyleSheet(UIFunctions.selectMenu(widgets.btn_anamnes.styleSheet()))
 
 
     # BUTTONS CLICK
@@ -115,25 +115,28 @@ class MainWindow(QMainWindow):
         btnName = btn.objectName()
 
         # SHOW HOME PAGE
-        if btnName == "btn_home":
-            widgets.stackedWidget.setCurrentWidget(widgets.home)
+        if btnName == "btn_anamnes":
+            widgets.stackedWidget.setCurrentWidget(widgets.anamnes)
             UIFunctions.resetStyle(self, btnName)
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
         # SHOW WIDGETS PAGE
-        if btnName == "btn_widgets":
-            widgets.stackedWidget.setCurrentWidget(widgets.widgets)
+        if btnName == "btn_visits":
+            widgets.stackedWidget.setCurrentWidget(widgets.visits)
             UIFunctions.resetStyle(self, btnName)
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
         # SHOW NEW PAGE
-        if btnName == "btn_new":
-            widgets.stackedWidget.setCurrentWidget(widgets.new_page) # SET PAGE
+        if btnName == "btn_diagnostics":
+            widgets.stackedWidget.setCurrentWidget(widgets.diagnostics) # SET PAGE
             UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
 
-        if btnName == "btn_save":
-            print("Save BTN clicked!")
+        if btnName == "btn_try_page":
+            widgets.stackedWidget.setCurrentWidget(widgets.try_page)  # SET PAGE
+            UIFunctions.resetStyle(self, btnName)  # RESET ANOTHERS BUTTONS SELECTED
+            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))  # SELECT MENU
+
 
         # PRINT BTN NAME
         print(f'Button "{btnName}" pressed!')
@@ -161,4 +164,4 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     app.setWindowIcon(QIcon("icon.ico"))
     window = MainWindow()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
