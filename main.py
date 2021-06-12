@@ -78,11 +78,17 @@ class MainWindow(QMainWindow):
 
         # Try page wigets
         widgets.pushButton_3.clicked.connect(self.buttonClick)
-        graph_widget = pg.PlotWidget(name='Plot1')
+        widgets.labelVersion_5.setText('')
+        graph_widget = pg.GraphicsLayoutWidget(show=True)
+        graph_widget.setBackground(background=(100, 100, 100)) # setting up graph background color
+        plot_widget = graph_widget.addPlot(title="Updating plot")
+        plot_widget.enableAutoRange('xy', True)
+
+
         global plot
-        plot = graph_widget.plot()
-        plot.setPen((200, 200, 100))
-        # graph_widget = pg.PlotWidget(name='Plot1')
+        plot = plot_widget.plot(pen='y')
+        plot.setPen((200, 200, 100)) # setting up line properties (here color only)
+        # plot.enableAutoRange('xy', True)
         widgets.graph_layout.addWidget(graph_widget)
 
 
@@ -154,13 +160,20 @@ class MainWindow(QMainWindow):
 
         if btnName == "pushButton_3" :
             openFileName = widgets.lineEdit_3.text()
-            with open(openFileName, 'r') as file:
-                freq, I, Q = json.load(file)
-                freq = np.array(freq)
-                I = np.array(I)
-                Q = np.array(Q)
-            plot.setData(x=freq, y=np.sqrt(I**2 + Q**2))
-            widgets.graph_layout.update()
+
+            try:
+                with open(openFileName, 'r') as file:
+                    freq, I, Q = json.load(file)
+                    freq = np.array(freq)
+                    I = np.array(I)
+                    Q = np.array(Q)
+                # plot.setData(x=[], y=[])
+                plot.setData(x=freq, y=np.sqrt(I**2 + Q**2))
+                widgets.labelVersion_5.setText('')
+            except FileNotFoundError:
+                plot.setData(x=[], y=[])
+                widgets.labelVersion_5.setText('File Not Found')
+            # widgets.graph_layout.update() # не знаю, нужна ли эта строчка вообще
 
         # PRINT BTN NAME
         print(f'Button "{btnName}" pressed!')
