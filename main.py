@@ -17,6 +17,9 @@
 import sys
 import os
 import platform
+import json
+from matplotlib import pyplot as plt
+import numpy as np
 
 # IMPORT / GUI AND MODULES AND WIDGETS
 # ///////////////////////////////////////////////////////////////
@@ -71,6 +74,11 @@ class MainWindow(QMainWindow):
         widgets.btn_visits.clicked.connect(self.buttonClick)
         widgets.btn_diagnostics.clicked.connect(self.buttonClick)
         widgets.btn_try_page.clicked.connect(self.buttonClick)
+
+        # Try page wigets
+        widgets.pushButton_3.clicked.connect(self.buttonClick)
+        graph_widget = QPushButton("График")
+        widgets.graph_layout.addWidget(graph_widget)
 
         # EXTRA LEFT BOX
         def openCloseLeftBox():
@@ -137,6 +145,20 @@ class MainWindow(QMainWindow):
             UIFunctions.resetStyle(self, btnName)  # RESET ANOTHERS BUTTONS SELECTED
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))  # SELECT MENU
 
+        if btnName == "pushButton_3":
+            openFileName = widgets.lineEdit_3.text()
+            with open(openFileName, 'r') as file:
+                freq, I, Q = json.load(file)
+                freq = np.array(freq)
+                I = np.array(I)
+                Q = np.array(Q)
+
+            fig, ax = plt.subplots()
+            ax.grid(True)
+            fig.set_figwidth(10)
+            fig.set_figheight(10)
+            ax.plot(freq, np.sqrt(I**2 + Q**2))
+            plt.show()
 
         # PRINT BTN NAME
         print(f'Button "{btnName}" pressed!')

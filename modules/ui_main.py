@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainInBIkr.ui'
+## Form generated from reading UI file 'mainvWZQKV.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.0
 ##
@@ -1166,7 +1166,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 352, 218))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 218, 218))
         self.scrollAreaWidgetContents.setStyleSheet(u" QScrollBar:vertical {\n"
 "	border: none;\n"
 "    background: rgb(52, 59, 72);\n"
@@ -1450,6 +1450,12 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_24.addWidget(self.frame_div_content_3)
 
+        self.horizontalLayoutWidget = QWidget(self.try_page)
+        self.horizontalLayoutWidget.setObjectName(u"horizontalLayoutWidget")
+        self.horizontalLayoutWidget.setGeometry(QRect(189, 119, 821, 451))
+        self.graph_layout = QHBoxLayout(self.horizontalLayoutWidget)
+        self.graph_layout.setObjectName(u"graph_layout")
+        self.graph_layout.setContentsMargins(0, 5, 0, 0)
         self.stackedWidget.addWidget(self.try_page)
         self.diagnostics = QWidget()
         self.diagnostics.setObjectName(u"diagnostics")
