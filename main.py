@@ -82,13 +82,13 @@ class MainWindow(QMainWindow):
         graph_widget = pg.GraphicsLayoutWidget(show=True)
         graph_widget.setBackground(background=(100, 100, 100)) # setting up graph background color
         plot_widget = graph_widget.addPlot(title="Updating plot")
-        plot_widget.enableAutoRange('xy', True)
+        # plot_widget.enableAutoRange('xy', True)
+        plot_widget.autoRange()
 
 
         global plot
         plot = plot_widget.plot(pen='y')
         plot.setPen((200, 200, 100)) # setting up line properties (here color only)
-        # plot.enableAutoRange('xy', True)
         widgets.graph_layout.addWidget(graph_widget)
 
 
@@ -110,8 +110,8 @@ class MainWindow(QMainWindow):
 
         # SET CUSTOM THEME
         # ///////////////////////////////////////////////////////////////
-        useCustomTheme = False
-        themeFile = "themes\py_dracula_light.qss"
+        useCustomTheme = True
+        themeFile = "themes\pb_theme.qss"
 
         # SET THEME AND HACKS
         if useCustomTheme:
