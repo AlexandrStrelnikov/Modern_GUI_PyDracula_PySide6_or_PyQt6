@@ -53,7 +53,7 @@ class MainWindow(QMainWindow):
         description = ""
         # APPLY TEXTS
         self.setWindowTitle(title)
-        widgets.titleRightInfo.setText(description)
+        # widgets.titleRightInfo.setText(description)
 
         # TOGGLE MENU
         # ///////////////////////////////////////////////////////////////

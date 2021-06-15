@@ -17,9 +17,65 @@ DARK THEME - DRACULA COLOR BASED
 
 ///////////////////////////////////////////////////////////////////////////////////////////////// */
 
-QWidget{ /* text parameters are here!*/
+QWidget{
 	color: rgb(0, 0, 0);
-	font: 10pt "Segoe UI";
+	font: 10pt "Segoe UI Semibold";
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////
+information */
+#lastNameLabel{
+	color: rgb(221, 221, 221);
+	font: 10pt "Segoe UI Semibold";
+}
+#nameMidleNameLabel{
+	color: rgb(221, 221, 221);
+	font: 8pt "Segoe UI";
+}
+#cartNLabel{
+	color: rgb(221, 221, 221);
+	font: 10pt "Segoe UI Semibold";
+}
+#ageLabel{
+	color: rgb(221, 221, 221);
+	font: 8pt "Segoe UI";
+}
+#titleLeftApp{
+	color: rgb(221, 221, 221);
+	font: 8pt "Segoe UI";
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////
+Menu texp props */
+#btn_anamnes{
+	color: rgb(221, 221, 221);
+	font: 12pt "Segoe UI Semibold";
+}
+#btn_diagnostics{
+	color: rgb(221, 221, 221);
+	font: 12pt "Segoe UI Semibold";
+}
+#btn_try_page{
+	color: rgb(221, 221, 221);
+	font: 12pt "Segoe UI Semibold";
+}
+#btn_visits{
+	color: rgb(221, 221, 221);
+	font: 12pt "Segoe UI Semibold";
+}
+#btn_reconnect{
+	color: rgb(221, 221, 221);
+	font: 12pt "Segoe UI Semibold";
+}
+#btn_print{
+	color: rgb(221, 221, 221);
+	font: 12pt "Segoe UI Semibold";
+}
+#btn_message{
+	color: rgb(221, 221, 221);
+	font: 12pt "Segoe UI Semibold";
+}
+#btn_logout{
+	color: rgb(221, 221, 221);
+	font: 12pt "Segoe UI Semibold";
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -57,7 +113,7 @@ Left Menu */
 	background-repeat: no-repeat;
 }
 #titleLeftApp { font: 63 12pt "Segoe UI Semibold"; }
-#titleLeftDescription { font: 8pt "Segoe UI"; color: rgb(189, 147, 249); }
+#titleLeftDescription { font: 8pt "Segoe UI"; color: rgb(221, 221, 221); }
 
 /* MENUS */
 #topMenu .QPushButton {	
@@ -115,7 +171,8 @@ Left Menu */
 }
 
 /* Title Menu */
-#titleRightInfo { padding-left: 10px; }
+#titleRightInfo {
+    padding-left: 10px;}
 
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
