@@ -76,8 +76,11 @@ class UIFunctions(MainWindow):
             # SET MAX WIDTH
             if width == 60:
                 widthExtended = maxExtend
+                self.ui.toggleButton.setStyleSheet('background-image: url(:/icons/images/icons/cil-chevron-left.png);')
             else:
                 widthExtended = standard
+                self.ui.toggleButton.setStyleSheet('background-image: url(:/icons/images/icons/cil-chevron-right.png);')
+
 
             # ANIMATION
             self.animation = QPropertyAnimation(self.ui.leftMenuBg, b"minimumWidth")
@@ -87,34 +90,34 @@ class UIFunctions(MainWindow):
             self.animation.setEasingCurve(QEasingCurve.InOutQuart)
             self.animation.start()
 
-    # TOGGLE LEFT BOX
+    # TOGGLE LEFT BOX я не знаю что это, лучше оставлю
     # ///////////////////////////////////////////////////////////////
-    def toggleLeftBox(self, enable):
-        if enable:
-            # GET WIDTH
-            width = self.ui.extraLeftBox.width()
-            widthRightBox = self.ui.extraRightBox.width()
-            maxExtend = Settings.LEFT_BOX_WIDTH
-            color = Settings.BTN_LEFT_BOX_COLOR
-            standard = 0
-
-            # GET BTN STYLE
-            style = self.ui.toggleLeftBox.styleSheet()
-
-            # SET MAX WIDTH
-            if width == 0:
-                widthExtended = maxExtend
-                # SELECT BTN
-                self.ui.toggleLeftBox.setStyleSheet(style + color)
-                if widthRightBox != 0:
-                    style = self.ui.settingsTopBtn.styleSheet()
-                    self.ui.settingsTopBtn.setStyleSheet(style.replace(Settings.BTN_RIGHT_BOX_COLOR, ''))
-            else:
-                widthExtended = standard
-                # RESET BTN
-                self.ui.toggleLeftBox.setStyleSheet(style.replace(color, ''))
-                
-        UIFunctions.start_box_animation(self, width, widthRightBox, "left")
+    # def toggleLeftBox(self, enable):
+    #     if enable:
+    #         # GET WIDTH
+    #         width = self.ui.extraLeftBox.width()
+    #         widthRightBox = self.ui.extraRightBox.width()
+    #         maxExtend = Settings.LEFT_BOX_WIDTH
+    #         color = Settings.BTN_LEFT_BOX_COLOR
+    #         standard = 0
+    #
+    #         # GET BTN STYLE
+    #         style = self.ui.toggleLeftBox.styleSheet()
+    #
+    #         # SET MAX WIDTH
+    #         if width == 0:
+    #             widthExtended = maxExtend
+    #             # SELECT BTN
+    #             self.ui.toggleLeftBox.setStyleSheet(style + color)
+    #             if widthRightBox != 0:
+    #                 style = self.ui.settingsTopBtn.styleSheet()
+    #                 self.ui.settingsTopBtn.setStyleSheet(style.replace(Settings.BTN_RIGHT_BOX_COLOR, ''))
+    #         else:
+    #             widthExtended = standard
+    #             # RESET BTN
+    #             self.ui.toggleLeftBox.setStyleSheet(style.replace(color, ''))
+    #
+    #     UIFunctions.start_box_animation(self, width, widthRightBox, "left")
 
     # TOGGLE RIGHT BOX
     # ///////////////////////////////////////////////////////////////

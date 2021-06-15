@@ -25,26 +25,27 @@ QWidget{
 information */
 #lastNameLabel{
 	color: rgb(221, 221, 221);
-	font: 10pt "Segoe UI Semibold";
+	font: 12pt "Segoe UI Semibold";
 }
 #nameMidleNameLabel{
 	color: rgb(221, 221, 221);
-	font: 8pt "Segoe UI";
+	font: 7pt "Segoe UI";
 }
 #cartNLabel{
 	color: rgb(221, 221, 221);
-	font: 10pt "Segoe UI Semibold";
+	font: 12pt "Segoe UI Semibold";
 }
 #ageLabel{
 	color: rgb(221, 221, 221);
-	font: 8pt "Segoe UI";
+	font: 7pt "Segoe UI";
 }
 #titleLeftApp{
 	color: rgb(221, 221, 221);
 	font: 8pt "Segoe UI";
 }
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
-Menu texp props */
+Menu texp props (это костыль)
+В оригинальном фреймворке несколько мест, определяющих ситль кнопок*/
 #btn_anamnes{
 	color: rgb(221, 221, 221);
 	font: 12pt "Segoe UI Semibold";
@@ -62,19 +63,19 @@ Menu texp props */
 	font: 12pt "Segoe UI Semibold";
 }
 #btn_reconnect{
-	color: rgb(221, 221, 221);
+	color: rgb(0, 0, 0);
 	font: 12pt "Segoe UI Semibold";
 }
 #btn_print{
-	color: rgb(221, 221, 221);
+	color: rgb(0, 0, 0);
 	font: 12pt "Segoe UI Semibold";
 }
 #btn_message{
-	color: rgb(221, 221, 221);
+	color: rgb(0, 0, 0);
 	font: 12pt "Segoe UI Semibold";
 }
 #btn_logout{
-	color: rgb(221, 221, 221);
+	color: rgb(0, 0, 0);
 	font: 12pt "Segoe UI Semibold";
 }
 
@@ -122,14 +123,14 @@ Left Menu */
 	border: none;
 	border-left: 22px solid transparent;
 	background-color: transparent;
-	text-align: center;
+	text-align: left;
 	padding-left: 44px;
 }
 #topMenu .QPushButton:hover {
-	background-color: rgb(40, 44, 52);
+	background-color: rgb(116,119,124);
 }
 #topMenu .QPushButton:pressed {	
-	background-color: rgb(189, 147, 249);
+	background-color: rgb(69,71,74);
 	color: rgb(255, 255, 255);
 }
 #bottomMenu .QPushButton {	
@@ -164,10 +165,10 @@ Left Menu */
 	color: rgb(113, 126, 149);
 }
 #toggleButton:hover {
-	background-color: rgb(40, 44, 52);
+	background-color: rgb(116,119,124);
 }
 #toggleButton:pressed {
-	background-color: rgb(189, 147, 249);
+	background-color: rgb(69,71,74);
 }
 
 /* Title Menu */
@@ -237,8 +238,8 @@ Content App */
 #rightButtons .QPushButton:pressed { background-color: rgb(23, 26, 30); border-style: solid; border-radius: 4px; }
 
 /* Theme Settings */
-#extraRightBox { background-color: rgb(44, 49, 58); }
-#themeSettingsTopDetail { background-color: rgb(189, 147, 249); }
+#extraRightBox { background-color: rgb(242, 242, 242); }
+#themeSettingsTopDetail { background-color: rgb(242, 242, 242); }
 
 /* Bottom Bar */
 #bottomBar { background-color: rgb(44, 49, 58); }
@@ -252,14 +253,14 @@ Content App */
 	border: none;
 	border-left: 22px solid transparent;
 	background-color:transparent;
-	text-align: center;
+	text-align: right;
 	padding-left: 44px;
 }
 #contentSettings .QPushButton:hover {
-	background-color: rgb(143, 214, 156);
+	background-color: rgb(116,119,124);
 }
 #contentSettings .QPushButton:pressed {	
-	background-color: rgb(189, 147, 249);
+	background-color: rgb(69,71,74);
 	color: rgb(255, 255, 255);
 }
 

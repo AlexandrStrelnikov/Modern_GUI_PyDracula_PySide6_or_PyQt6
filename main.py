@@ -45,7 +45,7 @@ class MainWindow(QMainWindow):
 
         # USE CUSTOM TITLE BAR | USE AS "False" FOR MAC OR LINUX
         # ///////////////////////////////////////////////////////////////
-        Settings.ENABLE_CUSTOM_TITLE_BAR = False
+        Settings.ENABLE_CUSTOM_TITLE_BAR = True
 
         # APP NAME
         # ///////////////////////////////////////////////////////////////
@@ -80,7 +80,7 @@ class MainWindow(QMainWindow):
         widgets.pushButton_3.clicked.connect(self.buttonClick)
         widgets.labelVersion_5.setText('')
         graph_widget = pg.GraphicsLayoutWidget(show=True)
-        graph_widget.setBackground(background=(100, 100, 100)) # setting up graph background color
+        graph_widget.setBackground(background=Settings.PLOT_BACKGROUND) # setting up graph background color
         plot_widget = graph_widget.addPlot(title="Updating plot")
         # plot_widget.enableAutoRange('xy', True)
         plot_widget.autoRange()
@@ -88,7 +88,7 @@ class MainWindow(QMainWindow):
 
         global plot
         plot = plot_widget.plot(pen='y')
-        plot.setPen((200, 200, 100)) # setting up line properties (here color only)
+        plot.setPen(Settings.PLOT_LINE_COLOR[1]) # setting up line properties (here color only)
         widgets.graph_layout.addWidget(graph_widget)
 
 
@@ -118,7 +118,10 @@ class MainWindow(QMainWindow):
             # LOAD AND APPLY STYLE
             UIFunctions.theme(self, themeFile, True)
 
-            # SET HACKS
+            # SET HACKS охуенный блядь хак
+            # Они изменяют класс Settings
+            # после вызова (предыдущая строка) и переназначают атрибуты класса Settings.
+            # (!) Не проебитесь на этом моменте
             AppFunctions.setThemeHack(self)
 
         # SET HOME PAGE AND SELECT MENU

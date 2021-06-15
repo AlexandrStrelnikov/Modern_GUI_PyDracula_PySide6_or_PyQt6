@@ -2,10 +2,14 @@ class Settings():
     # APP SETTINGS
     # ///////////////////////////////////////////////////////////////
     ENABLE_CUSTOM_TITLE_BAR = True
-    MENU_WIDTH = 180
+    MENU_WIDTH = 220
     LEFT_BOX_WIDTH = 240
     RIGHT_BOX_WIDTH = 240
     TIME_ANIMATION = 300
+
+
+    PLOT_BACKGROUND = (255, 255, 255)
+    PLOT_LINE_COLOR = ('#37b5a7', '#a737b5', '#b5a737')
 
     # BTNS LEFT AND RIGHT BOX COLORS
     BTN_LEFT_BOX_COLOR = "background-color: rgb(44, 49, 58);"

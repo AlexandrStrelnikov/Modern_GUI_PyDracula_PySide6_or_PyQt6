@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainkUFuPD.ui'
+## Form generated from reading UI file 'mainMTLIJp.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.0
 ##
@@ -731,7 +731,7 @@ class Ui_MainWindow(object):
         self.gridLayout_3.setObjectName(u"gridLayout_3")
         self.lastNameLabel = QLabel(self.contentTopBg)
         self.lastNameLabel.setObjectName(u"lastNameLabel")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
+        sizePolicy2 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Maximum)
         sizePolicy2.setHorizontalStretch(0)
         sizePolicy2.setVerticalStretch(0)
         sizePolicy2.setHeightForWidth(self.lastNameLabel.sizePolicy().hasHeightForWidth())
@@ -743,19 +743,22 @@ class Ui_MainWindow(object):
 
         self.cartNLabel = QLabel(self.contentTopBg)
         self.cartNLabel.setObjectName(u"cartNLabel")
-        sizePolicy2.setHeightForWidth(self.cartNLabel.sizePolicy().hasHeightForWidth())
-        self.cartNLabel.setSizePolicy(sizePolicy2)
+        sizePolicy3 = QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.cartNLabel.sizePolicy().hasHeightForWidth())
+        self.cartNLabel.setSizePolicy(sizePolicy3)
         self.cartNLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
         self.gridLayout_3.addWidget(self.cartNLabel, 0, 1, 1, 1)
 
         self.leftBox = QFrame(self.contentTopBg)
         self.leftBox.setObjectName(u"leftBox")
-        sizePolicy3 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
-        sizePolicy3.setHorizontalStretch(0)
-        sizePolicy3.setVerticalStretch(0)
-        sizePolicy3.setHeightForWidth(self.leftBox.sizePolicy().hasHeightForWidth())
-        self.leftBox.setSizePolicy(sizePolicy3)
+        sizePolicy4 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
+        sizePolicy4.setHorizontalStretch(0)
+        sizePolicy4.setVerticalStretch(0)
+        sizePolicy4.setHeightForWidth(self.leftBox.sizePolicy().hasHeightForWidth())
+        self.leftBox.setSizePolicy(sizePolicy4)
         self.leftBox.setFrameShape(QFrame.NoFrame)
         self.leftBox.setFrameShadow(QFrame.Raised)
         self.horizontalLayout = QHBoxLayout(self.leftBox)
@@ -763,11 +766,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setSizeConstraint(QLayout.SetMinimumSize)
         self.connectioStatusLabel = QLabel(self.leftBox)
         self.connectioStatusLabel.setObjectName(u"connectioStatusLabel")
-        sizePolicy4 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Fixed)
-        sizePolicy4.setHorizontalStretch(0)
-        sizePolicy4.setVerticalStretch(0)
-        sizePolicy4.setHeightForWidth(self.connectioStatusLabel.sizePolicy().hasHeightForWidth())
-        self.connectioStatusLabel.setSizePolicy(sizePolicy4)
+        sizePolicy5 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Fixed)
+        sizePolicy5.setHorizontalStretch(0)
+        sizePolicy5.setVerticalStretch(0)
+        sizePolicy5.setHeightForWidth(self.connectioStatusLabel.sizePolicy().hasHeightForWidth())
+        self.connectioStatusLabel.setSizePolicy(sizePolicy5)
         self.connectioStatusLabel.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
 
         self.horizontalLayout.addWidget(self.connectioStatusLabel)
@@ -843,16 +846,16 @@ class Ui_MainWindow(object):
 
         self.nameMidleNameLabel = QLabel(self.contentTopBg)
         self.nameMidleNameLabel.setObjectName(u"nameMidleNameLabel")
-        sizePolicy2.setHeightForWidth(self.nameMidleNameLabel.sizePolicy().hasHeightForWidth())
-        self.nameMidleNameLabel.setSizePolicy(sizePolicy2)
+        sizePolicy3.setHeightForWidth(self.nameMidleNameLabel.sizePolicy().hasHeightForWidth())
+        self.nameMidleNameLabel.setSizePolicy(sizePolicy3)
         self.nameMidleNameLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
         self.gridLayout_3.addWidget(self.nameMidleNameLabel, 1, 0, 1, 1)
 
         self.ageLabel = QLabel(self.contentTopBg)
         self.ageLabel.setObjectName(u"ageLabel")
-        sizePolicy2.setHeightForWidth(self.ageLabel.sizePolicy().hasHeightForWidth())
-        self.ageLabel.setSizePolicy(sizePolicy2)
+        sizePolicy3.setHeightForWidth(self.ageLabel.sizePolicy().hasHeightForWidth())
+        self.ageLabel.setSizePolicy(sizePolicy3)
         self.ageLabel.setFont(font)
         self.ageLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
@@ -1165,11 +1168,11 @@ class Ui_MainWindow(object):
         __qtablewidgetitem23 = QTableWidgetItem()
         self.tableWidget.setItem(0, 3, __qtablewidgetitem23)
         self.tableWidget.setObjectName(u"tableWidget")
-        sizePolicy5 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
-        sizePolicy5.setHorizontalStretch(0)
-        sizePolicy5.setVerticalStretch(0)
-        sizePolicy5.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
-        self.tableWidget.setSizePolicy(sizePolicy5)
+        sizePolicy6 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        sizePolicy6.setHorizontalStretch(0)
+        sizePolicy6.setVerticalStretch(0)
+        sizePolicy6.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
+        self.tableWidget.setSizePolicy(sizePolicy6)
         palette = QPalette()
         brush = QBrush(QColor(221, 221, 221, 255))
         brush.setStyle(Qt.SolidPattern)
@@ -1381,7 +1384,7 @@ class Ui_MainWindow(object):
         self.btn_reconnect.setFont(font)
         self.btn_reconnect.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_reconnect.setLayoutDirection(Qt.LeftToRight)
-        self.btn_reconnect.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-loop.png);")
+        self.btn_reconnect.setStyleSheet(u"")
 
         self.verticalLayout_5.addWidget(self.btn_reconnect)
 
@@ -1393,7 +1396,7 @@ class Ui_MainWindow(object):
         self.btn_message.setFont(font)
         self.btn_message.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_message.setLayoutDirection(Qt.LeftToRight)
-        self.btn_message.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-envelope-open.png);")
+        self.btn_message.setStyleSheet(u"")
 
         self.verticalLayout_5.addWidget(self.btn_message)
 
@@ -1402,10 +1405,15 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.btn_print.sizePolicy().hasHeightForWidth())
         self.btn_print.setSizePolicy(sizePolicy)
         self.btn_print.setMinimumSize(QSize(0, 45))
-        self.btn_print.setFont(font)
+        font5 = QFont()
+        font5.setPointSize(10)
+        font5.setBold(False)
+        font5.setItalic(False)
+        font5.setKerning(True)
+        self.btn_print.setFont(font5)
         self.btn_print.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_print.setLayoutDirection(Qt.LeftToRight)
-        self.btn_print.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-print.png);")
+        self.btn_print.setStyleSheet(u"")
 
         self.verticalLayout_5.addWidget(self.btn_print)
 
@@ -1417,7 +1425,7 @@ class Ui_MainWindow(object):
         self.btn_logout.setFont(font)
         self.btn_logout.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_logout.setLayoutDirection(Qt.LeftToRight)
-        self.btn_logout.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-account-logout.png);")
+        self.btn_logout.setStyleSheet(u"")
 
         self.verticalLayout_5.addWidget(self.btn_logout)
 
@@ -1462,7 +1470,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1570,9 +1578,9 @@ class Ui_MainWindow(object):
         self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Open", None))
         self.labelVersion_5.setText(QCoreApplication.translate("MainWindow", u"Label description", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"NEW PAGE TEST", None))
-        self.btn_reconnect.setText(QCoreApplication.translate("MainWindow", u"Reconnect", None))
-        self.btn_message.setText(QCoreApplication.translate("MainWindow", u"Message", None))
-        self.btn_print.setText(QCoreApplication.translate("MainWindow", u"Print", None))
-        self.btn_logout.setText(QCoreApplication.translate("MainWindow", u"Logout", None))
+        self.btn_reconnect.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435", None))
+        self.btn_message.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435", None))
+        self.btn_print.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0435\u0447\u0430\u0442\u044c", None))
+        self.btn_logout.setText(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0445\u043e\u0434", None))
     # retranslateUi
 
