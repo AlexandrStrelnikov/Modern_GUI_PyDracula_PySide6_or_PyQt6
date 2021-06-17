@@ -260,16 +260,15 @@ QHeaderView::section:vertical
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
 LineEdit */
 QLineEdit {
-	background-color: #6272a4;
-	border-radius: 5px;
+	background-color: #000000;
 	border: 2px solid #6272a4;
 	padding-left: 10px;
 	selection-color: rgb(255, 255, 255);
 	selection-background-color: rgb(255, 121, 198);
-    color: #f8f8f2;
+    color: #000000;
 }
 QLineEdit:hover {
-	border: 2px solid rgb(64, 71, 88);
+	border: 2px solid rgb(255, 0, 0);
 }
 QLineEdit:focus {
 	border: 2px solid #ff79c6;

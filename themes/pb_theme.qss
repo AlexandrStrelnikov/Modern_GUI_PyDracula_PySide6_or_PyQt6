@@ -272,6 +272,7 @@ QTableWidget {
 	border-radius: 5px;
 	gridline-color: rgb(44, 49, 58);
 	border-bottom: 1px solid rgb(44, 49, 60);
+	color: rgb(0, 0, 0);
 }
 QTableWidget::item{
 	border-color: rgb(44, 49, 60);
@@ -280,7 +281,8 @@ QTableWidget::item{
 	gridline-color: rgb(44, 49, 60);
 }
 QTableWidget::item:selected{
-	background-color: rgb(189, 147, 249);
+	background-color: rgb(242, 242, 242);
+	color: rgb(0, 0, 0);
 }
 QHeaderView::section{
 	background-color: rgb(55, 181, 167);
@@ -307,30 +309,30 @@ QHeaderView::section:vertical
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
-LineEdit */
+LineEdit Здесь почему то не работает задание цвета фона!*/
 QLineEdit {
-	background-color: rgb(55, 181, 167);
-	border-radius: 5px;
-	border: 2px solid rgb(55, 181, 167);
+	background-color: rgb(0, 0, 0);
+	border: 2px solid rgb(255, 255, 255);
+	border-bottom-color: rgb(44,49,58);
 	padding-left: 10px;
-	selection-color: rgb(255, 255, 255);
-	selection-background-color: rgb(143, 214, 156);
+
 }
 QLineEdit:hover {
-	border: 2px solid rgb(143, 214, 156);
+	border: 2px solid rgb(255, 255, 255);
+	border-bottom-color: rgb(116,119,124);
 }
 QLineEdit:focus {
-	border: 2px solid rgb(91, 101, 124);
+	border: 2px solid rgb(255, 255, 255);
+	border-bottom-color: rgb(64,89,169);
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
-PlainTextEdit */
+PlainTextEdit Здесь почему то не работает задание цвета фона!*/
 QPlainTextEdit {
-	background-color: rgb(27, 29, 35);
-	border-radius: 5px;
-	padding: 10px;
-	selection-color: rgb(255, 255, 255);
-	selection-background-color: rgb(143, 214, 156);
+	background-color: rgb(0, 0, 0);
+	border: 2px solid rgb(255, 255, 255);
+	border-bottom-color: rgb(44,49,58);
+	padding-left: 10px;
 }
 QPlainTextEdit  QScrollBar:vertical {
     width: 8px;
@@ -339,23 +341,60 @@ QPlainTextEdit  QScrollBar:horizontal {
     height: 8px;
  }
 QPlainTextEdit:hover {
-	border: 2px solid rgb(143, 214, 156);
+	border: 2px solid rgb(255, 255, 255);
+	border-bottom-color: rgb(116,119,124);
 }
 QPlainTextEdit:focus {
-	border: 2px solid rgb(91, 101, 124);
+	border: 2px solid rgb(255, 255, 255);
+	border-bottom-color: rgb(64,89,169);
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////
+ComboBox */
+QComboBox{
+	background-color: rgb(27, 29, 35);
+	border-radius: 2px;
+	border: 2px solid rgb(255, 255, 255);
+	border-bottom-color: rgb(44,49,58);
+	padding: 5px;
+	padding-left: 10px;
+}
+QComboBox:hover {
+	border: 2px solid rgb(255, 255, 255);
+	border-bottom-color: rgb(116,119,124);
+}
+
+QComboBox::drop-down {
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	width: 25px;
+	border-left-width: 3px;
+	border-left-color: rgb(255, 255, 255);
+	border-left-style: solid;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	background-image: url(:/icons/images/icons/cil-arrow-bottom.png);
+	background-position: center;
+	background-repeat: no-reperat;
+ }
+QComboBox QAbstractItemView {
+	color: rgb(0, 0, 0);
+	background-color: rgb(55, 181, 167);
+	padding: 10px;
+	selection-background-color: rgb(0, 0, 0);
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
 ScrollBars */
 QScrollBar:horizontal {
     border: none;
-    background: rgb(52, 59, 72);
+    background-color: rgb(55,181,167);
     height: 8px;
     margin: 0px 21px 0 21px;
 	border-radius: 0px;
 }
 QScrollBar::handle:horizontal {
-    background: rgb(189, 147, 249);
+    background: rgb(64,89,169);
     min-width: 25px;
 	border-radius: 4px
 }
@@ -387,13 +426,13 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
 }
  QScrollBar:vertical {
 	border: none;
-    background: rgb(52, 59, 72);
+    background: rgb(55,181,167);
     width: 8px;
     margin: 21px 0 21px 0;
 	border-radius: 0px;
  }
  QScrollBar::handle:vertical {	
-	background: rgb(189, 147, 249);
+	background: rgb(64,89,169);
     min-height: 25px;
 	border-radius: 4px
  }
@@ -425,119 +464,88 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
 CheckBox */
-QCheckBox::indicator {
-    border: 3px solid rgb(52, 59, 72);
+#styleSheet QCheckBox::indicator {
+    border: 2px solid rgb(52, 59, 72);
 	width: 15px;
 	height: 15px;
-	border-radius: 10px;
-    background: rgb(44, 49, 60);
+    background: rgb(255, 255, 255);
 }
-QCheckBox::indicator:hover {
-    border: 3px solid rgb(143, 214, 156);
-}
-QCheckBox::indicator:checked {
-    background: 3px solid rgb(52, 59, 72);
-	border: 3px solid rgb(52, 59, 72);	
+
+#styleSheet QCheckBox::indicator:checked {
+    background: 2px solid rgb(15,157,88);
+	border: 2px solid rgb(15,157,88);
 	background-image: url(:/icons/images/icons/cil-check-alt.png);
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
 RadioButton */
-QRadioButton::indicator {
-    border: 3px solid rgb(52, 59, 72);
+#styleSheet QRadioButton::indicator {
+    border: 2px solid rgb(52, 59, 72);
 	width: 15px;
 	height: 15px;
-	border-radius: 10px;
-    background: rgb(44, 49, 60);
-}
-QRadioButton::indicator:hover {
-    border: 3px solid rgb(58, 66, 81);
-}
-QRadioButton::indicator:checked {
-    background: 3px solid rgb(94, 106, 130);
-	border: 3px solid rgb(52, 59, 72);	
+	border-radius: 9px;
+    background: rgb(255, 255, 255);
+
 }
 
-/* /////////////////////////////////////////////////////////////////////////////////////////////////
-ComboBox */
-QComboBox{
-	background-color: rgb(27, 29, 35);
-	border-radius: 5px;
-	border: 2px solid rgb(55, 181, 167);
-	padding: 5px;
-	padding-left: 10px;
-}
-QComboBox:hover{
-	border: 2px solid rgb(64, 71, 88);
-}
-QComboBox::drop-down {
-	subcontrol-origin: padding;
-	subcontrol-position: top right;
-	width: 25px; 
-	border-left-width: 3px;
-	border-left-color: rgba(39, 44, 54, 150);
-	border-left-style: solid;
-	border-top-right-radius: 3px;
-	border-bottom-right-radius: 3px;	
-	background-image: url(:/icons/images/icons/cil-arrow-bottom.png);
-	background-position: center;
-	background-repeat: no-reperat;
- }
-QComboBox QAbstractItemView {
-	color: rgb(143, 214, 156);
-	background-color: rgb(55, 181, 167);
-	padding: 10px;
-	selection-background-color: rgb(39, 44, 54);
+#styleSheet QRadioButton::indicator:checked {
+    background: 2px solid rgb(94, 106, 130);
+	border: 2px solid rgb(15,157,88);
+	border-radius: 9px;
+	background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 rgba(15,157,88, 255), stop:0.7 rgba(255, 255, 255, 255), stop:0.95 rgba(255, 255, 255, 255), stop:1 rgba(15,157,88, 255));
 }
 
+
+
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
-Sliders */
-QSlider::groove:horizontal {
+Sliders РЕШАТЬ ПРОБЛЕМУ С ФОНОМ НАДО ТАК!!!! (или через styleSheet, если задается для всего докемента)*/
+
+#row_2 QSlider::groove:horizontal {
     border-radius: 5px;
     height: 10px;
 	margin: 0px;
-	background-color: rgb(52, 59, 72);
+	background-color: rgb(242,242,242);
 }
-QSlider::groove:horizontal:hover {
-	background-color: rgb(55, 62, 76);
+#row_2 QSlider::groove:horizontal:hover {
+	background-color: rgb(242,242,242);
 }
-QSlider::handle:horizontal {
-    background-color: rgb(189, 147, 249);
+#row_2 QSlider::handle:horizontal {
+    background-color: rgb(64,89,169);
     border: none;
     height: 10px;
     width: 10px;
     margin: 0px;
 	border-radius: 5px;
 }
-QSlider::handle:horizontal:hover {
-    background-color: rgb(195, 155, 255);
+#row_2 QSlider::handle:horizontal:hover {
+    background-color: rgb(64,89,169);
 }
-QSlider::handle:horizontal:pressed {
-    background-color: rgb(143, 214, 156);
+#row_2 QSlider::handle:horizontal:pressed {
+    background-color: rgb(64,89,169)
 }
 
-QSlider::groove:vertical {
+#row_2 QSlider::groove:vertical {
     border-radius: 5px;
     width: 10px;
     margin: 0px;
-	background-color: rgb(52, 59, 72);
+	background-color: rgb(242,242,242);
 }
-QSlider::groove:vertical:hover {
-	background-color: rgb(55, 62, 76);
+#row_2 QSlider::groove:vertical:hover {
+	background-color: rgb(242,242,242);
 }
-QSlider::handle:vertical {
-    background-color: rgb(189, 147, 249);
+#row_2 QSlider::handle:vertical {
+    background-color: rgb(64,89,169);
 	border: none;
     height: 10px;
     width: 10px;
     margin: 0px;
 	border-radius: 5px;
 }
-QSlider::handle:vertical:hover {
-    background-color: rgb(195, 155, 255);
+#row_2 QSlider::handle:vertical:hover {
+    background-color: rgb(64,89,169);
 }
-QSlider::handle:vertical:pressed {
-    background-color: rgb(143, 214, 156);
+#row_2 QSlider::handle:vertical:pressed {
+    background-color: rgb(64,89,169);
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -559,17 +567,15 @@ QCommandLinkButton:pressed {
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
 Button */
 #pagesContainer QPushButton {
-	border: 2px solid rgb(52, 59, 72);
-	border-radius: 5px;	
+	border: 2px solid rgb(55,181,167);
+	border-radius: 2px;
 	background-color: rgb(52, 59, 72);
 }
 #pagesContainer QPushButton:hover {
-	background-color: rgb(57, 65, 80);
 	border: 2px solid rgb(61, 70, 86);
 }
-#pagesContainer QPushButton:pressed {	
-	background-color: rgb(35, 40, 49);
-	border: 2px solid rgb(43, 50, 61);
+#pagesContainer QPushButton:pressed {
+	border: 2px solid rgb(55,181,167);
 }
 
 
