@@ -45,7 +45,7 @@ class MainWindow(QMainWindow):
 
         # USE CUSTOM TITLE BAR | USE AS "False" FOR MAC OR LINUX
         # ///////////////////////////////////////////////////////////////
-        Settings.ENABLE_CUSTOM_TITLE_BAR = False
+        Settings.ENABLE_CUSTOM_TITLE_BAR = True
 
         # APP NAME
         # ///////////////////////////////////////////////////////////////
@@ -74,7 +74,9 @@ class MainWindow(QMainWindow):
         widgets.btn_anamnes.clicked.connect(self.buttonClick)
         widgets.btn_visits.clicked.connect(self.buttonClick)
         widgets.btn_diagnostics.clicked.connect(self.buttonClick)
-        widgets.btn_try_page.clicked.connect(self.buttonClick)
+        widgets.btn_logout.clicked.connect(self.buttonClick)
+
+        widgets.btn_login.clicked.connect(self.buttonClick)
 
         # Try page wigets
         widgets.pushButton_3.clicked.connect(self.buttonClick)
@@ -104,6 +106,11 @@ class MainWindow(QMainWindow):
             UIFunctions.toggleRightBox(self, True)
         widgets.settingsTopBtn.clicked.connect(openCloseRightBox)
 
+        widgets.btn_logout.clicked.connect(openCloseRightBox)
+        widgets.btn_message.clicked.connect(openCloseRightBox)
+        widgets.btn_print.clicked.connect(openCloseRightBox)
+        widgets.btn_reconnect.clicked.connect(openCloseRightBox)
+
         # SHOW APP
         # ///////////////////////////////////////////////////////////////
         self.show()
@@ -127,9 +134,34 @@ class MainWindow(QMainWindow):
 
         # SET HOME PAGE AND SELECT MENU
         # ///////////////////////////////////////////////////////////////
-        widgets.stackedWidget.setCurrentWidget(widgets.anamnes)
-        widgets.btn_anamnes.setStyleSheet(UIFunctions.selectMenu(widgets.btn_anamnes.styleSheet()))
+        widgets.stackedWidget.setCurrentWidget(widgets.autorisation_page)
+        self.buttouEnable(False)
+        self.setUserInformation(name='',
+                          lastname='',
+                          midlename='',
+                          birthday='',
+                          cardnumber='')
+        self.resetUserLineEdit()
 
+    def buttouEnable(self, status):
+        widgets.btn_anamnes.setEnabled(status)
+        widgets.btn_visits.setEnabled(status)
+        widgets.btn_diagnostics.setEnabled(status)
+        widgets.toggleButton.setEnabled(status)
+        widgets.settingsTopBtn.setEnabled(status)
+
+    def setUserInformation(self, name, lastname, midlename, birthday, cardnumber):
+        widgets.nameMidleNameLabel.setText(name + midlename)
+        widgets.lastNameLabel.setText(lastname)
+        widgets.ageLabel.setText(birthday)
+        widgets.cartNLabel.setText(cardnumber)
+
+    def resetUserLineEdit(self):
+        widgets.nameLlineEdit.setText(''),
+        widgets.surnameLineEdit.setText(''),
+        widgets.middlenameLineEdit.setText(''),
+        widgets.birthdateLineEdit.setText(''),
+        widgets.cardLineEdit.setText('')
 
     # BUTTONS CLICK
     # Post here your functions for clicked buttons
@@ -157,10 +189,32 @@ class MainWindow(QMainWindow):
             UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
 
-        if btnName == "btn_try_page":
-            widgets.stackedWidget.setCurrentWidget(widgets.try_page)  # SET PAGE
+        if btnName == "btn_logout":
+            widgets.stackedWidget.setCurrentWidget(widgets.autorisation_page)  # SET PAGE
             UIFunctions.resetStyle(self, btnName)  # RESET ANOTHERS BUTTONS SELECTED
-            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))  # SELECT MENU
+            UIFunctions.resetMenu(self)
+            self.buttouEnable(False)
+            self.setUserInformation(name='',
+                                    lastname='',
+                                    midlename='',
+                                    birthday='',
+                                    cardnumber='')
+            self.resetUserLineEdit()
+
+        if btnName == "btn_login":
+            widgets.stackedWidget.setCurrentWidget(widgets.anamnes)  # SET PAGE
+            UIFunctions.resetStyle(self, btnName)  # RESET ANOTHERS BUTTONS SELECTED
+            widgets.btn_anamnes.setStyleSheet(UIFunctions.selectMenu(widgets.btn_anamnes.styleSheet()))
+
+            self.buttouEnable(True)
+
+            self.setUserInformation(name=widgets.nameLlineEdit.text(),
+                                    lastname=widgets.surnameLineEdit.text(),
+                                    midlename=widgets.middlenameLineEdit.text(),
+                                    birthday=widgets.birthdateLineEdit.text(),
+                                    cardnumber=widgets.cardLineEdit.text())
+            self.resetUserLineEdit()
+
 
         if btnName == "pushButton_3" :
             openFileName = widgets.lineEdit_3.text()

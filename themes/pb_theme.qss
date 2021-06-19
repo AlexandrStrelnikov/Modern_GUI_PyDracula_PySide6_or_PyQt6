@@ -127,10 +127,10 @@ Left Menu */
 	padding-left: 44px;
 }
 #topMenu .QPushButton:hover {
-	background-color: rgb(116,119,124);
+	background-color: rgb(49,162,150);
 }
 #topMenu .QPushButton:pressed {	
-	background-color: rgb(69,71,74);
+	background-color: rgb(49,162,150);
 	color: rgb(255, 255, 255);
 }
 #bottomMenu .QPushButton {	
@@ -165,10 +165,10 @@ Left Menu */
 	color: rgb(113, 126, 149);
 }
 #toggleButton:hover {
-	background-color: rgb(116,119,124);
+	background-color: rgb(49,162,150);
 }
 #toggleButton:pressed {
-	background-color: rgb(69,71,74);
+	background-color: rgb(49,162,150);
 }
 
 /* Title Menu */
@@ -257,11 +257,10 @@ Content App */
 	padding-left: 44px;
 }
 #contentSettings .QPushButton:hover {
-	background-color: rgb(116,119,124);
+	background-color: rgb(226,227,227);
 }
 #contentSettings .QPushButton:pressed {	
-	background-color: rgb(69,71,74);
-	color: rgb(255, 255, 255);
+	background-color: rgb(218,219,219);
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////

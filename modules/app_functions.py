@@ -26,7 +26,7 @@ class AppFunctions(MainWindow):
         Settings.BTN_RIGHT_BOX_COLOR = "background-color: #37B5A7;"
         Settings.MENU_SELECTED_STYLESHEET = MENU_SELECTED_STYLESHEET = """
         border-left: 22px solid qlineargradient(spread:pad, x1:0.034, y1:0, x2:0.216, y2:0, stop:0.499 rgba(64,89,169,255), stop:0.5 rgba(85, 170, 255, 0));
-        background-color: #52565C;
+        background-color: #31A296;
         """
 
         # SET MANUAL STYLES

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainPPHazh.ui'
+## Form generated from reading UI file 'mainNaIcUh.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.0
 ##
@@ -647,6 +647,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_8.setContentsMargins(0, -1, -1, -1)
         self.btn_anamnes = QPushButton(self.topMenu)
         self.btn_anamnes.setObjectName(u"btn_anamnes")
+        self.btn_anamnes.setEnabled(True)
         sizePolicy.setHeightForWidth(self.btn_anamnes.sizePolicy().hasHeightForWidth())
         self.btn_anamnes.setSizePolicy(sizePolicy)
         self.btn_anamnes.setMinimumSize(QSize(0, 45))
@@ -680,18 +681,6 @@ class Ui_MainWindow(object):
         self.btn_diagnostics.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-medical-cross.png);")
 
         self.verticalLayout_8.addWidget(self.btn_diagnostics)
-
-        self.btn_try_page = QPushButton(self.topMenu)
-        self.btn_try_page.setObjectName(u"btn_try_page")
-        sizePolicy.setHeightForWidth(self.btn_try_page.sizePolicy().hasHeightForWidth())
-        self.btn_try_page.setSizePolicy(sizePolicy)
-        self.btn_try_page.setMinimumSize(QSize(0, 45))
-        self.btn_try_page.setFont(font)
-        self.btn_try_page.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_try_page.setLayoutDirection(Qt.LeftToRight)
-        self.btn_try_page.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-description.png);")
-
-        self.verticalLayout_8.addWidget(self.btn_try_page)
 
 
         self.verticalMenuLayout.addWidget(self.topMenu)
@@ -729,36 +718,42 @@ class Ui_MainWindow(object):
         self.contentTopBg.setFrameShadow(QFrame.Raised)
         self.gridLayout_3 = QGridLayout(self.contentTopBg)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
-        self.lastNameLabel = QLabel(self.contentTopBg)
-        self.lastNameLabel.setObjectName(u"lastNameLabel")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Maximum)
-        sizePolicy2.setHorizontalStretch(0)
-        sizePolicy2.setVerticalStretch(0)
-        sizePolicy2.setHeightForWidth(self.lastNameLabel.sizePolicy().hasHeightForWidth())
-        self.lastNameLabel.setSizePolicy(sizePolicy2)
-        self.lastNameLabel.setFont(font)
-        self.lastNameLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.gridLayout_3.addWidget(self.lastNameLabel, 0, 0, 1, 1)
-
         self.cartNLabel = QLabel(self.contentTopBg)
         self.cartNLabel.setObjectName(u"cartNLabel")
-        sizePolicy3 = QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
-        sizePolicy3.setHorizontalStretch(0)
-        sizePolicy3.setVerticalStretch(0)
-        sizePolicy3.setHeightForWidth(self.cartNLabel.sizePolicy().hasHeightForWidth())
-        self.cartNLabel.setSizePolicy(sizePolicy3)
+        sizePolicy2 = QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.cartNLabel.sizePolicy().hasHeightForWidth())
+        self.cartNLabel.setSizePolicy(sizePolicy2)
         self.cartNLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
         self.gridLayout_3.addWidget(self.cartNLabel, 0, 1, 1, 1)
 
+        self.ageLabel = QLabel(self.contentTopBg)
+        self.ageLabel.setObjectName(u"ageLabel")
+        sizePolicy2.setHeightForWidth(self.ageLabel.sizePolicy().hasHeightForWidth())
+        self.ageLabel.setSizePolicy(sizePolicy2)
+        self.ageLabel.setFont(font)
+        self.ageLabel.setStyleSheet(u"")
+        self.ageLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.gridLayout_3.addWidget(self.ageLabel, 1, 1, 1, 1)
+
+        self.nameMidleNameLabel = QLabel(self.contentTopBg)
+        self.nameMidleNameLabel.setObjectName(u"nameMidleNameLabel")
+        sizePolicy2.setHeightForWidth(self.nameMidleNameLabel.sizePolicy().hasHeightForWidth())
+        self.nameMidleNameLabel.setSizePolicy(sizePolicy2)
+        self.nameMidleNameLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.gridLayout_3.addWidget(self.nameMidleNameLabel, 1, 0, 1, 1)
+
         self.leftBox = QFrame(self.contentTopBg)
         self.leftBox.setObjectName(u"leftBox")
-        sizePolicy4 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
-        sizePolicy4.setHorizontalStretch(0)
-        sizePolicy4.setVerticalStretch(0)
-        sizePolicy4.setHeightForWidth(self.leftBox.sizePolicy().hasHeightForWidth())
-        self.leftBox.setSizePolicy(sizePolicy4)
+        sizePolicy3 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.leftBox.sizePolicy().hasHeightForWidth())
+        self.leftBox.setSizePolicy(sizePolicy3)
         self.leftBox.setFrameShape(QFrame.NoFrame)
         self.leftBox.setFrameShadow(QFrame.Raised)
         self.horizontalLayout = QHBoxLayout(self.leftBox)
@@ -766,11 +761,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setSizeConstraint(QLayout.SetMinimumSize)
         self.connectioStatusLabel = QLabel(self.leftBox)
         self.connectioStatusLabel.setObjectName(u"connectioStatusLabel")
-        sizePolicy5 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Fixed)
-        sizePolicy5.setHorizontalStretch(0)
-        sizePolicy5.setVerticalStretch(0)
-        sizePolicy5.setHeightForWidth(self.connectioStatusLabel.sizePolicy().hasHeightForWidth())
-        self.connectioStatusLabel.setSizePolicy(sizePolicy5)
+        sizePolicy4 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Fixed)
+        sizePolicy4.setHorizontalStretch(0)
+        sizePolicy4.setVerticalStretch(0)
+        sizePolicy4.setHeightForWidth(self.connectioStatusLabel.sizePolicy().hasHeightForWidth())
+        self.connectioStatusLabel.setSizePolicy(sizePolicy4)
         self.connectioStatusLabel.setCursor(QCursor(Qt.PointingHandCursor))
         self.connectioStatusLabel.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
 
@@ -845,22 +840,17 @@ class Ui_MainWindow(object):
 
         self.gridLayout_3.addWidget(self.rightButtons, 0, 3, 2, 1)
 
-        self.nameMidleNameLabel = QLabel(self.contentTopBg)
-        self.nameMidleNameLabel.setObjectName(u"nameMidleNameLabel")
-        sizePolicy3.setHeightForWidth(self.nameMidleNameLabel.sizePolicy().hasHeightForWidth())
-        self.nameMidleNameLabel.setSizePolicy(sizePolicy3)
-        self.nameMidleNameLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        self.lastNameLabel = QLabel(self.contentTopBg)
+        self.lastNameLabel.setObjectName(u"lastNameLabel")
+        sizePolicy5 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Maximum)
+        sizePolicy5.setHorizontalStretch(0)
+        sizePolicy5.setVerticalStretch(0)
+        sizePolicy5.setHeightForWidth(self.lastNameLabel.sizePolicy().hasHeightForWidth())
+        self.lastNameLabel.setSizePolicy(sizePolicy5)
+        self.lastNameLabel.setFont(font)
+        self.lastNameLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
-        self.gridLayout_3.addWidget(self.nameMidleNameLabel, 1, 0, 1, 1)
-
-        self.ageLabel = QLabel(self.contentTopBg)
-        self.ageLabel.setObjectName(u"ageLabel")
-        sizePolicy3.setHeightForWidth(self.ageLabel.sizePolicy().hasHeightForWidth())
-        self.ageLabel.setSizePolicy(sizePolicy3)
-        self.ageLabel.setFont(font)
-        self.ageLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.gridLayout_3.addWidget(self.ageLabel, 1, 1, 1, 1)
+        self.gridLayout_3.addWidget(self.lastNameLabel, 0, 0, 1, 1)
 
 
         self.verticalLayout_2.addWidget(self.contentTopBg)
@@ -1001,7 +991,6 @@ class Ui_MainWindow(object):
 
         self.radioButton = QRadioButton(self.row_2)
         self.radioButton.setObjectName(u"radioButton")
-        self.radioButton.setStyleSheet(u"")
 
         self.gridLayout_2.addWidget(self.radioButton, 0, 1, 1, 1)
 
@@ -1034,7 +1023,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 440, 218))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 431, 218))
         self.scrollAreaWidgetContents.setStyleSheet(u" QScrollBar:vertical {\n"
 "	border: none;\n"
 "    background: rgb(52, 59, 72);\n"
@@ -1312,6 +1301,55 @@ class Ui_MainWindow(object):
         self.graph_layout.setObjectName(u"graph_layout")
         self.graph_layout.setContentsMargins(0, 5, 0, 0)
         self.stackedWidget.addWidget(self.try_page)
+        self.autorisation_page = QWidget()
+        self.autorisation_page.setObjectName(u"autorisation_page")
+        self.verticalLayoutWidget = QWidget(self.autorisation_page)
+        self.verticalLayoutWidget.setObjectName(u"verticalLayoutWidget")
+        self.verticalLayoutWidget.setGeometry(QRect(199, 119, 791, 251))
+        self.verticalLayout_12 = QVBoxLayout(self.verticalLayoutWidget)
+        self.verticalLayout_12.setObjectName(u"verticalLayout_12")
+        self.verticalLayout_12.setContentsMargins(0, 0, 0, 0)
+        self.nameLlineEdit = QLineEdit(self.verticalLayoutWidget)
+        self.nameLlineEdit.setObjectName(u"nameLlineEdit")
+
+        self.verticalLayout_12.addWidget(self.nameLlineEdit)
+
+        self.surnameLineEdit = QLineEdit(self.verticalLayoutWidget)
+        self.surnameLineEdit.setObjectName(u"surnameLineEdit")
+
+        self.verticalLayout_12.addWidget(self.surnameLineEdit)
+
+        self.middlenameLineEdit = QLineEdit(self.verticalLayoutWidget)
+        self.middlenameLineEdit.setObjectName(u"middlenameLineEdit")
+
+        self.verticalLayout_12.addWidget(self.middlenameLineEdit)
+
+        self.birthdateLineEdit = QLineEdit(self.verticalLayoutWidget)
+        self.birthdateLineEdit.setObjectName(u"birthdateLineEdit")
+
+        self.verticalLayout_12.addWidget(self.birthdateLineEdit)
+
+        self.cardLineEdit = QLineEdit(self.verticalLayoutWidget)
+        self.cardLineEdit.setObjectName(u"cardLineEdit")
+
+        self.verticalLayout_12.addWidget(self.cardLineEdit)
+
+        self.userDataStatusLabel = QLabel(self.verticalLayoutWidget)
+        self.userDataStatusLabel.setObjectName(u"userDataStatusLabel")
+
+        self.verticalLayout_12.addWidget(self.userDataStatusLabel)
+
+        self.btn_login = QPushButton(self.verticalLayoutWidget)
+        self.btn_login.setObjectName(u"btn_login")
+
+        self.verticalLayout_12.addWidget(self.btn_login)
+
+        self.btn_register = QPushButton(self.verticalLayoutWidget)
+        self.btn_register.setObjectName(u"btn_register")
+
+        self.verticalLayout_12.addWidget(self.btn_register)
+
+        self.stackedWidget.addWidget(self.autorisation_page)
         self.diagnostics = QWidget()
         self.diagnostics.setObjectName(u"diagnostics")
         self.verticalLayout_20 = QVBoxLayout(self.diagnostics)
@@ -1343,6 +1381,7 @@ class Ui_MainWindow(object):
 
         self.contentSettings = QFrame(self.extraRightBox)
         self.contentSettings.setObjectName(u"contentSettings")
+        self.contentSettings.setEnabled(True)
         self.contentSettings.setFrameShape(QFrame.NoFrame)
         self.contentSettings.setFrameShadow(QFrame.Raised)
         self.verticalLayout_13 = QVBoxLayout(self.contentSettings)
@@ -1426,13 +1465,17 @@ class Ui_MainWindow(object):
         self.bottomBar.setMaximumSize(QSize(16777215, 22))
         self.bottomBar.setFrameShape(QFrame.NoFrame)
         self.bottomBar.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_10 = QVBoxLayout(self.bottomBar)
+        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
         self.frame_size_grip = QFrame(self.bottomBar)
         self.frame_size_grip.setObjectName(u"frame_size_grip")
-        self.frame_size_grip.setGeometry(QRect(0, 0, 20, 22))
         self.frame_size_grip.setMinimumSize(QSize(20, 0))
         self.frame_size_grip.setMaximumSize(QSize(20, 16777215))
         self.frame_size_grip.setFrameShape(QFrame.NoFrame)
         self.frame_size_grip.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_10.addWidget(self.frame_size_grip)
+
 
         self.verticalLayout_6.addWidget(self.bottomBar)
 
@@ -1449,7 +1492,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(3)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1463,9 +1506,9 @@ class Ui_MainWindow(object):
         self.btn_anamnes.setText(QCoreApplication.translate("MainWindow", u"\u0410\u043d\u0430\u043c\u043d\u0435\u0437", None))
         self.btn_visits.setText(QCoreApplication.translate("MainWindow", u"\u0412\u0438\u0437\u0438\u0442\u044b", None))
         self.btn_diagnostics.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430", None))
-        self.btn_try_page.setText(QCoreApplication.translate("MainWindow", u"\u043f\u0440\u043e\u0431\u043d\u0430\u044f \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430", None))
-        self.lastNameLabel.setText(QCoreApplication.translate("MainWindow", u"\u0424\u0430\u043c\u0438\u043b\u0438\u044f", None))
         self.cartNLabel.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u043c\u0435\u0440 \u043a\u0430\u0440\u0442\u044b", None))
+        self.ageLabel.setText(QCoreApplication.translate("MainWindow", u"\u0412\u043e\u0437\u0440\u0430\u0441\u0442", None))
+        self.nameMidleNameLabel.setText(QCoreApplication.translate("MainWindow", u"\u0418\u043c\u044f \u041e\u0442\u0447\u0435\u0441\u0442\u0432\u043e", None))
         self.connectioStatusLabel.setText(QCoreApplication.translate("MainWindow", u"Not connected", None))
 #if QT_CONFIG(tooltip)
         self.settingsTopBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Settings", None))
@@ -1483,8 +1526,7 @@ class Ui_MainWindow(object):
         self.closeAppBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Close", None))
 #endif // QT_CONFIG(tooltip)
         self.closeAppBtn.setText("")
-        self.nameMidleNameLabel.setText(QCoreApplication.translate("MainWindow", u"\u0418\u043c\u044f \u041e\u0442\u0447\u0435\u0441\u0442\u0432\u043e", None))
-        self.ageLabel.setText(QCoreApplication.translate("MainWindow", u"\u0412\u043e\u0437\u0440\u0430\u0441\u0442", None))
+        self.lastNameLabel.setText(QCoreApplication.translate("MainWindow", u"\u0424\u0430\u043c\u0438\u043b\u0438\u044f", None))
         self.labelBoxBlenderInstalation.setText(QCoreApplication.translate("MainWindow", u"FILE BOX", None))
         self.lineEdit.setText("")
         self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Type here", None))
@@ -1554,6 +1596,20 @@ class Ui_MainWindow(object):
         self.lineEdit_3.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Type here", None))
         self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Open", None))
         self.labelVersion_5.setText(QCoreApplication.translate("MainWindow", u"Label description", None))
+        self.nameLlineEdit.setText("")
+        self.nameLlineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0418\u043c\u044f", None))
+        self.surnameLineEdit.setText("")
+        self.surnameLineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0424\u0430\u043c\u0438\u043b\u0438\u044f", None))
+        self.middlenameLineEdit.setInputMask("")
+        self.middlenameLineEdit.setText("")
+        self.middlenameLineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u0441\u0447\u0435\u0441\u0442\u0432\u043e", None))
+        self.birthdateLineEdit.setText("")
+        self.birthdateLineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0414\u0430\u0442\u0430 \u0440\u043e\u0436\u0434\u0435\u043d\u0438\u044f", None))
+        self.cardLineEdit.setText("")
+        self.cardLineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u043c\u0435\u0440 \u043a\u0430\u0440\u0442\u044b", None))
+        self.userDataStatusLabel.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.btn_login.setText(QCoreApplication.translate("MainWindow", u"\u0412\u043e\u0439\u0442\u0438", None))
+        self.btn_register.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043e\u0432\u0430\u0442\u044c", None))
         self.btn_reconnect.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435", None))
         self.btn_message.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435", None))
         self.btn_print.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0435\u0447\u0430\u0442\u044c", None))

@@ -90,6 +90,26 @@ class UIFunctions(MainWindow):
             self.animation.setEasingCurve(QEasingCurve.InOutQuart)
             self.animation.start()
 
+    def resetMenu(self):
+
+        # GET WIDTH
+        width = self.ui.leftMenuBg.width()
+        maxExtend = Settings.MENU_WIDTH
+        standard = 60
+
+        # SET MAX WIDTH
+        if width != 60:
+            widthExtended = standard
+            self.ui.toggleButton.setStyleSheet('background-image: url(:/icons/images/icons/cil-chevron-right.png);')
+
+            # ANIMATION
+            self.animation = QPropertyAnimation(self.ui.leftMenuBg, b"minimumWidth")
+            self.animation.setDuration(Settings.TIME_ANIMATION)
+            self.animation.setStartValue(width)
+            self.animation.setEndValue(widthExtended)
+            self.animation.setEasingCurve(QEasingCurve.InOutQuart)
+            self.animation.start()
+
     # TOGGLE LEFT BOX я не знаю что это, лучше оставлю
     # ///////////////////////////////////////////////////////////////
     # def toggleLeftBox(self, enable):
