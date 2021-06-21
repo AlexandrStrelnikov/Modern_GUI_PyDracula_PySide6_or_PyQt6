@@ -259,7 +259,7 @@ class UIFunctions(MainWindow):
                     self.dragPos = event.globalPos()
                     event.accept()
             self.ui.contentTopBg.mouseMoveEvent = moveWindow
-            self.ui.topLogoInfo.mouseMoveEvent = moveWindow
+            # self.ui.topLogoInfo.mouseMoveEvent = moveWindow
 
             # CUSTOM GRIPS
             self.left_grip = CustomGrip(self, Qt.LeftEdge, True)
