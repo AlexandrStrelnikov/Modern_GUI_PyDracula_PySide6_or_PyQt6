@@ -39,10 +39,7 @@ information */
 	color: rgb(221, 221, 221);
 	font: 7pt "Segoe UI";
 }
-#titleLeftApp{
-	color: rgb(221, 221, 221);
-	font: 8pt "Segoe UI";
-}
+
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
 Menu texp props (это костыль)
 В оригинальном фреймворке несколько мест, определяющих ситль кнопок*/
@@ -102,6 +99,16 @@ Bg App */
 	border: 1px solid rgb(44, 49, 58); /* не трогать*/
 }
 
+#topLogoInfo{
+    background-color: rgb(242, 242, 242);
+}
+
+#titleLeftApp{
+	color: rgb(0, 0, 0);
+	font: 8pt "Segoe UI";
+}
+
+
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
 Left Menu */
 #leftMenuBg {	
@@ -113,8 +120,14 @@ Left Menu */
 	background-position: centered;
 	background-repeat: no-repeat;
 }
-#titleLeftApp { font: 63 12pt "Segoe UI Semibold"; }
-#titleLeftDescription { font: 8pt "Segoe UI"; color: rgb(221, 221, 221); }
+#titleLeftApp {
+    font: 63 12pt "Segoe UI Semibold";
+    color: rgb(0, 0, 0);
+}
+#titleLeftDescription {
+    font: 8pt "Segoe UI";
+    color: rgb(0, 0, 0);
+}
 
 /* MENUS */
 #topMenu .QPushButton {	
@@ -125,32 +138,17 @@ Left Menu */
 	background-color: transparent;
 	text-align: left;
 	padding-left: 44px;
+	color : rgb(0,0,0);
 }
 #topMenu .QPushButton:hover {
-	background-color: rgb(49,162,150);
+	background-color: rgb(226,227,227);
+	color : rgb(0,0,0);
 }
-#topMenu .QPushButton:pressed {	
-	background-color: rgb(49,162,150);
-	color: rgb(255, 255, 255);
-}
-#bottomMenu .QPushButton {	
-	background-position: left center;
-    background-repeat: no-repeat;
-	border: none;
-	border-left: 20px solid transparent;
-	background-color:transparent;
-	text-align: center;
-	padding-left: 44px;
-}
-#bottomMenu .QPushButton:hover {
-	background-color: rgb(40, 44, 52);
-}
-#bottomMenu .QPushButton:pressed {	
-	background-color: rgb(189, 147, 249);
-	color: rgb(255, 255, 255);
-}
+
+
 #leftMenuFrame{
-	border-top: 3px solid rgb(44, 49, 58);
+    background-color: rgb(242, 242, 242);
+	border-top: 3px solid rgb(242,242,242);
 }
 
 /* Toggle Button */
@@ -159,17 +157,15 @@ Left Menu */
     background-repeat: no-repeat;
 	border: none;
 	border-left: 20px solid transparent;
-	background-color: rgb(55, 181, 167);
+	background-color: rgb(242, 242, 242);
 	text-align: center;
 	padding-left: 44px;
 	color: rgb(113, 126, 149);
 }
 #toggleButton:hover {
-	background-color: rgb(49,162,150);
+	background-color: rgb(226,227,227);
 }
-#toggleButton:pressed {
-	background-color: rgb(49,162,150);
-}
+
 
 /* Title Menu */
 #titleRightInfo {
@@ -179,7 +175,7 @@ Left Menu */
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
 Extra Tab */
 #extraLeftBox {	
-	background-color: rgb(44, 49, 58);
+	background-color: rgb(55,181,167);
 }
 #extraTopBg{	
 	background-color: rgb(189, 147, 249)
@@ -229,7 +225,7 @@ Content App */
 	background-color: rgb(55, 181, 167);
 }
 #contentBottom{
-	border-top: 3px solid rgb(44, 49, 58);
+	border-top: 3px solid rgb(55,181,167);
 }
 
 /* Top Buttons */
@@ -242,7 +238,7 @@ Content App */
 #themeSettingsTopDetail { background-color: rgb(242, 242, 242); }
 
 /* Bottom Bar */
-#bottomBar { background-color: rgb(44, 49, 58); }
+#bottomBar { background-color: rgb(207, 207, 207); }
 #bottomBar QLabel { font-size: 11px; color: rgb(113, 126, 149); padding-left: 10px; padding-right: 10px; padding-bottom: 2px; }
 
 /* CONTENT SETTINGS */
@@ -260,7 +256,7 @@ Content App */
 	background-color: rgb(226,227,227);
 }
 #contentSettings .QPushButton:pressed {	
-	background-color: rgb(218,219,219);
+	background-color: rgb(214,215,216);
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
