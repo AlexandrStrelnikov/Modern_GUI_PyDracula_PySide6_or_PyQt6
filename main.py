@@ -79,27 +79,20 @@ class MainWindow(QMainWindow):
         widgets.btn_login.clicked.connect(self.buttonClick)
 
         # Try page wigets
-        widgets.pushButton_3.clicked.connect(self.buttonClick)
-        widgets.labelVersion_5.setText('')
-        graph_widget = pg.GraphicsLayoutWidget(show=True)
-        graph_widget.setBackground(background=Settings.PLOT_BACKGROUND) # setting up graph background color
-        plot_widget = graph_widget.addPlot(title="Updating plot")
-        # plot_widget.enableAutoRange('xy', True)
-        plot_widget.autoRange()
+        # widgets.pushButton_3.clicked.connect(self.buttonClick)
+        # widgets.labelVersion_5.setText('')
+        # graph_widget = pg.GraphicsLayoutWidget(show=True)
+        # graph_widget.setBackground(background=Settings.PLOT_BACKGROUND) # setting up graph background color
+        # plot_widget = graph_widget.addPlot(title="Updating plot")
+        # # plot_widget.enableAutoRange('xy', True)
+        # plot_widget.autoRange()
+        #
+        #
+        # global plot
+        # plot = plot_widget.plot(pen='y')
+        # plot.setPen(Settings.PLOT_LINE_COLOR[1]) # setting up line properties (here color only)
+        # widgets.graph_layout.addWidget(graph_widget)
 
-
-        global plot
-        plot = plot_widget.plot(pen='y')
-        plot.setPen(Settings.PLOT_LINE_COLOR[1]) # setting up line properties (here color only)
-        widgets.graph_layout.addWidget(graph_widget)
-
-
-
-        # EXTRA LEFT BOX
-        # def openCloseLeftBox():
-        #     UIFunctions.toggleLeftBox(self, True)
-        # widgets.toggleLeftBox.clicked.connect(openCloseLeftBox)
-        # widgets.extraCloseColumnBtn.clicked.connect(openCloseLeftBox)
 
         # EXTRA RIGHT BOX
         def openCloseRightBox():
@@ -136,12 +129,12 @@ class MainWindow(QMainWindow):
         # ///////////////////////////////////////////////////////////////
         widgets.stackedWidget.setCurrentWidget(widgets.autorisation_page)
         self.buttouEnable(False)
-        self.setUserInformation(name='',
-                          lastname='',
-                          midlename='',
-                          birthday='',
-                          cardnumber='')
-        self.resetUserLineEdit()
+        # self.setUserInformation(name='',
+        #                   lastname='',
+        #                   midlename='',
+        #                   birthday='',
+        #                   cardnumber='')
+        # self.resetUserLineEdit()
 
     def buttouEnable(self, status):
         widgets.btn_anamnes.setEnabled(status)
@@ -194,12 +187,12 @@ class MainWindow(QMainWindow):
             UIFunctions.resetStyle(self, btnName)  # RESET ANOTHERS BUTTONS SELECTED
             UIFunctions.resetMenu(self)
             self.buttouEnable(False)
-            self.setUserInformation(name='',
-                                    lastname='',
-                                    midlename='',
-                                    birthday='',
-                                    cardnumber='')
-            self.resetUserLineEdit()
+            # self.setUserInformation(name='',
+            #                         lastname='',
+            #                         midlename='',
+            #                         birthday='',
+            #                         cardnumber='')
+            # self.resetUserLineEdit()
 
         if btnName == "btn_login":
             widgets.stackedWidget.setCurrentWidget(widgets.anamnes)  # SET PAGE
@@ -208,12 +201,12 @@ class MainWindow(QMainWindow):
 
             self.buttouEnable(True)
 
-            self.setUserInformation(name=widgets.nameLlineEdit.text(),
-                                    lastname=widgets.surnameLineEdit.text(),
-                                    midlename=widgets.middlenameLineEdit.text(),
-                                    birthday=widgets.birthdateLineEdit.text(),
-                                    cardnumber=widgets.cardLineEdit.text())
-            self.resetUserLineEdit()
+            # self.setUserInformation(name=widgets.nameLlineEdit.text(),
+            #                         lastname=widgets.surnameLineEdit.text(),
+            #                         midlename=widgets.middlenameLineEdit.text(),
+            #                         birthday=widgets.birthdateLineEdit.text(),
+            #                         cardnumber=widgets.cardLineEdit.text())
+            # self.resetUserLineEdit()
 
 
         if btnName == "pushButton_3" :

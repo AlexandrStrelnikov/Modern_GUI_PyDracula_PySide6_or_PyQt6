@@ -7,8 +7,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1280</width>
-    <height>720</height>
+    <width>1284</width>
+    <height>727</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -635,34 +635,6 @@ Button */
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
-            <widget class="QFrame" name="topLogo">
-             <property name="geometry">
-              <rect>
-               <x>10</x>
-               <y>5</y>
-               <width>42</width>
-               <height>42</height>
-              </rect>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>42</width>
-               <height>42</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>42</width>
-               <height>42</height>
-              </size>
-             </property>
-             <property name="frameShape">
-              <enum>QFrame::NoFrame</enum>
-             </property>
-             <property name="frameShadow">
-              <enum>QFrame::Raised</enum>
-             </property>
-            </widget>
             <widget class="QLabel" name="titleLeftApp">
              <property name="geometry">
               <rect>
@@ -715,6 +687,47 @@ Button */
               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
              </property>
             </widget>
+            <widget class="QPushButton" name="toggleButton">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>60</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>45</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-image: url(:/icons/images/icons/icon_menu.png);</string>
+             </property>
+             <property name="text">
+              <string>Hide</string>
+             </property>
+            </widget>
            </widget>
           </item>
           <item>
@@ -741,74 +754,6 @@ Button */
              <property name="bottomMargin">
               <number>0</number>
              </property>
-             <item>
-              <widget class="QFrame" name="toggleBox">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>45</height>
-                </size>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::NoFrame</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QVBoxLayout" name="verticalLayout_4">
-                <property name="spacing">
-                 <number>0</number>
-                </property>
-                <property name="leftMargin">
-                 <number>0</number>
-                </property>
-                <property name="topMargin">
-                 <number>0</number>
-                </property>
-                <property name="rightMargin">
-                 <number>0</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>0</number>
-                </property>
-                <item>
-                 <widget class="QPushButton" name="toggleButton">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>10</pointsize>
-                    <italic>false</italic>
-                    <bold>false</bold>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/icon_menu.png);</string>
-                  </property>
-                  <property name="text">
-                   <string>Hide</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
              <item alignment="Qt::AlignTop">
               <widget class="QFrame" name="topMenu">
                <property name="frameShape">
@@ -834,7 +779,7 @@ Button */
                  <number>0</number>
                 </property>
                 <item>
-                 <widget class="QPushButton" name="btn_home">
+                 <widget class="QPushButton" name="btn_anamnes">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -864,12 +809,12 @@ Button */
                    <string notr="true">background-image: url(:/icons/images/icons/cil-home.png);</string>
                   </property>
                   <property name="text">
-                   <string>Home</string>
+                   <string>Анамнез</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="btn_widgets">
+                 <widget class="QPushButton" name="btn_visits">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -899,12 +844,12 @@ Button */
                    <string notr="true">background-image: url(:/icons/images/icons/cil-gamepad.png);</string>
                   </property>
                   <property name="text">
-                   <string>Widgets</string>
+                   <string>Визиты</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="btn_new">
+                 <widget class="QPushButton" name="btn_diagnostics">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -934,77 +879,7 @@ Button */
                    <string notr="true">background-image: url(:/icons/images/icons/cil-file.png);</string>
                   </property>
                   <property name="text">
-                   <string>New</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="btn_save">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>10</pointsize>
-                    <italic>false</italic>
-                    <bold>false</bold>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-save.png)</string>
-                  </property>
-                  <property name="text">
-                   <string>Save</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="btn_exit">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>10</pointsize>
-                    <italic>false</italic>
-                    <bold>false</bold>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-x.png);</string>
-                  </property>
-                  <property name="text">
-                   <string>Exit</string>
+                   <string>Диагностика</string>
                   </property>
                  </widget>
                 </item>
@@ -1822,38 +1697,32 @@ p, li { white-space: pre-wrap; }
                   <property name="frameShadow">
                    <enum>QFrame::Raised</enum>
                   </property>
-                  <layout class="QVBoxLayout" name="verticalLayout_15">
-                   <property name="spacing">
-                    <number>0</number>
-                   </property>
-                   <property name="leftMargin">
-                    <number>10</number>
-                   </property>
-                   <property name="topMargin">
-                    <number>10</number>
-                   </property>
-                   <property name="rightMargin">
-                    <number>10</number>
-                   </property>
-                   <property name="bottomMargin">
-                    <number>10</number>
-                   </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_4">
                    <item>
                     <widget class="QStackedWidget" name="stackedWidget">
                      <property name="styleSheet">
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>0</number>
+                      <number>1</number>
                      </property>
-                     <widget class="QWidget" name="home">
-                      <property name="styleSheet">
-                       <string notr="true">background-image: url(:/images/images/images/PyDracula_vertical.png);
-background-position: center;
-background-repeat: no-repeat;</string>
-                      </property>
+                     <widget class="QWidget" name="anamnes"/>
+                     <widget class="QWidget" name="autorisation_page">
+                      <widget class="QPushButton" name="btn_login">
+                       <property name="geometry">
+                        <rect>
+                         <x>480</x>
+                         <y>180</y>
+                         <width>75</width>
+                         <height>24</height>
+                        </rect>
+                       </property>
+                       <property name="text">
+                        <string>Login</string>
+                       </property>
+                      </widget>
                      </widget>
-                     <widget class="QWidget" name="widgets">
+                     <widget class="QWidget" name="visits">
                       <property name="styleSheet">
                        <string notr="true">b</string>
                       </property>
@@ -2146,7 +2015,7 @@ background-repeat: no-repeat;</string>
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>354</width>
+                                 <width>356</width>
                                  <height>218</height>
                                 </rect>
                                </property>
@@ -2688,19 +2557,8 @@ background-repeat: no-repeat;</string>
                        </item>
                       </layout>
                      </widget>
-                     <widget class="QWidget" name="new_page">
-                      <layout class="QVBoxLayout" name="verticalLayout_20">
-                       <item>
-                        <widget class="QLabel" name="label">
-                         <property name="text">
-                          <string>NEW PAGE TEST</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
+                     <widget class="QWidget" name="diagnostics">
+                      <layout class="QVBoxLayout" name="verticalLayout_20"/>
                      </widget>
                     </widget>
                    </item>
@@ -2791,22 +2649,39 @@ background-repeat: no-repeat;</string>
                         <property name="frameShadow">
                          <enum>QFrame::Raised</enum>
                         </property>
-                        <layout class="QVBoxLayout" name="verticalLayout_14">
-                         <property name="spacing">
-                          <number>0</number>
-                         </property>
-                         <property name="leftMargin">
-                          <number>0</number>
-                         </property>
-                         <property name="topMargin">
-                          <number>0</number>
-                         </property>
-                         <property name="rightMargin">
-                          <number>0</number>
-                         </property>
-                         <property name="bottomMargin">
-                          <number>0</number>
-                         </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_15">
+                         <item>
+                          <widget class="QPushButton" name="btn_reconnect">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>45</height>
+                            </size>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <pointsize>10</pointsize>
+                             <italic>false</italic>
+                             <bold>false</bold>
+                            </font>
+                           </property>
+                           <property name="cursor">
+                            <cursorShape>PointingHandCursor</cursorShape>
+                           </property>
+                           <property name="layoutDirection">
+                            <enum>Qt::LeftToRight</enum>
+                           </property>
+                           <property name="text">
+                            <string>Переподключиться</string>
+                           </property>
+                          </widget>
+                         </item>
                          <item>
                           <widget class="QPushButton" name="btn_message">
                            <property name="sizePolicy">
@@ -2834,11 +2709,8 @@ background-repeat: no-repeat;</string>
                            <property name="layoutDirection">
                             <enum>Qt::LeftToRight</enum>
                            </property>
-                           <property name="styleSheet">
-                            <string notr="true">background-image: url(:/icons/images/icons/cil-envelope-open.png);</string>
-                           </property>
                            <property name="text">
-                            <string>Message</string>
+                            <string>Сообщение</string>
                            </property>
                           </widget>
                          </item>
@@ -2869,11 +2741,8 @@ background-repeat: no-repeat;</string>
                            <property name="layoutDirection">
                             <enum>Qt::LeftToRight</enum>
                            </property>
-                           <property name="styleSheet">
-                            <string notr="true">background-image: url(:/icons/images/icons/cil-print.png);</string>
-                           </property>
                            <property name="text">
-                            <string>Print</string>
+                            <string>Печать</string>
                            </property>
                           </widget>
                          </item>
@@ -2904,11 +2773,8 @@ background-repeat: no-repeat;</string>
                            <property name="layoutDirection">
                             <enum>Qt::LeftToRight</enum>
                            </property>
-                           <property name="styleSheet">
-                            <string notr="true">background-image: url(:/icons/images/icons/cil-account-logout.png);</string>
-                           </property>
                            <property name="text">
-                            <string>Logout</string>
+                            <string>Выход</string>
                            </property>
                           </widget>
                          </item>

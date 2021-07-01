@@ -32,9 +32,9 @@ class AppFunctions(MainWindow):
 
         # SET MANUAL STYLES
         self.ui.lineEdit.setStyleSheet("background-color: #FFFFFF;")
-        self.ui.lineEdit_3.setStyleSheet("background-color: #FFFFFF;")
+        # self.ui.lineEdit_3.setStyleSheet("background-color: #FFFFFF;")
         self.ui.pushButton.setStyleSheet("background-color: #37B5A7;")
-        self.ui.pushButton_3.setStyleSheet("background-color: #37B5A7;")
+        # self.ui.pushButton_3.setStyleSheet("background-color: #37B5A7;")
         self.ui.plainTextEdit.setStyleSheet("background-color: #FFFFFF;")
 
         # здесь настраиваются скроллеры
