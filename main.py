@@ -75,8 +75,14 @@ class MainWindow(QMainWindow):
         widgets.btn_visits.clicked.connect(self.buttonClick)
         widgets.btn_diagnostics.clicked.connect(self.buttonClick)
         widgets.btn_logout.clicked.connect(self.buttonClick)
-
         widgets.btn_login.clicked.connect(self.buttonClick)
+
+        widgets.redactAnamnesButton.clicked.connect(self.buttonClick)
+        widgets.cancelAnamnesButton.clicked.connect(self.buttonClick)
+        widgets.saveAnamnesButton.clicked.connect(self.buttonClick)
+        widgets.illnesHistoryText.setEnabled(False)
+        widgets.ECONumLineEdit.setEnabled(False)
+        widgets.IGHComboBox.setEnabled(False)
 
         # Try page wigets
         # widgets.pushButton_3.clicked.connect(self.buttonClick)
@@ -226,6 +232,23 @@ class MainWindow(QMainWindow):
                 widgets.labelVersion_5.setText('File Not Found')
             # widgets.graph_layout.update() # не знаю, нужна ли эта строчка вообще
 
+        if btnName == "redactAnamnesButton":
+            widgets.stackedWidget_2.setCurrentWidget(widgets.anamnesSavePage)
+            widgets.illnesHistoryText.setEnabled(True)
+            widgets.ECONumLineEdit.setEnabled(True)
+            widgets.IGHComboBox.setEnabled(True)
+
+        if btnName == "cancelAnamnesButton":
+            widgets.stackedWidget_2.setCurrentWidget(widgets.anamnesRedactioPage)
+            widgets.illnesHistoryText.setEnabled(False)
+            widgets.ECONumLineEdit.setEnabled(False)
+            widgets.IGHComboBox.setEnabled(False)
+
+        if btnName == "saveAnamnesButton":
+            widgets.stackedWidget_2.setCurrentWidget(widgets.anamnesRedactioPage)
+            widgets.illnesHistoryText.setEnabled(False)
+            widgets.ECONumLineEdit.setEnabled(False)
+            widgets.IGHComboBox.setEnabled(False)
         # PRINT BTN NAME
         print(f'Button "{btnName}" pressed!')
 

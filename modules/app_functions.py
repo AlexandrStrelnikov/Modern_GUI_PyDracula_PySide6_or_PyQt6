@@ -36,6 +36,7 @@ class AppFunctions(MainWindow):
         self.ui.pushButton.setStyleSheet("background-color: #37B5A7;")
         # self.ui.pushButton_3.setStyleSheet("background-color: #37B5A7;")
         self.ui.plainTextEdit.setStyleSheet("background-color: #FFFFFF;")
+        # self.ui.plainTextEdit.setStyleSheet("background-color: #FFFFFF;")
 
         # здесь настраиваются скроллеры
         self.ui.tableWidget.setStyleSheet("QScrollBar:vertical { background: #F2F2F2; } QScrollBar:horizontal { background: #F2F2F2; }")

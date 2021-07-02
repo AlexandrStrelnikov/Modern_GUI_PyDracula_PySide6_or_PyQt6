@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainRrREhs.ui'
+## Form generated from reading UI file 'mainLOApjv.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.0
 ##
@@ -1003,13 +1003,14 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 818, 335))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 818, 289))
         self.verticalLayout_24 = QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_24.setObjectName(u"verticalLayout_24")
-        self.plainTextEdit_2 = QPlainTextEdit(self.scrollAreaWidgetContents_2)
-        self.plainTextEdit_2.setObjectName(u"plainTextEdit_2")
+        self.illnesHistoryText = QPlainTextEdit(self.scrollAreaWidgetContents_2)
+        self.illnesHistoryText.setObjectName(u"illnesHistoryText")
+        self.illnesHistoryText.setLineWidth(1)
 
-        self.verticalLayout_24.addWidget(self.plainTextEdit_2)
+        self.verticalLayout_24.addWidget(self.illnesHistoryText)
 
         self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
 
@@ -1039,6 +1040,44 @@ class Ui_MainWindow(object):
         self.IGHComboBox.setObjectName(u"IGHComboBox")
 
         self.verticalLayout_25.addWidget(self.IGHComboBox)
+
+        self.stackedWidget_2 = QStackedWidget(self.anamnes)
+        self.stackedWidget_2.setObjectName(u"stackedWidget_2")
+        self.stackedWidget_2.setEnabled(True)
+        sizePolicy2 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.stackedWidget_2.sizePolicy().hasHeightForWidth())
+        self.stackedWidget_2.setSizePolicy(sizePolicy2)
+        self.anamnesRedactioPage = QWidget()
+        self.anamnesRedactioPage.setObjectName(u"anamnesRedactioPage")
+        self.verticalLayout_26 = QVBoxLayout(self.anamnesRedactioPage)
+        self.verticalLayout_26.setObjectName(u"verticalLayout_26")
+        self.verticalLayout_26.setContentsMargins(300, 9, 300, -1)
+        self.redactAnamnesButton = QPushButton(self.anamnesRedactioPage)
+        self.redactAnamnesButton.setObjectName(u"redactAnamnesButton")
+
+        self.verticalLayout_26.addWidget(self.redactAnamnesButton)
+
+        self.stackedWidget_2.addWidget(self.anamnesRedactioPage)
+        self.anamnesSavePage = QWidget()
+        self.anamnesSavePage.setObjectName(u"anamnesSavePage")
+        self.horizontalLayout_7 = QHBoxLayout(self.anamnesSavePage)
+        self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
+        self.horizontalLayout_7.setContentsMargins(200, -1, 200, -1)
+        self.saveAnamnesButton = QPushButton(self.anamnesSavePage)
+        self.saveAnamnesButton.setObjectName(u"saveAnamnesButton")
+
+        self.horizontalLayout_7.addWidget(self.saveAnamnesButton)
+
+        self.cancelAnamnesButton = QPushButton(self.anamnesSavePage)
+        self.cancelAnamnesButton.setObjectName(u"cancelAnamnesButton")
+
+        self.horizontalLayout_7.addWidget(self.cancelAnamnesButton)
+
+        self.stackedWidget_2.addWidget(self.anamnesSavePage)
+
+        self.verticalLayout_25.addWidget(self.stackedWidget_2)
 
         self.stackedWidget.addWidget(self.anamnes)
         self.autorisation_page = QWidget()
@@ -1086,11 +1125,11 @@ class Ui_MainWindow(object):
 
         self.sqlStatusLabel = QLabel(self.autorisation_page)
         self.sqlStatusLabel.setObjectName(u"sqlStatusLabel")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
-        sizePolicy2.setHorizontalStretch(0)
-        sizePolicy2.setVerticalStretch(0)
-        sizePolicy2.setHeightForWidth(self.sqlStatusLabel.sizePolicy().hasHeightForWidth())
-        self.sqlStatusLabel.setSizePolicy(sizePolicy2)
+        sizePolicy3 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.sqlStatusLabel.sizePolicy().hasHeightForWidth())
+        self.sqlStatusLabel.setSizePolicy(sizePolicy3)
         self.sqlStatusLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignTop)
 
         self.verticalLayout_14.addWidget(self.sqlStatusLabel)
@@ -1372,11 +1411,11 @@ class Ui_MainWindow(object):
         __qtablewidgetitem23 = QTableWidgetItem()
         self.tableWidget.setItem(0, 3, __qtablewidgetitem23)
         self.tableWidget.setObjectName(u"tableWidget")
-        sizePolicy3 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
-        sizePolicy3.setHorizontalStretch(0)
-        sizePolicy3.setVerticalStretch(0)
-        sizePolicy3.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
-        self.tableWidget.setSizePolicy(sizePolicy3)
+        sizePolicy4 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        sizePolicy4.setHorizontalStretch(0)
+        sizePolicy4.setVerticalStretch(0)
+        sizePolicy4.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
+        self.tableWidget.setSizePolicy(sizePolicy4)
         palette = QPalette()
         brush = QBrush(QColor(221, 221, 221, 255))
         brush.setStyle(Qt.SolidPattern)
@@ -1592,6 +1631,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
 
         self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget_2.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1645,6 +1685,9 @@ class Ui_MainWindow(object):
         self.IGHComboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"\u041d\u0435 \u043f\u0440\u043e\u0432\u043e\u0434\u0438\u043b\u043e\u0441\u044c", None))
         self.IGHComboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"\u041f\u0440\u043e\u0432\u043e\u0434\u0438\u043b\u043e\u0441\u044c", None))
 
+        self.redactAnamnesButton.setText(QCoreApplication.translate("MainWindow", u"\u0420\u0435\u0434\u0430\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u0442\u044c", None))
+        self.saveAnamnesButton.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c", None))
+        self.cancelAnamnesButton.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u043c\u0435\u043d\u0430", None))
         self.surnameLineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0424\u0430\u043c\u0438\u043b\u0438\u044f", None))
         self.nameLlineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0418\u043c\u044f", None))
         self.middlenameLineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u0447\u0435\u0441\u0442\u0432\u043e", None))
