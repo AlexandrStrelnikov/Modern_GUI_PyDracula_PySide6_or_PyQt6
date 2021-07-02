@@ -41,6 +41,7 @@ class AppFunctions(MainWindow):
         self.ui.tableWidget.setStyleSheet("QScrollBar:vertical { background: #F2F2F2; } QScrollBar:horizontal { background: #F2F2F2; }")
         self.ui.scrollArea.setStyleSheet("QScrollBar:vertical { background: #F2F2F2; } QScrollBar:horizontal { background: #F2F2F2; }")
         self.ui.comboBox.setStyleSheet("background-color: #FFFFFF;")
+        self.ui.IGHComboBox.setStyleSheet("background-color: #FFFFFF;")
         self.ui.horizontalScrollBar.setStyleSheet("background-color: #F2F2F2;")
         self.ui.verticalScrollBar.setStyleSheet("background-color: #F2F2F2;")
         # self.ui.commandLinkButton.setStyleSheet("color: #000000;")

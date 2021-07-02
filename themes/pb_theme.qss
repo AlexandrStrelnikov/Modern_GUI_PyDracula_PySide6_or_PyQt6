@@ -359,7 +359,7 @@ QPlainTextEdit:focus {
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
 ComboBox */
-QComboBox{
+#pagesContainer .QComboBox{
 	background-color: rgb(27, 29, 35);
 	border-radius: 2px;
 	border: 2px solid rgb(255, 255, 255);
@@ -367,12 +367,12 @@ QComboBox{
 	padding: 5px;
 	padding-left: 10px;
 }
-QComboBox:hover {
+#pagesContainer .QComboBox:hover {
 	border: 2px solid rgb(255, 255, 255);
 	border-bottom-color: rgb(116,119,124);
 }
 
-QComboBox::drop-down {
+#pagesContainer .QComboBox::drop-down {
 	subcontrol-origin: padding;
 	subcontrol-position: top right;
 	width: 25px;
@@ -385,7 +385,7 @@ QComboBox::drop-down {
 	background-position: center;
 	background-repeat: no-reperat;
  }
-QComboBox QAbstractItemView {
+#pagesContainer .QComboBox QAbstractItemView {
 	color: rgb(0, 0, 0);
 	background-color: rgb(55, 181, 167);
 	padding: 10px;

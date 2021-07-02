@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainFQOLHz.ui'
+## Form generated from reading UI file 'mainRrREhs.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.0
 ##
@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1284, 727)
+        MainWindow.resize(940, 613)
         MainWindow.setMinimumSize(QSize(940, 560))
         self.styleSheet = QWidget(MainWindow)
         self.styleSheet.setObjectName(u"styleSheet")
@@ -674,18 +674,6 @@ class Ui_MainWindow(object):
         self.verticalLayout_9.setSpacing(0)
         self.verticalLayout_9.setObjectName(u"verticalLayout_9")
         self.verticalLayout_9.setContentsMargins(0, 0, 0, 0)
-        self.toggleLeftBox = QPushButton(self.bottomMenu)
-        self.toggleLeftBox.setObjectName(u"toggleLeftBox")
-        sizePolicy.setHeightForWidth(self.toggleLeftBox.sizePolicy().hasHeightForWidth())
-        self.toggleLeftBox.setSizePolicy(sizePolicy)
-        self.toggleLeftBox.setMinimumSize(QSize(0, 45))
-        self.toggleLeftBox.setFont(font)
-        self.toggleLeftBox.setCursor(QCursor(Qt.PointingHandCursor))
-        self.toggleLeftBox.setLayoutDirection(Qt.LeftToRight)
-        self.toggleLeftBox.setStyleSheet(u"background-image: url(:/icons/images/icons/icon_settings.png);")
-
-        self.verticalLayout_9.addWidget(self.toggleLeftBox)
-
 
         self.verticalMenuLayout.addWidget(self.bottomMenu, 0, Qt.AlignBottom)
 
@@ -789,7 +777,6 @@ class Ui_MainWindow(object):
         self.btn_adjustments.setFont(font)
         self.btn_adjustments.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_adjustments.setLayoutDirection(Qt.LeftToRight)
-        self.btn_adjustments.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-equalizer.png);")
 
         self.verticalLayout_11.addWidget(self.btn_adjustments)
 
@@ -801,7 +788,6 @@ class Ui_MainWindow(object):
         self.btn_more.setFont(font)
         self.btn_more.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_more.setLayoutDirection(Qt.LeftToRight)
-        self.btn_more.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-layers.png);")
 
         self.verticalLayout_11.addWidget(self.btn_more)
 
@@ -867,21 +853,43 @@ class Ui_MainWindow(object):
         self.leftBox.setFrameShape(QFrame.NoFrame)
         self.leftBox.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_3 = QHBoxLayout(self.leftBox)
-        self.horizontalLayout_3.setSpacing(0)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
-        self.titleRightInfo = QLabel(self.leftBox)
-        self.titleRightInfo.setObjectName(u"titleRightInfo")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Expanding)
-        sizePolicy2.setHorizontalStretch(0)
-        sizePolicy2.setVerticalStretch(0)
-        sizePolicy2.setHeightForWidth(self.titleRightInfo.sizePolicy().hasHeightForWidth())
-        self.titleRightInfo.setSizePolicy(sizePolicy2)
-        self.titleRightInfo.setMaximumSize(QSize(16777215, 45))
-        self.titleRightInfo.setFont(font)
-        self.titleRightInfo.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        self.verticalLayout_21 = QVBoxLayout()
+        self.verticalLayout_21.setObjectName(u"verticalLayout_21")
+        self.lastNameLabel = QLabel(self.leftBox)
+        self.lastNameLabel.setObjectName(u"lastNameLabel")
 
-        self.horizontalLayout_3.addWidget(self.titleRightInfo)
+        self.verticalLayout_21.addWidget(self.lastNameLabel)
+
+        self.nameMidleNameLabel = QLabel(self.leftBox)
+        self.nameMidleNameLabel.setObjectName(u"nameMidleNameLabel")
+
+        self.verticalLayout_21.addWidget(self.nameMidleNameLabel)
+
+
+        self.horizontalLayout_3.addLayout(self.verticalLayout_21)
+
+        self.verticalLayout_22 = QVBoxLayout()
+        self.verticalLayout_22.setObjectName(u"verticalLayout_22")
+        self.verticalLayout_22.setContentsMargins(-1, -1, 0, -1)
+        self.cartNLabel = QLabel(self.leftBox)
+        self.cartNLabel.setObjectName(u"cartNLabel")
+
+        self.verticalLayout_22.addWidget(self.cartNLabel)
+
+        self.ageLabel = QLabel(self.leftBox)
+        self.ageLabel.setObjectName(u"ageLabel")
+
+        self.verticalLayout_22.addWidget(self.ageLabel)
+
+
+        self.horizontalLayout_3.addLayout(self.verticalLayout_22)
+
+        self.label = QLabel(self.leftBox)
+        self.label.setObjectName(u"label")
+        self.label.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+
+        self.horizontalLayout_3.addWidget(self.label)
 
 
         self.horizontalLayout.addWidget(self.leftBox)
@@ -981,12 +989,115 @@ class Ui_MainWindow(object):
         self.stackedWidget.setStyleSheet(u"background: transparent;")
         self.anamnes = QWidget()
         self.anamnes.setObjectName(u"anamnes")
+        self.verticalLayout_25 = QVBoxLayout(self.anamnes)
+        self.verticalLayout_25.setObjectName(u"verticalLayout_25")
+        self.illnesHistoryLabel = QLabel(self.anamnes)
+        self.illnesHistoryLabel.setObjectName(u"illnesHistoryLabel")
+
+        self.verticalLayout_25.addWidget(self.illnesHistoryLabel)
+
+        self.horizontalLayout_6 = QHBoxLayout()
+        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
+        self.scrollArea_2 = QScrollArea(self.anamnes)
+        self.scrollArea_2.setObjectName(u"scrollArea_2")
+        self.scrollArea_2.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_2 = QWidget()
+        self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 818, 335))
+        self.verticalLayout_24 = QVBoxLayout(self.scrollAreaWidgetContents_2)
+        self.verticalLayout_24.setObjectName(u"verticalLayout_24")
+        self.plainTextEdit_2 = QPlainTextEdit(self.scrollAreaWidgetContents_2)
+        self.plainTextEdit_2.setObjectName(u"plainTextEdit_2")
+
+        self.verticalLayout_24.addWidget(self.plainTextEdit_2)
+
+        self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
+
+        self.horizontalLayout_6.addWidget(self.scrollArea_2)
+
+
+        self.verticalLayout_25.addLayout(self.horizontalLayout_6)
+
+        self.ECONumLabel = QLabel(self.anamnes)
+        self.ECONumLabel.setObjectName(u"ECONumLabel")
+
+        self.verticalLayout_25.addWidget(self.ECONumLabel)
+
+        self.ECONumLineEdit = QLineEdit(self.anamnes)
+        self.ECONumLineEdit.setObjectName(u"ECONumLineEdit")
+
+        self.verticalLayout_25.addWidget(self.ECONumLineEdit)
+
+        self.IGHLabel = QLabel(self.anamnes)
+        self.IGHLabel.setObjectName(u"IGHLabel")
+
+        self.verticalLayout_25.addWidget(self.IGHLabel)
+
+        self.IGHComboBox = QComboBox(self.anamnes)
+        self.IGHComboBox.addItem("")
+        self.IGHComboBox.addItem("")
+        self.IGHComboBox.setObjectName(u"IGHComboBox")
+
+        self.verticalLayout_25.addWidget(self.IGHComboBox)
+
         self.stackedWidget.addWidget(self.anamnes)
         self.autorisation_page = QWidget()
         self.autorisation_page.setObjectName(u"autorisation_page")
+        self.verticalLayout_23 = QVBoxLayout(self.autorisation_page)
+        self.verticalLayout_23.setObjectName(u"verticalLayout_23")
+        self.verticalLayout_14 = QVBoxLayout()
+        self.verticalLayout_14.setObjectName(u"verticalLayout_14")
+        self.verticalLayout_14.setContentsMargins(100, 200, 100, 100)
+        self.surnameLineEdit = QLineEdit(self.autorisation_page)
+        self.surnameLineEdit.setObjectName(u"surnameLineEdit")
+
+        self.verticalLayout_14.addWidget(self.surnameLineEdit)
+
+        self.nameLlineEdit = QLineEdit(self.autorisation_page)
+        self.nameLlineEdit.setObjectName(u"nameLlineEdit")
+
+        self.verticalLayout_14.addWidget(self.nameLlineEdit)
+
+        self.middlenameLineEdit = QLineEdit(self.autorisation_page)
+        self.middlenameLineEdit.setObjectName(u"middlenameLineEdit")
+
+        self.verticalLayout_14.addWidget(self.middlenameLineEdit)
+
+        self.birthdateLineEdit = QDateEdit(self.autorisation_page)
+        self.birthdateLineEdit.setObjectName(u"birthdateLineEdit")
+        self.birthdateLineEdit.setCurrentSectionIndex(0)
+
+        self.verticalLayout_14.addWidget(self.birthdateLineEdit)
+
+        self.cardLineEdit = QLineEdit(self.autorisation_page)
+        self.cardLineEdit.setObjectName(u"cardLineEdit")
+
+        self.verticalLayout_14.addWidget(self.cardLineEdit)
+
         self.btn_login = QPushButton(self.autorisation_page)
         self.btn_login.setObjectName(u"btn_login")
-        self.btn_login.setGeometry(QRect(480, 180, 75, 24))
+
+        self.verticalLayout_14.addWidget(self.btn_login)
+
+        self.btn_registration = QPushButton(self.autorisation_page)
+        self.btn_registration.setObjectName(u"btn_registration")
+
+        self.verticalLayout_14.addWidget(self.btn_registration)
+
+        self.sqlStatusLabel = QLabel(self.autorisation_page)
+        self.sqlStatusLabel.setObjectName(u"sqlStatusLabel")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.sqlStatusLabel.sizePolicy().hasHeightForWidth())
+        self.sqlStatusLabel.setSizePolicy(sizePolicy2)
+        self.sqlStatusLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignTop)
+
+        self.verticalLayout_14.addWidget(self.sqlStatusLabel)
+
+
+        self.verticalLayout_23.addLayout(self.verticalLayout_14)
+
         self.stackedWidget.addWidget(self.autorisation_page)
         self.visits = QWidget()
         self.visits.setObjectName(u"visits")
@@ -1129,7 +1240,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 356, 218))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 274, 218))
         self.scrollAreaWidgetContents.setStyleSheet(u" QScrollBar:vertical {\n"
 "	border: none;\n"
 "    background: rgb(52, 59, 72);\n"
@@ -1480,7 +1591,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1488,36 +1599,30 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.titleLeftApp.setText(QCoreApplication.translate("MainWindow", u"PyDracula", None))
-        self.titleLeftDescription.setText(QCoreApplication.translate("MainWindow", u"Modern GUI / Flat Style", None))
-        self.toggleButton.setText(QCoreApplication.translate("MainWindow", u"Hide", None))
+        self.titleLeftApp.setText(QCoreApplication.translate("MainWindow", u"\u0424\u043e\u0442\u043e\u043d-\u0411\u0438\u043e", None))
+        self.titleLeftDescription.setText(QCoreApplication.translate("MainWindow", u"\u0412\u0435\u0440. \u0425\u0425\u0425", None))
         self.btn_anamnes.setText(QCoreApplication.translate("MainWindow", u"\u0410\u043d\u0430\u043c\u043d\u0435\u0437", None))
         self.btn_visits.setText(QCoreApplication.translate("MainWindow", u"\u0412\u0438\u0437\u0438\u0442\u044b", None))
         self.btn_diagnostics.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430", None))
-        self.toggleLeftBox.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
         self.extraLabel.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
 #if QT_CONFIG(tooltip)
         self.extraCloseColumnBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Close left box", None))
 #endif // QT_CONFIG(tooltip)
         self.extraCloseColumnBtn.setText("")
-        self.btn_share.setText(QCoreApplication.translate("MainWindow", u"Share", None))
-        self.btn_adjustments.setText(QCoreApplication.translate("MainWindow", u"Adjustments", None))
-        self.btn_more.setText(QCoreApplication.translate("MainWindow", u"More", None))
+        self.btn_share.setText("")
+        self.btn_adjustments.setText("")
+        self.btn_more.setText("")
+        self.textEdit.setMarkdown("")
         self.textEdit.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Segoe UI'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600; color:#ff79c6;\">PyDracula</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#ffffff;\">An interface created using Python and PySide (support for PyQt), and with colors based on the Dracula theme created by Zeno Rocha.</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-inde"
-                        "nt:0; text-indent:0px;\"><span style=\" color:#ffffff;\">MIT License</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#bd93f9;\">Created by: Wanderson M. Pimenta</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600; color:#ff79c6;\">Convert UI</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt; color:#ffffff;\">pyside6-uic main.ui &gt; ui_main.py</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600; color:#ff79c6;\">Convert QRC</span></p>\n"
-"<p align=\"center\" "
-                        "style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt; color:#ffffff;\">pyside6-rcc resources.qrc -o resources_rc.py</span></p></body></html>", None))
-        self.titleRightInfo.setText(QCoreApplication.translate("MainWindow", u"PyDracula APP - Theme with colors based on Dracula for Python.", None))
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
+        self.lastNameLabel.setText(QCoreApplication.translate("MainWindow", u"\u0424\u0430\u043c\u0438\u043b\u0438\u044f", None))
+        self.nameMidleNameLabel.setText(QCoreApplication.translate("MainWindow", u"\u0418\u043c\u044f \u041e\u0442\u0447\u0435\u0441\u0442\u0432\u043e", None))
+        self.cartNLabel.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u043c\u0435\u0440 \u043a\u0430\u0440\u0442\u044b", None))
+        self.ageLabel.setText(QCoreApplication.translate("MainWindow", u"\u0412\u043e\u0437\u0440\u0430\u0441\u0442", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"Not connected", None))
 #if QT_CONFIG(tooltip)
         self.settingsTopBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Settings", None))
 #endif // QT_CONFIG(tooltip)
@@ -1534,7 +1639,20 @@ class Ui_MainWindow(object):
         self.closeAppBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Close", None))
 #endif // QT_CONFIG(tooltip)
         self.closeAppBtn.setText("")
-        self.btn_login.setText(QCoreApplication.translate("MainWindow", u"Login", None))
+        self.illnesHistoryLabel.setText(QCoreApplication.translate("MainWindow", u"\u0418\u0441\u0442\u043e\u0440\u0438\u044f \u0411\u043e\u043b\u0435\u0437\u043d\u0438", None))
+        self.ECONumLabel.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440 \u042d\u041a\u041e", None))
+        self.IGHLabel.setText(QCoreApplication.translate("MainWindow", u"\u0418\u0413\u0425", None))
+        self.IGHComboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"\u041d\u0435 \u043f\u0440\u043e\u0432\u043e\u0434\u0438\u043b\u043e\u0441\u044c", None))
+        self.IGHComboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"\u041f\u0440\u043e\u0432\u043e\u0434\u0438\u043b\u043e\u0441\u044c", None))
+
+        self.surnameLineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0424\u0430\u043c\u0438\u043b\u0438\u044f", None))
+        self.nameLlineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0418\u043c\u044f", None))
+        self.middlenameLineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u0447\u0435\u0441\u0442\u0432\u043e", None))
+        self.birthdateLineEdit.setDisplayFormat(QCoreApplication.translate("MainWindow", u"dd/mm/yyyy", None))
+        self.cardLineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u043c\u0435\u0440 \u043a\u0430\u0440\u0442\u044b", None))
+        self.btn_login.setText(QCoreApplication.translate("MainWindow", u"\u0412\u043e\u0439\u0442\u0438", None))
+        self.btn_registration.setText(QCoreApplication.translate("MainWindow", u"\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f", None))
+        self.sqlStatusLabel.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.labelBoxBlenderInstalation.setText(QCoreApplication.translate("MainWindow", u"FILE BOX", None))
         self.lineEdit.setText("")
         self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Type here", None))
@@ -1605,7 +1723,5 @@ class Ui_MainWindow(object):
         self.btn_message.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435", None))
         self.btn_print.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0435\u0447\u0430\u0442\u044c", None))
         self.btn_logout.setText(QCoreApplication.translate("MainWindow", u"\u0412\u044b\u0445\u043e\u0434", None))
-        self.creditsLabel.setText(QCoreApplication.translate("MainWindow", u"By: Wanderson M. Pimenta", None))
-        self.version.setText(QCoreApplication.translate("MainWindow", u"v1.0.3", None))
     # retranslateUi
 

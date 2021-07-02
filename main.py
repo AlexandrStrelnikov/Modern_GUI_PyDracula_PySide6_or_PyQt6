@@ -129,12 +129,12 @@ class MainWindow(QMainWindow):
         # ///////////////////////////////////////////////////////////////
         widgets.stackedWidget.setCurrentWidget(widgets.autorisation_page)
         self.buttouEnable(False)
-        # self.setUserInformation(name='',
-        #                   lastname='',
-        #                   midlename='',
-        #                   birthday='',
-        #                   cardnumber='')
-        # self.resetUserLineEdit()
+        self.setUserInformation(name='',
+                          lastname='',
+                          midlename='',
+                          birthday='',
+                          cardnumber='')
+        self.resetUserLineEdit()
 
     def buttouEnable(self, status):
         widgets.btn_anamnes.setEnabled(status)
@@ -144,7 +144,7 @@ class MainWindow(QMainWindow):
         widgets.settingsTopBtn.setEnabled(status)
 
     def setUserInformation(self, name, lastname, midlename, birthday, cardnumber):
-        widgets.nameMidleNameLabel.setText(name + midlename)
+        widgets.nameMidleNameLabel.setText(name + ' ' + midlename)
         widgets.lastNameLabel.setText(lastname)
         widgets.ageLabel.setText(birthday)
         widgets.cartNLabel.setText(cardnumber)
@@ -153,7 +153,7 @@ class MainWindow(QMainWindow):
         widgets.nameLlineEdit.setText(''),
         widgets.surnameLineEdit.setText(''),
         widgets.middlenameLineEdit.setText(''),
-        widgets.birthdateLineEdit.setText(''),
+        # widgets.birthdateLineEdit.setText(''),
         widgets.cardLineEdit.setText('')
 
     # BUTTONS CLICK
@@ -187,12 +187,12 @@ class MainWindow(QMainWindow):
             UIFunctions.resetStyle(self, btnName)  # RESET ANOTHERS BUTTONS SELECTED
             UIFunctions.resetMenu(self)
             self.buttouEnable(False)
-            # self.setUserInformation(name='',
-            #                         lastname='',
-            #                         midlename='',
-            #                         birthday='',
-            #                         cardnumber='')
-            # self.resetUserLineEdit()
+            self.setUserInformation(name='',
+                                    lastname='',
+                                    midlename='',
+                                    birthday='',
+                                    cardnumber='')
+            self.resetUserLineEdit()
 
         if btnName == "btn_login":
             widgets.stackedWidget.setCurrentWidget(widgets.anamnes)  # SET PAGE
@@ -201,12 +201,12 @@ class MainWindow(QMainWindow):
 
             self.buttouEnable(True)
 
-            # self.setUserInformation(name=widgets.nameLlineEdit.text(),
-            #                         lastname=widgets.surnameLineEdit.text(),
-            #                         midlename=widgets.middlenameLineEdit.text(),
-            #                         birthday=widgets.birthdateLineEdit.text(),
-            #                         cardnumber=widgets.cardLineEdit.text())
-            # self.resetUserLineEdit()
+            self.setUserInformation(name=widgets.nameLlineEdit.text(),
+                                    lastname=widgets.surnameLineEdit.text(),
+                                    midlename=widgets.middlenameLineEdit.text(),
+                                    birthday=widgets.birthdateLineEdit.text(),
+                                    cardnumber=widgets.cardLineEdit.text())
+            self.resetUserLineEdit()
 
 
         if btnName == "pushButton_3" :

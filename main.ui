@@ -7,8 +7,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1284</width>
-    <height>727</height>
+    <width>940</width>
+    <height>613</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -652,7 +652,7 @@ Button */
               </font>
              </property>
              <property name="text">
-              <string>PyDracula</string>
+              <string>Фотон-Био</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -681,7 +681,7 @@ Button */
               </font>
              </property>
              <property name="text">
-              <string>Modern GUI / Flat Style</string>
+              <string>Вер. ХХХ</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -723,9 +723,6 @@ Button */
              </property>
              <property name="styleSheet">
               <string notr="true">background-image: url(:/icons/images/icons/icon_menu.png);</string>
-             </property>
-             <property name="text">
-              <string>Hide</string>
              </property>
             </widget>
            </widget>
@@ -910,41 +907,6 @@ Button */
                 <property name="bottomMargin">
                  <number>0</number>
                 </property>
-                <item>
-                 <widget class="QPushButton" name="toggleLeftBox">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>10</pointsize>
-                    <italic>false</italic>
-                    <bold>false</bold>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/icon_settings.png);</string>
-                  </property>
-                  <property name="text">
-                   <string>Left Box</string>
-                  </property>
-                 </widget>
-                </item>
                </layout>
               </widget>
              </item>
@@ -1194,7 +1156,7 @@ Button */
                    <string notr="true">background-image: url(:/icons/images/icons/cil-share-boxed.png);</string>
                   </property>
                   <property name="text">
-                   <string>Share</string>
+                   <string/>
                   </property>
                  </widget>
                 </item>
@@ -1225,11 +1187,8 @@ Button */
                   <property name="layoutDirection">
                    <enum>Qt::LeftToRight</enum>
                   </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-equalizer.png);</string>
-                  </property>
                   <property name="text">
-                   <string>Adjustments</string>
+                   <string/>
                   </property>
                  </widget>
                 </item>
@@ -1260,11 +1219,8 @@ Button */
                   <property name="layoutDirection">
                    <enum>Qt::LeftToRight</enum>
                   </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-layers.png);</string>
-                  </property>
                   <property name="text">
-                   <string>More</string>
+                   <string/>
                   </property>
                  </widget>
                 </item>
@@ -1297,19 +1253,15 @@ Button */
                   <property name="readOnly">
                    <bool>true</bool>
                   </property>
+                  <property name="markdown">
+                   <string/>
+                  </property>
                   <property name="html">
                    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ff79c6;&quot;&gt;PyDracula&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;An interface created using Python and PySide (support for PyQt), and with colors based on the Dracula theme created by Zeno Rocha.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;MIT License&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#bd93f9;&quot;&gt;Created by: Wanderson M. Pimenta&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ff79c6;&quot;&gt;Convert UI&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;pyside6-uic main.ui &amp;gt; ui_main.py&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ff79c6;&quot;&gt;Convert QRC&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;pyside6-rcc resources.qrc -o resources_rc.py&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                  </widget>
                 </item>
@@ -1407,47 +1359,52 @@ p, li { white-space: pre-wrap; }
                 <enum>QFrame::Raised</enum>
                </property>
                <layout class="QHBoxLayout" name="horizontalLayout_3">
-                <property name="spacing">
-                 <number>0</number>
-                </property>
-                <property name="leftMargin">
-                 <number>0</number>
-                </property>
-                <property name="topMargin">
-                 <number>0</number>
-                </property>
-                <property name="rightMargin">
-                 <number>0</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>0</number>
-                </property>
                 <item>
-                 <widget class="QLabel" name="titleRightInfo">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
+                 <layout class="QVBoxLayout" name="verticalLayout_21">
+                  <item>
+                   <widget class="QLabel" name="lastNameLabel">
+                    <property name="text">
+                     <string>Фамилия</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="nameMidleNameLabel">
+                    <property name="text">
+                     <string>Имя Отчество</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_22">
+                  <property name="rightMargin">
+                   <number>0</number>
                   </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>16777215</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>10</pointsize>
-                    <italic>false</italic>
-                    <bold>false</bold>
-                   </font>
-                  </property>
+                  <item>
+                   <widget class="QLabel" name="cartNLabel">
+                    <property name="text">
+                     <string>Номер карты</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="ageLabel">
+                    <property name="text">
+                     <string>Возраст</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label">
                   <property name="text">
-                   <string>PyDracula APP - Theme with colors based on Dracula for Python.</string>
+                   <string>Not connected</string>
                   </property>
                   <property name="alignment">
-                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                   </property>
                  </widget>
                 </item>
@@ -1704,23 +1661,163 @@ p, li { white-space: pre-wrap; }
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>1</number>
+                      <number>0</number>
                      </property>
-                     <widget class="QWidget" name="anamnes"/>
+                     <widget class="QWidget" name="anamnes">
+                      <layout class="QVBoxLayout" name="verticalLayout_25">
+                       <item>
+                        <widget class="QLabel" name="illnesHistoryLabel">
+                         <property name="text">
+                          <string>История Болезни</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_6">
+                         <item>
+                          <widget class="QScrollArea" name="scrollArea_2">
+                           <property name="widgetResizable">
+                            <bool>true</bool>
+                           </property>
+                           <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                            <property name="geometry">
+                             <rect>
+                              <x>0</x>
+                              <y>0</y>
+                              <width>818</width>
+                              <height>335</height>
+                             </rect>
+                            </property>
+                            <layout class="QVBoxLayout" name="verticalLayout_24">
+                             <item>
+                              <widget class="QPlainTextEdit" name="plainTextEdit_2"/>
+                             </item>
+                            </layout>
+                           </widget>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="ECONumLabel">
+                         <property name="text">
+                          <string>Количество процедур ЭКО</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="ECONumLineEdit"/>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="IGHLabel">
+                         <property name="text">
+                          <string>ИГХ</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QComboBox" name="IGHComboBox">
+                         <item>
+                          <property name="text">
+                           <string>Не проводилось</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>Проводилось</string>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
                      <widget class="QWidget" name="autorisation_page">
-                      <widget class="QPushButton" name="btn_login">
-                       <property name="geometry">
-                        <rect>
-                         <x>480</x>
-                         <y>180</y>
-                         <width>75</width>
-                         <height>24</height>
-                        </rect>
-                       </property>
-                       <property name="text">
-                        <string>Login</string>
-                       </property>
-                      </widget>
+                      <layout class="QVBoxLayout" name="verticalLayout_23">
+                       <item>
+                        <layout class="QVBoxLayout" name="verticalLayout_14">
+                         <property name="leftMargin">
+                          <number>100</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>200</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>100</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>100</number>
+                         </property>
+                         <item>
+                          <widget class="QLineEdit" name="surnameLineEdit">
+                           <property name="placeholderText">
+                            <string>Фамилия</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLineEdit" name="nameLlineEdit">
+                           <property name="placeholderText">
+                            <string>Имя</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLineEdit" name="middlenameLineEdit">
+                           <property name="placeholderText">
+                            <string>Отчество</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QDateEdit" name="birthdateLineEdit">
+                           <property name="displayFormat">
+                            <string>dd/mm/yyyy</string>
+                           </property>
+                           <property name="currentSectionIndex">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLineEdit" name="cardLineEdit">
+                           <property name="placeholderText">
+                            <string>Номер карты</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="btn_login">
+                           <property name="text">
+                            <string>Войти</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="btn_registration">
+                           <property name="text">
+                            <string>Регистрация</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="sqlStatusLabel">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="text">
+                            <string>TextLabel</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
                      </widget>
                      <widget class="QWidget" name="visits">
                       <property name="styleSheet">
@@ -2015,7 +2112,7 @@ p, li { white-space: pre-wrap; }
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>356</width>
+                                 <width>274</width>
                                  <height>218</height>
                                 </rect>
                                </property>
@@ -2841,9 +2938,6 @@ p, li { white-space: pre-wrap; }
                     <bold>false</bold>
                    </font>
                   </property>
-                  <property name="text">
-                   <string>By: Wanderson M. Pimenta</string>
-                  </property>
                   <property name="alignment">
                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                   </property>
@@ -2851,9 +2945,6 @@ p, li { white-space: pre-wrap; }
                 </item>
                 <item>
                  <widget class="QLabel" name="version">
-                  <property name="text">
-                   <string>v1.0.3</string>
-                  </property>
                   <property name="alignment">
                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                   </property>
