@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainLOApjv.ui'
+## Form generated from reading UI file 'mainpQUYEn.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.0
 ##
@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(940, 613)
+        MainWindow.resize(940, 593)
         MainWindow.setMinimumSize(QSize(940, 560))
         self.styleSheet = QWidget(MainWindow)
         self.styleSheet.setObjectName(u"styleSheet")
@@ -854,7 +854,9 @@ class Ui_MainWindow(object):
         self.leftBox.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_3 = QHBoxLayout(self.leftBox)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.horizontalLayout_3.setContentsMargins(-1, 2, -1, 2)
         self.verticalLayout_21 = QVBoxLayout()
+        self.verticalLayout_21.setSpacing(4)
         self.verticalLayout_21.setObjectName(u"verticalLayout_21")
         self.lastNameLabel = QLabel(self.leftBox)
         self.lastNameLabel.setObjectName(u"lastNameLabel")
@@ -869,7 +871,12 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addLayout(self.verticalLayout_21)
 
+        self.horizontalSpacer_2 = QSpacerItem(250, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+
+        self.horizontalLayout_3.addItem(self.horizontalSpacer_2)
+
         self.verticalLayout_22 = QVBoxLayout()
+        self.verticalLayout_22.setSpacing(4)
         self.verticalLayout_22.setObjectName(u"verticalLayout_22")
         self.verticalLayout_22.setContentsMargins(-1, -1, 0, -1)
         self.cartNLabel = QLabel(self.leftBox)
@@ -884,6 +891,10 @@ class Ui_MainWindow(object):
 
 
         self.horizontalLayout_3.addLayout(self.verticalLayout_22)
+
+        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_3.addItem(self.horizontalSpacer_3)
 
         self.label = QLabel(self.leftBox)
         self.label.setObjectName(u"label")
@@ -984,6 +995,7 @@ class Ui_MainWindow(object):
         self.pagesContainer.setFrameShadow(QFrame.Raised)
         self.verticalLayout_4 = QVBoxLayout(self.pagesContainer)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
         self.stackedWidget = QStackedWidget(self.pagesContainer)
         self.stackedWidget.setObjectName(u"stackedWidget")
         self.stackedWidget.setStyleSheet(u"background: transparent;")
@@ -991,6 +1003,7 @@ class Ui_MainWindow(object):
         self.anamnes.setObjectName(u"anamnes")
         self.verticalLayout_25 = QVBoxLayout(self.anamnes)
         self.verticalLayout_25.setObjectName(u"verticalLayout_25")
+        self.verticalLayout_25.setContentsMargins(18, 18, 18, 18)
         self.illnesHistoryLabel = QLabel(self.anamnes)
         self.illnesHistoryLabel.setObjectName(u"illnesHistoryLabel")
 
@@ -1000,14 +1013,16 @@ class Ui_MainWindow(object):
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
         self.scrollArea_2 = QScrollArea(self.anamnes)
         self.scrollArea_2.setObjectName(u"scrollArea_2")
+        self.scrollArea_2.setFrameShape(QFrame.NoFrame)
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 818, 289))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 820, 195))
         self.verticalLayout_24 = QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_24.setObjectName(u"verticalLayout_24")
         self.illnesHistoryText = QPlainTextEdit(self.scrollAreaWidgetContents_2)
         self.illnesHistoryText.setObjectName(u"illnesHistoryText")
+        self.illnesHistoryText.setFrameShape(QFrame.StyledPanel)
         self.illnesHistoryText.setLineWidth(1)
 
         self.verticalLayout_24.addWidget(self.illnesHistoryText)
@@ -1019,15 +1034,29 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_25.addLayout(self.horizontalLayout_6)
 
+        self.verticalSpacer_4 = QSpacerItem(20, 20, QSizePolicy.Minimum, QSizePolicy.Fixed)
+
+        self.verticalLayout_25.addItem(self.verticalSpacer_4)
+
         self.ECONumLabel = QLabel(self.anamnes)
         self.ECONumLabel.setObjectName(u"ECONumLabel")
 
         self.verticalLayout_25.addWidget(self.ECONumLabel)
 
-        self.ECONumLineEdit = QLineEdit(self.anamnes)
-        self.ECONumLineEdit.setObjectName(u"ECONumLineEdit")
+        self.ECONumSpinBox = QSpinBox(self.anamnes)
+        self.ECONumSpinBox.setObjectName(u"ECONumSpinBox")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.ECONumSpinBox.sizePolicy().hasHeightForWidth())
+        self.ECONumSpinBox.setSizePolicy(sizePolicy2)
+        self.ECONumSpinBox.setMinimumSize(QSize(200, 0))
 
-        self.verticalLayout_25.addWidget(self.ECONumLineEdit)
+        self.verticalLayout_25.addWidget(self.ECONumSpinBox)
+
+        self.verticalSpacer_3 = QSpacerItem(20, 20, QSizePolicy.Minimum, QSizePolicy.Fixed)
+
+        self.verticalLayout_25.addItem(self.verticalSpacer_3)
 
         self.IGHLabel = QLabel(self.anamnes)
         self.IGHLabel.setObjectName(u"IGHLabel")
@@ -1038,17 +1067,24 @@ class Ui_MainWindow(object):
         self.IGHComboBox.addItem("")
         self.IGHComboBox.addItem("")
         self.IGHComboBox.setObjectName(u"IGHComboBox")
+        sizePolicy2.setHeightForWidth(self.IGHComboBox.sizePolicy().hasHeightForWidth())
+        self.IGHComboBox.setSizePolicy(sizePolicy2)
+        self.IGHComboBox.setMinimumSize(QSize(200, 0))
 
         self.verticalLayout_25.addWidget(self.IGHComboBox)
+
+        self.verticalSpacer_5 = QSpacerItem(20, 20, QSizePolicy.Minimum, QSizePolicy.Fixed)
+
+        self.verticalLayout_25.addItem(self.verticalSpacer_5)
 
         self.stackedWidget_2 = QStackedWidget(self.anamnes)
         self.stackedWidget_2.setObjectName(u"stackedWidget_2")
         self.stackedWidget_2.setEnabled(True)
-        sizePolicy2 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Fixed)
-        sizePolicy2.setHorizontalStretch(0)
-        sizePolicy2.setVerticalStretch(0)
-        sizePolicy2.setHeightForWidth(self.stackedWidget_2.sizePolicy().hasHeightForWidth())
-        self.stackedWidget_2.setSizePolicy(sizePolicy2)
+        sizePolicy3 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Fixed)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.stackedWidget_2.sizePolicy().hasHeightForWidth())
+        self.stackedWidget_2.setSizePolicy(sizePolicy3)
         self.anamnesRedactioPage = QWidget()
         self.anamnesRedactioPage.setObjectName(u"anamnesRedactioPage")
         self.verticalLayout_26 = QVBoxLayout(self.anamnesRedactioPage)
@@ -1062,18 +1098,44 @@ class Ui_MainWindow(object):
         self.stackedWidget_2.addWidget(self.anamnesRedactioPage)
         self.anamnesSavePage = QWidget()
         self.anamnesSavePage.setObjectName(u"anamnesSavePage")
+        sizePolicy4 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy4.setHorizontalStretch(0)
+        sizePolicy4.setVerticalStretch(0)
+        sizePolicy4.setHeightForWidth(self.anamnesSavePage.sizePolicy().hasHeightForWidth())
+        self.anamnesSavePage.setSizePolicy(sizePolicy4)
         self.horizontalLayout_7 = QHBoxLayout(self.anamnesSavePage)
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
-        self.horizontalLayout_7.setContentsMargins(200, -1, 200, -1)
+        self.horizontalLayout_7.setContentsMargins(9, -1, 9, -1)
+        self.horizontalSpacer_5 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_7.addItem(self.horizontalSpacer_5)
+
         self.saveAnamnesButton = QPushButton(self.anamnesSavePage)
         self.saveAnamnesButton.setObjectName(u"saveAnamnesButton")
+        sizePolicy5 = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
+        sizePolicy5.setHorizontalStretch(0)
+        sizePolicy5.setVerticalStretch(0)
+        sizePolicy5.setHeightForWidth(self.saveAnamnesButton.sizePolicy().hasHeightForWidth())
+        self.saveAnamnesButton.setSizePolicy(sizePolicy5)
+        self.saveAnamnesButton.setMinimumSize(QSize(120, 0))
 
         self.horizontalLayout_7.addWidget(self.saveAnamnesButton)
 
+        self.horizontalSpacer_4 = QSpacerItem(10, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+
+        self.horizontalLayout_7.addItem(self.horizontalSpacer_4)
+
         self.cancelAnamnesButton = QPushButton(self.anamnesSavePage)
         self.cancelAnamnesButton.setObjectName(u"cancelAnamnesButton")
+        sizePolicy5.setHeightForWidth(self.cancelAnamnesButton.sizePolicy().hasHeightForWidth())
+        self.cancelAnamnesButton.setSizePolicy(sizePolicy5)
+        self.cancelAnamnesButton.setMinimumSize(QSize(120, 0))
 
         self.horizontalLayout_7.addWidget(self.cancelAnamnesButton)
+
+        self.horizontalSpacer_6 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_7.addItem(self.horizontalSpacer_6)
 
         self.stackedWidget_2.addWidget(self.anamnesSavePage)
 
@@ -1084,58 +1146,59 @@ class Ui_MainWindow(object):
         self.autorisation_page.setObjectName(u"autorisation_page")
         self.verticalLayout_23 = QVBoxLayout(self.autorisation_page)
         self.verticalLayout_23.setObjectName(u"verticalLayout_23")
-        self.verticalLayout_14 = QVBoxLayout()
+        self.verticalLayout_23.setContentsMargins(18, 18, 18, 18)
+        self.verticalFrame = QFrame(self.autorisation_page)
+        self.verticalFrame.setObjectName(u"verticalFrame")
+        self.verticalLayout_14 = QVBoxLayout(self.verticalFrame)
         self.verticalLayout_14.setObjectName(u"verticalLayout_14")
         self.verticalLayout_14.setContentsMargins(100, 200, 100, 100)
-        self.surnameLineEdit = QLineEdit(self.autorisation_page)
+        self.surnameLineEdit = QLineEdit(self.verticalFrame)
         self.surnameLineEdit.setObjectName(u"surnameLineEdit")
 
         self.verticalLayout_14.addWidget(self.surnameLineEdit)
 
-        self.nameLlineEdit = QLineEdit(self.autorisation_page)
+        self.nameLlineEdit = QLineEdit(self.verticalFrame)
         self.nameLlineEdit.setObjectName(u"nameLlineEdit")
 
         self.verticalLayout_14.addWidget(self.nameLlineEdit)
 
-        self.middlenameLineEdit = QLineEdit(self.autorisation_page)
+        self.middlenameLineEdit = QLineEdit(self.verticalFrame)
         self.middlenameLineEdit.setObjectName(u"middlenameLineEdit")
 
         self.verticalLayout_14.addWidget(self.middlenameLineEdit)
 
-        self.birthdateLineEdit = QDateEdit(self.autorisation_page)
+        self.birthdateLineEdit = QDateEdit(self.verticalFrame)
         self.birthdateLineEdit.setObjectName(u"birthdateLineEdit")
+        self.birthdateLineEdit.setCalendarPopup(True)
         self.birthdateLineEdit.setCurrentSectionIndex(0)
 
         self.verticalLayout_14.addWidget(self.birthdateLineEdit)
 
-        self.cardLineEdit = QLineEdit(self.autorisation_page)
+        self.cardLineEdit = QLineEdit(self.verticalFrame)
         self.cardLineEdit.setObjectName(u"cardLineEdit")
 
         self.verticalLayout_14.addWidget(self.cardLineEdit)
 
-        self.btn_login = QPushButton(self.autorisation_page)
+        self.btn_login = QPushButton(self.verticalFrame)
         self.btn_login.setObjectName(u"btn_login")
 
         self.verticalLayout_14.addWidget(self.btn_login)
 
-        self.btn_registration = QPushButton(self.autorisation_page)
+        self.btn_registration = QPushButton(self.verticalFrame)
         self.btn_registration.setObjectName(u"btn_registration")
 
         self.verticalLayout_14.addWidget(self.btn_registration)
 
-        self.sqlStatusLabel = QLabel(self.autorisation_page)
+        self.sqlStatusLabel = QLabel(self.verticalFrame)
         self.sqlStatusLabel.setObjectName(u"sqlStatusLabel")
-        sizePolicy3 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
-        sizePolicy3.setHorizontalStretch(0)
-        sizePolicy3.setVerticalStretch(0)
-        sizePolicy3.setHeightForWidth(self.sqlStatusLabel.sizePolicy().hasHeightForWidth())
-        self.sqlStatusLabel.setSizePolicy(sizePolicy3)
+        sizePolicy4.setHeightForWidth(self.sqlStatusLabel.sizePolicy().hasHeightForWidth())
+        self.sqlStatusLabel.setSizePolicy(sizePolicy4)
         self.sqlStatusLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignTop)
 
         self.verticalLayout_14.addWidget(self.sqlStatusLabel)
 
 
-        self.verticalLayout_23.addLayout(self.verticalLayout_14)
+        self.verticalLayout_23.addWidget(self.verticalFrame)
 
         self.stackedWidget.addWidget(self.autorisation_page)
         self.visits = QWidget()
@@ -1144,7 +1207,7 @@ class Ui_MainWindow(object):
         self.verticalLayout = QVBoxLayout(self.visits)
         self.verticalLayout.setSpacing(10)
         self.verticalLayout.setObjectName(u"verticalLayout")
-        self.verticalLayout.setContentsMargins(10, 10, 10, 10)
+        self.verticalLayout.setContentsMargins(18, 18, 18, 18)
         self.row_1 = QFrame(self.visits)
         self.row_1.setObjectName(u"row_1")
         self.row_1.setFrameShape(QFrame.StyledPanel)
@@ -1247,6 +1310,7 @@ class Ui_MainWindow(object):
         self.radioButton = QRadioButton(self.row_2)
         self.radioButton.setObjectName(u"radioButton")
         self.radioButton.setStyleSheet(u"")
+        self.radioButton.setAutoExclusive(False)
 
         self.gridLayout_2.addWidget(self.radioButton, 0, 1, 1, 1)
 
@@ -1411,11 +1475,11 @@ class Ui_MainWindow(object):
         __qtablewidgetitem23 = QTableWidgetItem()
         self.tableWidget.setItem(0, 3, __qtablewidgetitem23)
         self.tableWidget.setObjectName(u"tableWidget")
-        sizePolicy4 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
-        sizePolicy4.setHorizontalStretch(0)
-        sizePolicy4.setVerticalStretch(0)
-        sizePolicy4.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
-        self.tableWidget.setSizePolicy(sizePolicy4)
+        sizePolicy6 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        sizePolicy6.setHorizontalStretch(0)
+        sizePolicy6.setVerticalStretch(0)
+        sizePolicy6.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
+        self.tableWidget.setSizePolicy(sizePolicy6)
         palette = QPalette()
         brush = QBrush(QColor(221, 221, 221, 255))
         brush.setStyle(Qt.SolidPattern)
@@ -1483,6 +1547,208 @@ class Ui_MainWindow(object):
         self.diagnostics.setObjectName(u"diagnostics")
         self.verticalLayout_20 = QVBoxLayout(self.diagnostics)
         self.verticalLayout_20.setObjectName(u"verticalLayout_20")
+        self.verticalLayout_20.setContentsMargins(0, 0, 0, 0)
+        self.diagnosticButtonsFrame = QFrame(self.diagnostics)
+        self.diagnosticButtonsFrame.setObjectName(u"diagnosticButtonsFrame")
+        sizePolicy3.setHeightForWidth(self.diagnosticButtonsFrame.sizePolicy().hasHeightForWidth())
+        self.diagnosticButtonsFrame.setSizePolicy(sizePolicy3)
+        self.horizontalLayout_8 = QHBoxLayout(self.diagnosticButtonsFrame)
+        self.horizontalLayout_8.setSpacing(1)
+        self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
+        self.horizontalLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.inspectionButton = QPushButton(self.diagnosticButtonsFrame)
+        self.inspectionButton.setObjectName(u"inspectionButton")
+        sizePolicy5.setHeightForWidth(self.inspectionButton.sizePolicy().hasHeightForWidth())
+        self.inspectionButton.setSizePolicy(sizePolicy5)
+        self.inspectionButton.setMinimumSize(QSize(150, 45))
+        self.inspectionButton.setLayoutDirection(Qt.LeftToRight)
+        icon6 = QIcon()
+        icon6.addFile(u":/icons/images/icons/cil-arrow-circle-right.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.inspectionButton.setIcon(icon6)
+        self.inspectionButton.setIconSize(QSize(16, 16))
+        self.inspectionButton.setAutoDefault(False)
+        self.inspectionButton.setFlat(False)
+
+        self.horizontalLayout_8.addWidget(self.inspectionButton)
+
+        self.spectroscopyButton = QPushButton(self.diagnosticButtonsFrame)
+        self.spectroscopyButton.setObjectName(u"spectroscopyButton")
+        sizePolicy5.setHeightForWidth(self.spectroscopyButton.sizePolicy().hasHeightForWidth())
+        self.spectroscopyButton.setSizePolicy(sizePolicy5)
+        self.spectroscopyButton.setMinimumSize(QSize(180, 45))
+
+        self.horizontalLayout_8.addWidget(self.spectroscopyButton)
+
+        self.USIButton = QPushButton(self.diagnosticButtonsFrame)
+        self.USIButton.setObjectName(u"USIButton")
+        sizePolicy5.setHeightForWidth(self.USIButton.sizePolicy().hasHeightForWidth())
+        self.USIButton.setSizePolicy(sizePolicy5)
+        self.USIButton.setMinimumSize(QSize(150, 45))
+        self.USIButton.setLayoutDirection(Qt.LeftToRight)
+
+        self.horizontalLayout_8.addWidget(self.USIButton)
+
+        self.diagnosticsResultsButton = QPushButton(self.diagnosticButtonsFrame)
+        self.diagnosticsResultsButton.setObjectName(u"diagnosticsResultsButton")
+        sizePolicy5.setHeightForWidth(self.diagnosticsResultsButton.sizePolicy().hasHeightForWidth())
+        self.diagnosticsResultsButton.setSizePolicy(sizePolicy5)
+        self.diagnosticsResultsButton.setMinimumSize(QSize(150, 45))
+        self.diagnosticsResultsButton.setLayoutDirection(Qt.LeftToRight)
+
+        self.horizontalLayout_8.addWidget(self.diagnosticsResultsButton)
+
+        self.horizontalSpacer = QSpacerItem(200, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_8.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_20.addWidget(self.diagnosticButtonsFrame)
+
+        self.diagnosticStackedWidget = QStackedWidget(self.diagnostics)
+        self.diagnosticStackedWidget.setObjectName(u"diagnosticStackedWidget")
+        sizePolicy7 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Expanding)
+        sizePolicy7.setHorizontalStretch(0)
+        sizePolicy7.setVerticalStretch(0)
+        sizePolicy7.setHeightForWidth(self.diagnosticStackedWidget.sizePolicy().hasHeightForWidth())
+        self.diagnosticStackedWidget.setSizePolicy(sizePolicy7)
+        self.diagnosticStackedWidget.setMinimumSize(QSize(0, 0))
+        self.inspectionPage = QWidget()
+        self.inspectionPage.setObjectName(u"inspectionPage")
+        self.verticalLayout_27 = QVBoxLayout(self.inspectionPage)
+        self.verticalLayout_27.setObjectName(u"verticalLayout_27")
+        self.verticalLayout_27.setContentsMargins(18, 18, 18, 18)
+        self.inspectionDatTimeLabel = QLabel(self.inspectionPage)
+        self.inspectionDatTimeLabel.setObjectName(u"inspectionDatTimeLabel")
+        sizePolicy8 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Maximum)
+        sizePolicy8.setHorizontalStretch(0)
+        sizePolicy8.setVerticalStretch(0)
+        sizePolicy8.setHeightForWidth(self.inspectionDatTimeLabel.sizePolicy().hasHeightForWidth())
+        self.inspectionDatTimeLabel.setSizePolicy(sizePolicy8)
+        self.inspectionDatTimeLabel.setMidLineWidth(0)
+
+        self.verticalLayout_27.addWidget(self.inspectionDatTimeLabel)
+
+        self.dateTimeEdit = QDateTimeEdit(self.inspectionPage)
+        self.dateTimeEdit.setObjectName(u"dateTimeEdit")
+        sizePolicy2.setHeightForWidth(self.dateTimeEdit.sizePolicy().hasHeightForWidth())
+        self.dateTimeEdit.setSizePolicy(sizePolicy2)
+        self.dateTimeEdit.setMinimumSize(QSize(150, 0))
+        self.dateTimeEdit.setCurrentSection(QDateTimeEdit.MonthSection)
+        self.dateTimeEdit.setCalendarPopup(True)
+
+        self.verticalLayout_27.addWidget(self.dateTimeEdit)
+
+        self.verticalSpacer = QSpacerItem(20, 20, QSizePolicy.Minimum, QSizePolicy.Fixed)
+
+        self.verticalLayout_27.addItem(self.verticalSpacer)
+
+        self.cycleDayLabel = QLabel(self.inspectionPage)
+        self.cycleDayLabel.setObjectName(u"cycleDayLabel")
+        sizePolicy8.setHeightForWidth(self.cycleDayLabel.sizePolicy().hasHeightForWidth())
+        self.cycleDayLabel.setSizePolicy(sizePolicy8)
+
+        self.verticalLayout_27.addWidget(self.cycleDayLabel)
+
+        self.cycleDaySpinBox = QSpinBox(self.inspectionPage)
+        self.cycleDaySpinBox.setObjectName(u"cycleDaySpinBox")
+        sizePolicy2.setHeightForWidth(self.cycleDaySpinBox.sizePolicy().hasHeightForWidth())
+        self.cycleDaySpinBox.setSizePolicy(sizePolicy2)
+        self.cycleDaySpinBox.setMinimumSize(QSize(100, 0))
+
+        self.verticalLayout_27.addWidget(self.cycleDaySpinBox)
+
+        self.isCycleRadioBox = QRadioButton(self.inspectionPage)
+        self.isCycleRadioBox.setObjectName(u"isCycleRadioBox")
+
+        self.verticalLayout_27.addWidget(self.isCycleRadioBox)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_27.addItem(self.verticalSpacer_2)
+
+        self.diagnosticStackedWidget.addWidget(self.inspectionPage)
+        self.spectroscopyPage = QWidget()
+        self.spectroscopyPage.setObjectName(u"spectroscopyPage")
+        self.verticalLayout_28 = QVBoxLayout(self.spectroscopyPage)
+        self.verticalLayout_28.setObjectName(u"verticalLayout_28")
+        self.verticalLayout_28.setContentsMargins(18, 18, 18, 18)
+        self.spinBox = QSpinBox(self.spectroscopyPage)
+        self.spinBox.setObjectName(u"spinBox")
+
+        self.verticalLayout_28.addWidget(self.spinBox)
+
+        self.diagnosticStackedWidget.addWidget(self.spectroscopyPage)
+        self.USIPage = QWidget()
+        self.USIPage.setObjectName(u"USIPage")
+        self.verticalLayout_29 = QVBoxLayout(self.USIPage)
+        self.verticalLayout_29.setObjectName(u"verticalLayout_29")
+        self.verticalLayout_29.setContentsMargins(0, 0, 0, 0)
+        self.scrollArea_3 = QScrollArea(self.USIPage)
+        self.scrollArea_3.setObjectName(u"scrollArea_3")
+        self.scrollArea_3.setFrameShape(QFrame.NoFrame)
+        self.scrollArea_3.setWidgetResizable(True)
+        self.mechoArea = QWidget()
+        self.mechoArea.setObjectName(u"mechoArea")
+        self.mechoArea.setGeometry(QRect(0, 0, 858, 65))
+        sizePolicy8.setHeightForWidth(self.mechoArea.sizePolicy().hasHeightForWidth())
+        self.mechoArea.setSizePolicy(sizePolicy8)
+        self.verticalLayout_31 = QVBoxLayout(self.mechoArea)
+        self.verticalLayout_31.setObjectName(u"verticalLayout_31")
+        self.MECHOLabel = QLabel(self.mechoArea)
+        self.MECHOLabel.setObjectName(u"MECHOLabel")
+        sizePolicy8.setHeightForWidth(self.MECHOLabel.sizePolicy().hasHeightForWidth())
+        self.MECHOLabel.setSizePolicy(sizePolicy8)
+
+        self.verticalLayout_31.addWidget(self.MECHOLabel)
+
+        self.horizontalFrame_2 = QFrame(self.mechoArea)
+        self.horizontalFrame_2.setObjectName(u"horizontalFrame_2")
+        sizePolicy8.setHeightForWidth(self.horizontalFrame_2.sizePolicy().hasHeightForWidth())
+        self.horizontalFrame_2.setSizePolicy(sizePolicy8)
+        self.horizontalLayout_10 = QHBoxLayout(self.horizontalFrame_2)
+        self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
+        self.spinBox_2 = QSpinBox(self.horizontalFrame_2)
+        self.spinBox_2.setObjectName(u"spinBox_2")
+        self.spinBox_2.setMinimumSize(QSize(120, 0))
+        self.spinBox_2.setWrapping(False)
+        self.spinBox_2.setFrame(True)
+        self.spinBox_2.setButtonSymbols(QAbstractSpinBox.NoButtons)
+        self.spinBox_2.setProperty("showGroupSeparator", False)
+        self.spinBox_2.setMaximum(1000)
+
+        self.horizontalLayout_10.addWidget(self.spinBox_2)
+
+        self.label_2 = QLabel(self.horizontalFrame_2)
+        self.label_2.setObjectName(u"label_2")
+
+        self.horizontalLayout_10.addWidget(self.label_2)
+
+        self.horizontalSpacer_7 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_10.addItem(self.horizontalSpacer_7)
+
+
+        self.verticalLayout_31.addWidget(self.horizontalFrame_2)
+
+        self.scrollArea_3.setWidget(self.mechoArea)
+
+        self.verticalLayout_29.addWidget(self.scrollArea_3)
+
+        self.diagnosticStackedWidget.addWidget(self.USIPage)
+        self.resultsPage = QWidget()
+        self.resultsPage.setObjectName(u"resultsPage")
+        self.verticalLayout_30 = QVBoxLayout(self.resultsPage)
+        self.verticalLayout_30.setObjectName(u"verticalLayout_30")
+        self.verticalLayout_30.setContentsMargins(18, 18, 18, 18)
+        self.pushButton_2 = QPushButton(self.resultsPage)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+
+        self.verticalLayout_30.addWidget(self.pushButton_2)
+
+        self.diagnosticStackedWidget.addWidget(self.resultsPage)
+
+        self.verticalLayout_20.addWidget(self.diagnosticStackedWidget)
+
         self.stackedWidget.addWidget(self.diagnostics)
 
         self.verticalLayout_4.addWidget(self.stackedWidget)
@@ -1631,7 +1897,9 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
 
         self.stackedWidget.setCurrentIndex(0)
-        self.stackedWidget_2.setCurrentIndex(0)
+        self.stackedWidget_2.setCurrentIndex(1)
+        self.inspectionButton.setDefault(False)
+        self.diagnosticStackedWidget.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1679,8 +1947,8 @@ class Ui_MainWindow(object):
         self.closeAppBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Close", None))
 #endif // QT_CONFIG(tooltip)
         self.closeAppBtn.setText("")
-        self.illnesHistoryLabel.setText(QCoreApplication.translate("MainWindow", u"\u0418\u0441\u0442\u043e\u0440\u0438\u044f \u0411\u043e\u043b\u0435\u0437\u043d\u0438", None))
-        self.ECONumLabel.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440 \u042d\u041a\u041e", None))
+        self.illnesHistoryLabel.setText(QCoreApplication.translate("MainWindow", u"\u0418\u0421\u0422\u041e\u0420\u0418\u042f \u0411\u041e\u041b\u0415\u0417\u041d\u0418", None))
+        self.ECONumLabel.setText(QCoreApplication.translate("MainWindow", u"\u041a\u041e\u041b\u0418\u0427\u0415\u0421\u0422\u0412\u041e \u041f\u0420\u041e\u0426\u0415\u0414\u0423\u0420 \u042d\u041a\u041e", None))
         self.IGHLabel.setText(QCoreApplication.translate("MainWindow", u"\u0418\u0413\u0425", None))
         self.IGHComboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"\u041d\u0435 \u043f\u0440\u043e\u0432\u043e\u0434\u0438\u043b\u043e\u0441\u044c", None))
         self.IGHComboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"\u041f\u0440\u043e\u0432\u043e\u0434\u0438\u043b\u043e\u0441\u044c", None))
@@ -1762,6 +2030,20 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Line", None));
         self.tableWidget.setSortingEnabled(__sortingEnabled)
 
+        self.inspectionButton.setText(QCoreApplication.translate("MainWindow", u"1. \u041e\u0441\u043c\u043e\u0442\u0440", None))
+        self.spectroscopyButton.setText(QCoreApplication.translate("MainWindow", u"2. \u0421\u043f\u0435\u043a\u0442\u0440\u043e\u0441\u043a\u043e\u043f\u0438\u044f", None))
+        self.USIButton.setText(QCoreApplication.translate("MainWindow", u"3. \u0423\u0437\u0438", None))
+        self.diagnosticsResultsButton.setText(QCoreApplication.translate("MainWindow", u"4.\u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u044b\n"
+"\u0438 \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0430\u0446\u0438\u0438", None))
+        self.inspectionDatTimeLabel.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0410\u0422\u0410 \u0418 \u0412\u0420\u0415\u041c\u042f \u041e\u0421\u041c\u041e\u0422\u0420\u0410", None))
+        self.dateTimeEdit.setDisplayFormat(QCoreApplication.translate("MainWindow", u"M/d/yyyy h:mm", None))
+        self.cycleDayLabel.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0415\u041d\u042c \u0426\u0418\u041a\u041b\u0410", None))
+        self.isCycleRadioBox.setText(QCoreApplication.translate("MainWindow", u"\u0426\u0418\u041a\u041b \u041e\u0422\u0421\u0423\u0422\u0421\u0422\u0412\u0423\u0415\u0422", None))
+        self.MECHOLabel.setText(QCoreApplication.translate("MainWindow", u"\u041c-\u042d\u0425\u041e", None))
+        self.spinBox_2.setSpecialValueText("")
+        self.spinBox_2.setSuffix("")
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"\u041c\u041c", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
         self.btn_reconnect.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0435\u0440\u0435\u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0438\u0442\u044c\u0441\u044f", None))
         self.btn_message.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435", None))
         self.btn_print.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0435\u0447\u0430\u0442\u044c", None))

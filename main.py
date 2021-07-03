@@ -42,6 +42,7 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
         global widgets
         widgets = self.ui
+        self.setGeometry(300, 200, 1400, 800)
 
         # USE CUSTOM TITLE BAR | USE AS "False" FOR MAC OR LINUX
         # ///////////////////////////////////////////////////////////////
@@ -77,12 +78,21 @@ class MainWindow(QMainWindow):
         widgets.btn_logout.clicked.connect(self.buttonClick)
         widgets.btn_login.clicked.connect(self.buttonClick)
 
+        widgets.inspectionButton.clicked.connect(self.buttonClick)
+        widgets.spectroscopyButton.clicked.connect(self.buttonClick)
+        widgets.USIButton.clicked.connect(self.buttonClick)
+        widgets.diagnosticsResultsButton.clicked.connect(self.buttonClick)
+
         widgets.redactAnamnesButton.clicked.connect(self.buttonClick)
         widgets.cancelAnamnesButton.clicked.connect(self.buttonClick)
         widgets.saveAnamnesButton.clicked.connect(self.buttonClick)
-        widgets.illnesHistoryText.setEnabled(False)
-        widgets.ECONumLineEdit.setEnabled(False)
-        widgets.IGHComboBox.setEnabled(False)
+
+        widgets.isCycleRadioBox.clicked.connect(self.cycleDayClick)
+
+
+        # widgets.illnesHistoryText.setEnabled(False)
+        # widgets.ECONumSpinBox.setEnabled(False)
+        # widgets.IGHComboBox.setEnabled(False)
 
         # Try page wigets
         # widgets.pushButton_3.clicked.connect(self.buttonClick)
@@ -143,6 +153,7 @@ class MainWindow(QMainWindow):
         self.resetUserLineEdit()
 
     def buttouEnable(self, status):
+        # for left menu buttons only
         widgets.btn_anamnes.setEnabled(status)
         widgets.btn_visits.setEnabled(status)
         widgets.btn_diagnostics.setEnabled(status)
@@ -162,6 +173,11 @@ class MainWindow(QMainWindow):
         # widgets.birthdateLineEdit.setText(''),
         widgets.cardLineEdit.setText('')
 
+    def cycleDayClick(self):
+        btn = self.sender()
+        widgets.cycleDaySpinBox.setEnabled(not(btn.isChecked()))
+        widgets.cycleDaySpinBox.setValue(0)
+
     # BUTTONS CLICK
     # Post here your functions for clicked buttons
     # ///////////////////////////////////////////////////////////////
@@ -170,23 +186,40 @@ class MainWindow(QMainWindow):
         btn = self.sender()
         btnName = btn.objectName()
 
-        # SHOW HOME PAGE
         if btnName == "btn_anamnes":
             widgets.stackedWidget.setCurrentWidget(widgets.anamnes)
             UIFunctions.resetStyle(self, btnName)
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
-        # SHOW WIDGETS PAGE
         if btnName == "btn_visits":
             widgets.stackedWidget.setCurrentWidget(widgets.visits)
             UIFunctions.resetStyle(self, btnName)
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
-        # SHOW NEW PAGE
         if btnName == "btn_diagnostics":
             widgets.stackedWidget.setCurrentWidget(widgets.diagnostics) # SET PAGE
             UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
+
+        if btnName == "inspectionButton":
+            widgets.diagnosticStackedWidget.setCurrentWidget(widgets.inspectionPage) # SET PAGE
+            # UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
+            # btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
+
+        if btnName == "spectroscopyButton":
+            widgets.diagnosticStackedWidget.setCurrentWidget(widgets.spectroscopyPage) # SET PAGE
+            # UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
+            # btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
+
+        if btnName == "USIButton":
+            widgets.diagnosticStackedWidget.setCurrentWidget(widgets.USIPage) # SET PAGE
+            # UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
+            # btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
+
+        if btnName == "diagnosticsResultsButton":
+            widgets.diagnosticStackedWidget.setCurrentWidget(widgets.resultsPage) # SET PAGE
+            # UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
+            # btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
 
         if btnName == "btn_logout":
             widgets.stackedWidget.setCurrentWidget(widgets.autorisation_page)  # SET PAGE
@@ -235,19 +268,24 @@ class MainWindow(QMainWindow):
         if btnName == "redactAnamnesButton":
             widgets.stackedWidget_2.setCurrentWidget(widgets.anamnesSavePage)
             widgets.illnesHistoryText.setEnabled(True)
-            widgets.ECONumLineEdit.setEnabled(True)
+            widgets.ECONumSpinBox.setEnabled(True)
             widgets.IGHComboBox.setEnabled(True)
 
         if btnName == "cancelAnamnesButton":
             widgets.stackedWidget_2.setCurrentWidget(widgets.anamnesRedactioPage)
             widgets.illnesHistoryText.setEnabled(False)
-            widgets.ECONumLineEdit.setEnabled(False)
+            widgets.ECONumSpinBox.setEnabled(False)
             widgets.IGHComboBox.setEnabled(False)
+
+            widgets.illnesHistoryText.setText('')
+            widgets.ECONumSpinBox.setText('')
+            widgets.IGHComboBox.SelectedValue(1)
+
 
         if btnName == "saveAnamnesButton":
             widgets.stackedWidget_2.setCurrentWidget(widgets.anamnesRedactioPage)
             widgets.illnesHistoryText.setEnabled(False)
-            widgets.ECONumLineEdit.setEnabled(False)
+            widgets.ECONumSpinBox.setEnabled(False)
             widgets.IGHComboBox.setEnabled(False)
         # PRINT BTN NAME
         print(f'Button "{btnName}" pressed!')

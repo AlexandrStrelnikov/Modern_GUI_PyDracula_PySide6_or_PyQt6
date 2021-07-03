@@ -46,4 +46,6 @@ class AppFunctions(MainWindow):
         self.ui.horizontalScrollBar.setStyleSheet("background-color: #F2F2F2;")
         self.ui.verticalScrollBar.setStyleSheet("background-color: #F2F2F2;")
         # self.ui.commandLinkButton.setStyleSheet("color: #000000;")
-        # todo проблема с фоновыми цветами решается, если явно указать область, к которой относятся те или иные кнопки. Все эти костыли надо исправить при работе начисто
+
+        self.ui.diagnosticButtonsFrame.setStyleSheet("background-color: #CFCFCF;")
+
