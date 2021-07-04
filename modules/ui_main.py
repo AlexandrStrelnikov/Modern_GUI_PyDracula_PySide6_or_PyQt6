@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainpQUYEn.ui'
+## Form generated from reading UI file 'mainFYwwMH.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.0
 ##
@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(940, 593)
+        MainWindow.resize(940, 654)
         MainWindow.setMinimumSize(QSize(940, 560))
         self.styleSheet = QWidget(MainWindow)
         self.styleSheet.setObjectName(u"styleSheet")
@@ -606,8 +606,9 @@ class Ui_MainWindow(object):
         self.toggleButton.setMinimumSize(QSize(0, 45))
         self.toggleButton.setFont(font)
         self.toggleButton.setCursor(QCursor(Qt.PointingHandCursor))
+        self.toggleButton.setFocusPolicy(Qt.NoFocus)
         self.toggleButton.setLayoutDirection(Qt.LeftToRight)
-        self.toggleButton.setStyleSheet(u"background-image: url(:/icons/images/icons/icon_menu.png);")
+        self.toggleButton.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-chevron-right.png);")
 
         self.verticalLayout_3.addWidget(self.topLogoInfo)
 
@@ -634,6 +635,7 @@ class Ui_MainWindow(object):
         self.btn_anamnes.setMinimumSize(QSize(0, 45))
         self.btn_anamnes.setFont(font)
         self.btn_anamnes.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_anamnes.setFocusPolicy(Qt.NoFocus)
         self.btn_anamnes.setLayoutDirection(Qt.LeftToRight)
         self.btn_anamnes.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-home.png);")
 
@@ -646,6 +648,7 @@ class Ui_MainWindow(object):
         self.btn_visits.setMinimumSize(QSize(0, 45))
         self.btn_visits.setFont(font)
         self.btn_visits.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_visits.setFocusPolicy(Qt.NoFocus)
         self.btn_visits.setLayoutDirection(Qt.LeftToRight)
         self.btn_visits.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-gamepad.png);")
 
@@ -658,6 +661,7 @@ class Ui_MainWindow(object):
         self.btn_diagnostics.setMinimumSize(QSize(0, 45))
         self.btn_diagnostics.setFont(font)
         self.btn_diagnostics.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_diagnostics.setFocusPolicy(Qt.NoFocus)
         self.btn_diagnostics.setLayoutDirection(Qt.LeftToRight)
         self.btn_diagnostics.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-file.png);")
 
@@ -919,6 +923,7 @@ class Ui_MainWindow(object):
         self.settingsTopBtn.setMinimumSize(QSize(28, 28))
         self.settingsTopBtn.setMaximumSize(QSize(28, 28))
         self.settingsTopBtn.setCursor(QCursor(Qt.PointingHandCursor))
+        self.settingsTopBtn.setFocusPolicy(Qt.NoFocus)
         icon1 = QIcon()
         icon1.addFile(u":/icons/images/icons/icon_settings.png", QSize(), QIcon.Normal, QIcon.Off)
         self.settingsTopBtn.setIcon(icon1)
@@ -931,6 +936,7 @@ class Ui_MainWindow(object):
         self.minimizeAppBtn.setMinimumSize(QSize(28, 28))
         self.minimizeAppBtn.setMaximumSize(QSize(28, 28))
         self.minimizeAppBtn.setCursor(QCursor(Qt.PointingHandCursor))
+        self.minimizeAppBtn.setFocusPolicy(Qt.NoFocus)
         icon2 = QIcon()
         icon2.addFile(u":/icons/images/icons/icon_minimize.png", QSize(), QIcon.Normal, QIcon.Off)
         self.minimizeAppBtn.setIcon(icon2)
@@ -949,6 +955,7 @@ class Ui_MainWindow(object):
         font3.setStyleStrategy(QFont.PreferDefault)
         self.maximizeRestoreAppBtn.setFont(font3)
         self.maximizeRestoreAppBtn.setCursor(QCursor(Qt.PointingHandCursor))
+        self.maximizeRestoreAppBtn.setFocusPolicy(Qt.NoFocus)
         icon3 = QIcon()
         icon3.addFile(u":/icons/images/icons/icon_maximize.png", QSize(), QIcon.Normal, QIcon.Off)
         self.maximizeRestoreAppBtn.setIcon(icon3)
@@ -961,6 +968,7 @@ class Ui_MainWindow(object):
         self.closeAppBtn.setMinimumSize(QSize(28, 28))
         self.closeAppBtn.setMaximumSize(QSize(28, 28))
         self.closeAppBtn.setCursor(QCursor(Qt.PointingHandCursor))
+        self.closeAppBtn.setFocusPolicy(Qt.NoFocus)
         self.closeAppBtn.setIcon(icon)
         self.closeAppBtn.setIconSize(QSize(20, 20))
 
@@ -1017,7 +1025,7 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 820, 195))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 820, 256))
         self.verticalLayout_24 = QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_24.setObjectName(u"verticalLayout_24")
         self.illnesHistoryText = QPlainTextEdit(self.scrollAreaWidgetContents_2)
@@ -1343,7 +1351,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 274, 218))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 218, 218))
         self.scrollAreaWidgetContents.setStyleSheet(u" QScrollBar:vertical {\n"
 "	border: none;\n"
 "    background: rgb(52, 59, 72);\n"
@@ -1561,6 +1569,7 @@ class Ui_MainWindow(object):
         sizePolicy5.setHeightForWidth(self.inspectionButton.sizePolicy().hasHeightForWidth())
         self.inspectionButton.setSizePolicy(sizePolicy5)
         self.inspectionButton.setMinimumSize(QSize(150, 45))
+        self.inspectionButton.setFocusPolicy(Qt.NoFocus)
         self.inspectionButton.setLayoutDirection(Qt.LeftToRight)
         icon6 = QIcon()
         icon6.addFile(u":/icons/images/icons/cil-arrow-circle-right.png", QSize(), QIcon.Normal, QIcon.Off)
@@ -1576,6 +1585,7 @@ class Ui_MainWindow(object):
         sizePolicy5.setHeightForWidth(self.spectroscopyButton.sizePolicy().hasHeightForWidth())
         self.spectroscopyButton.setSizePolicy(sizePolicy5)
         self.spectroscopyButton.setMinimumSize(QSize(180, 45))
+        self.spectroscopyButton.setFocusPolicy(Qt.NoFocus)
 
         self.horizontalLayout_8.addWidget(self.spectroscopyButton)
 
@@ -1584,6 +1594,7 @@ class Ui_MainWindow(object):
         sizePolicy5.setHeightForWidth(self.USIButton.sizePolicy().hasHeightForWidth())
         self.USIButton.setSizePolicy(sizePolicy5)
         self.USIButton.setMinimumSize(QSize(150, 45))
+        self.USIButton.setFocusPolicy(Qt.NoFocus)
         self.USIButton.setLayoutDirection(Qt.LeftToRight)
 
         self.horizontalLayout_8.addWidget(self.USIButton)
@@ -1593,6 +1604,8 @@ class Ui_MainWindow(object):
         sizePolicy5.setHeightForWidth(self.diagnosticsResultsButton.sizePolicy().hasHeightForWidth())
         self.diagnosticsResultsButton.setSizePolicy(sizePolicy5)
         self.diagnosticsResultsButton.setMinimumSize(QSize(150, 45))
+        self.diagnosticsResultsButton.setFocusPolicy(Qt.NoFocus)
+        self.diagnosticsResultsButton.setAcceptDrops(False)
         self.diagnosticsResultsButton.setLayoutDirection(Qt.LeftToRight)
 
         self.horizontalLayout_8.addWidget(self.diagnosticsResultsButton)
@@ -1654,11 +1667,14 @@ class Ui_MainWindow(object):
         sizePolicy2.setHeightForWidth(self.cycleDaySpinBox.sizePolicy().hasHeightForWidth())
         self.cycleDaySpinBox.setSizePolicy(sizePolicy2)
         self.cycleDaySpinBox.setMinimumSize(QSize(100, 0))
+        self.cycleDaySpinBox.setValue(0)
 
         self.verticalLayout_27.addWidget(self.cycleDaySpinBox)
 
         self.isCycleRadioBox = QRadioButton(self.inspectionPage)
         self.isCycleRadioBox.setObjectName(u"isCycleRadioBox")
+        self.isCycleRadioBox.setFocusPolicy(Qt.NoFocus)
+        self.isCycleRadioBox.setChecked(False)
 
         self.verticalLayout_27.addWidget(self.isCycleRadioBox)
 
@@ -1683,31 +1699,32 @@ class Ui_MainWindow(object):
         self.verticalLayout_29 = QVBoxLayout(self.USIPage)
         self.verticalLayout_29.setObjectName(u"verticalLayout_29")
         self.verticalLayout_29.setContentsMargins(0, 0, 0, 0)
-        self.scrollArea_3 = QScrollArea(self.USIPage)
-        self.scrollArea_3.setObjectName(u"scrollArea_3")
-        self.scrollArea_3.setFrameShape(QFrame.NoFrame)
-        self.scrollArea_3.setWidgetResizable(True)
-        self.mechoArea = QWidget()
-        self.mechoArea.setObjectName(u"mechoArea")
-        self.mechoArea.setGeometry(QRect(0, 0, 858, 65))
-        sizePolicy8.setHeightForWidth(self.mechoArea.sizePolicy().hasHeightForWidth())
-        self.mechoArea.setSizePolicy(sizePolicy8)
-        self.verticalLayout_31 = QVBoxLayout(self.mechoArea)
+        self.USIscrollArea = QScrollArea(self.USIPage)
+        self.USIscrollArea.setObjectName(u"USIscrollArea")
+        self.USIscrollArea.setFrameShape(QFrame.NoFrame)
+        self.USIscrollArea.setWidgetResizable(True)
+        self.USIscrollAreaWidget = QWidget()
+        self.USIscrollAreaWidget.setObjectName(u"USIscrollAreaWidget")
+        self.USIscrollAreaWidget.setGeometry(QRect(0, -149, 850, 655))
+        sizePolicy8.setHeightForWidth(self.USIscrollAreaWidget.sizePolicy().hasHeightForWidth())
+        self.USIscrollAreaWidget.setSizePolicy(sizePolicy8)
+        self.verticalLayout_31 = QVBoxLayout(self.USIscrollAreaWidget)
         self.verticalLayout_31.setObjectName(u"verticalLayout_31")
-        self.MECHOLabel = QLabel(self.mechoArea)
-        self.MECHOLabel.setObjectName(u"MECHOLabel")
-        sizePolicy8.setHeightForWidth(self.MECHOLabel.sizePolicy().hasHeightForWidth())
-        self.MECHOLabel.setSizePolicy(sizePolicy8)
+        self.MECHOlabel = QLabel(self.USIscrollAreaWidget)
+        self.MECHOlabel.setObjectName(u"MECHOlabel")
+        sizePolicy8.setHeightForWidth(self.MECHOlabel.sizePolicy().hasHeightForWidth())
+        self.MECHOlabel.setSizePolicy(sizePolicy8)
 
-        self.verticalLayout_31.addWidget(self.MECHOLabel)
+        self.verticalLayout_31.addWidget(self.MECHOlabel)
 
-        self.horizontalFrame_2 = QFrame(self.mechoArea)
-        self.horizontalFrame_2.setObjectName(u"horizontalFrame_2")
-        sizePolicy8.setHeightForWidth(self.horizontalFrame_2.sizePolicy().hasHeightForWidth())
-        self.horizontalFrame_2.setSizePolicy(sizePolicy8)
-        self.horizontalLayout_10 = QHBoxLayout(self.horizontalFrame_2)
+        self.MECHOframe = QFrame(self.USIscrollAreaWidget)
+        self.MECHOframe.setObjectName(u"MECHOframe")
+        sizePolicy8.setHeightForWidth(self.MECHOframe.sizePolicy().hasHeightForWidth())
+        self.MECHOframe.setSizePolicy(sizePolicy8)
+        self.horizontalLayout_10 = QHBoxLayout(self.MECHOframe)
         self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
-        self.spinBox_2 = QSpinBox(self.horizontalFrame_2)
+        self.horizontalLayout_10.setContentsMargins(10, -1, -1, -1)
+        self.spinBox_2 = QSpinBox(self.MECHOframe)
         self.spinBox_2.setObjectName(u"spinBox_2")
         self.spinBox_2.setMinimumSize(QSize(120, 0))
         self.spinBox_2.setWrapping(False)
@@ -1718,7 +1735,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_10.addWidget(self.spinBox_2)
 
-        self.label_2 = QLabel(self.horizontalFrame_2)
+        self.label_2 = QLabel(self.MECHOframe)
         self.label_2.setObjectName(u"label_2")
 
         self.horizontalLayout_10.addWidget(self.label_2)
@@ -1728,11 +1745,321 @@ class Ui_MainWindow(object):
         self.horizontalLayout_10.addItem(self.horizontalSpacer_7)
 
 
-        self.verticalLayout_31.addWidget(self.horizontalFrame_2)
+        self.verticalLayout_31.addWidget(self.MECHOframe)
 
-        self.scrollArea_3.setWidget(self.mechoArea)
+        self.verticalSpacer_6 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Fixed)
 
-        self.verticalLayout_29.addWidget(self.scrollArea_3)
+        self.verticalLayout_31.addItem(self.verticalSpacer_6)
+
+        self.structureLabel = QLabel(self.USIscrollAreaWidget)
+        self.structureLabel.setObjectName(u"structureLabel")
+
+        self.verticalLayout_31.addWidget(self.structureLabel)
+
+        self.structureFrame = QFrame(self.USIscrollAreaWidget)
+        self.structureFrame.setObjectName(u"structureFrame")
+        sizePolicy4.setHeightForWidth(self.structureFrame.sizePolicy().hasHeightForWidth())
+        self.structureFrame.setSizePolicy(sizePolicy4)
+        self.structureFrame.setMinimumSize(QSize(0, 0))
+        self.horizontalLayout_13 = QHBoxLayout(self.structureFrame)
+        self.horizontalLayout_13.setSpacing(30)
+        self.horizontalLayout_13.setObjectName(u"horizontalLayout_13")
+        self.horizontalLayout_13.setContentsMargins(10, -1, 1, -1)
+        self.structuredButton = QRadioButton(self.structureFrame)
+        self.structuredButton.setObjectName(u"structuredButton")
+        self.structuredButton.setFocusPolicy(Qt.NoFocus)
+
+        self.horizontalLayout_13.addWidget(self.structuredButton)
+
+        self.notStructuredButton = QRadioButton(self.structureFrame)
+        self.notStructuredButton.setObjectName(u"notStructuredButton")
+        self.notStructuredButton.setFocusPolicy(Qt.NoFocus)
+
+        self.horizontalLayout_13.addWidget(self.notStructuredButton)
+
+        self.partlyStructuredButton = QRadioButton(self.structureFrame)
+        self.partlyStructuredButton.setObjectName(u"partlyStructuredButton")
+        self.partlyStructuredButton.setFocusPolicy(Qt.NoFocus)
+
+        self.horizontalLayout_13.addWidget(self.partlyStructuredButton)
+
+        self.horizontalSpacer_8 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_13.addItem(self.horizontalSpacer_8)
+
+
+        self.verticalLayout_31.addWidget(self.structureFrame)
+
+        self.verticalSpacer_7 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Fixed)
+
+        self.verticalLayout_31.addItem(self.verticalSpacer_7)
+
+        self.phaseCoincidenceLabel = QLabel(self.USIscrollAreaWidget)
+        self.phaseCoincidenceLabel.setObjectName(u"phaseCoincidenceLabel")
+
+        self.verticalLayout_31.addWidget(self.phaseCoincidenceLabel)
+
+        self.phaseCoincidenceFrame = QFrame(self.USIscrollAreaWidget)
+        self.phaseCoincidenceFrame.setObjectName(u"phaseCoincidenceFrame")
+        sizePolicy9 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Preferred)
+        sizePolicy9.setHorizontalStretch(0)
+        sizePolicy9.setVerticalStretch(0)
+        sizePolicy9.setHeightForWidth(self.phaseCoincidenceFrame.sizePolicy().hasHeightForWidth())
+        self.phaseCoincidenceFrame.setSizePolicy(sizePolicy9)
+        self.phaseCoincidenceFrame.setMinimumSize(QSize(0, 0))
+        self.gridLayout_3 = QGridLayout(self.phaseCoincidenceFrame)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.gridLayout_3.setHorizontalSpacing(30)
+        self.gridLayout_3.setVerticalSpacing(6)
+        self.gridLayout_3.setContentsMargins(10, -1, -1, -1)
+        self.earlySecretoryPhaseButton = QRadioButton(self.phaseCoincidenceFrame)
+        self.earlySecretoryPhaseButton.setObjectName(u"earlySecretoryPhaseButton")
+        sizePolicy10 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Fixed)
+        sizePolicy10.setHorizontalStretch(0)
+        sizePolicy10.setVerticalStretch(0)
+        sizePolicy10.setHeightForWidth(self.earlySecretoryPhaseButton.sizePolicy().hasHeightForWidth())
+        self.earlySecretoryPhaseButton.setSizePolicy(sizePolicy10)
+        self.earlySecretoryPhaseButton.setFocusPolicy(Qt.NoFocus)
+
+        self.gridLayout_3.addWidget(self.earlySecretoryPhaseButton, 1, 1, 1, 1)
+
+        self.latePolyferativePhaseButton = QRadioButton(self.phaseCoincidenceFrame)
+        self.latePolyferativePhaseButton.setObjectName(u"latePolyferativePhaseButton")
+        self.latePolyferativePhaseButton.setFocusPolicy(Qt.NoFocus)
+
+        self.gridLayout_3.addWidget(self.latePolyferativePhaseButton, 6, 0, 1, 1, Qt.AlignLeft|Qt.AlignBottom)
+
+        self.earlyPolyferativePhaseButton = QRadioButton(self.phaseCoincidenceFrame)
+        self.earlyPolyferativePhaseButton.setObjectName(u"earlyPolyferativePhaseButton")
+        self.earlyPolyferativePhaseButton.setFocusPolicy(Qt.NoFocus)
+
+        self.gridLayout_3.addWidget(self.earlyPolyferativePhaseButton, 1, 0, 1, 1, Qt.AlignLeft|Qt.AlignTop)
+
+        self.lateSecretoryPhaseButton = QRadioButton(self.phaseCoincidenceFrame)
+        self.lateSecretoryPhaseButton.setObjectName(u"lateSecretoryPhaseButton")
+        self.lateSecretoryPhaseButton.setFocusPolicy(Qt.NoFocus)
+
+        self.gridLayout_3.addWidget(self.lateSecretoryPhaseButton, 6, 1, 1, 1)
+
+        self.horizontalSpacer_9 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.gridLayout_3.addItem(self.horizontalSpacer_9, 6, 2, 1, 1)
+
+
+        self.verticalLayout_31.addWidget(self.phaseCoincidenceFrame)
+
+        self.verticalSpacer_8 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Fixed)
+
+        self.verticalLayout_31.addItem(self.verticalSpacer_8)
+
+        self.organicChangesLabel = QLabel(self.USIscrollAreaWidget)
+        self.organicChangesLabel.setObjectName(u"organicChangesLabel")
+
+        self.verticalLayout_31.addWidget(self.organicChangesLabel)
+
+        self.organicChangesFrame = QFrame(self.USIscrollAreaWidget)
+        self.organicChangesFrame.setObjectName(u"organicChangesFrame")
+        self.organicChangesFrame.setMinimumSize(QSize(0, 100))
+        self.gridLayout_4 = QGridLayout(self.organicChangesFrame)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setHorizontalSpacing(30)
+        self.gridLayout_4.setContentsMargins(10, -1, -1, -1)
+        self.checkBox_3 = QCheckBox(self.organicChangesFrame)
+        self.checkBox_3.setObjectName(u"checkBox_3")
+        self.checkBox_3.setFocusPolicy(Qt.NoFocus)
+
+        self.gridLayout_4.addWidget(self.checkBox_3, 2, 0, 1, 1)
+
+        self.checkBox_6 = QCheckBox(self.organicChangesFrame)
+        self.checkBox_6.setObjectName(u"checkBox_6")
+        sizePolicy2.setHeightForWidth(self.checkBox_6.sizePolicy().hasHeightForWidth())
+        self.checkBox_6.setSizePolicy(sizePolicy2)
+        self.checkBox_6.setFocusPolicy(Qt.NoFocus)
+
+        self.gridLayout_4.addWidget(self.checkBox_6, 1, 2, 1, 1)
+
+        self.checkBox_4 = QCheckBox(self.organicChangesFrame)
+        self.checkBox_4.setObjectName(u"checkBox_4")
+        sizePolicy2.setHeightForWidth(self.checkBox_4.sizePolicy().hasHeightForWidth())
+        self.checkBox_4.setSizePolicy(sizePolicy2)
+        self.checkBox_4.setFocusPolicy(Qt.NoFocus)
+
+        self.gridLayout_4.addWidget(self.checkBox_4, 2, 1, 1, 1)
+
+        self.checkBox_2 = QCheckBox(self.organicChangesFrame)
+        self.checkBox_2.setObjectName(u"checkBox_2")
+        sizePolicy2.setHeightForWidth(self.checkBox_2.sizePolicy().hasHeightForWidth())
+        self.checkBox_2.setSizePolicy(sizePolicy2)
+        self.checkBox_2.setFocusPolicy(Qt.NoFocus)
+
+        self.gridLayout_4.addWidget(self.checkBox_2, 1, 0, 1, 1)
+
+        self.checkBox_5 = QCheckBox(self.organicChangesFrame)
+        self.checkBox_5.setObjectName(u"checkBox_5")
+        sizePolicy2.setHeightForWidth(self.checkBox_5.sizePolicy().hasHeightForWidth())
+        self.checkBox_5.setSizePolicy(sizePolicy2)
+        self.checkBox_5.setFocusPolicy(Qt.NoFocus)
+
+        self.gridLayout_4.addWidget(self.checkBox_5, 1, 1, 1, 1)
+
+        self.horizontalSpacer_10 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.gridLayout_4.addItem(self.horizontalSpacer_10, 2, 3, 1, 1)
+
+        self.checkBox_7 = QCheckBox(self.organicChangesFrame)
+        self.checkBox_7.setObjectName(u"checkBox_7")
+        self.checkBox_7.setFocusPolicy(Qt.NoFocus)
+
+        self.gridLayout_4.addWidget(self.checkBox_7, 2, 2, 1, 1)
+
+
+        self.verticalLayout_31.addWidget(self.organicChangesFrame)
+
+        self.verticalSpacer_9 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Fixed)
+
+        self.verticalLayout_31.addItem(self.verticalSpacer_9)
+
+        self.horizontalFrame = QFrame(self.USIscrollAreaWidget)
+        self.horizontalFrame.setObjectName(u"horizontalFrame")
+        sizePolicy8.setHeightForWidth(self.horizontalFrame.sizePolicy().hasHeightForWidth())
+        self.horizontalFrame.setSizePolicy(sizePolicy8)
+        self.horizontalFrame.setMinimumSize(QSize(0, 0))
+        self.horizontalLayout_14 = QHBoxLayout(self.horizontalFrame)
+        self.horizontalLayout_14.setObjectName(u"horizontalLayout_14")
+        self.leftOvaryFrame = QFrame(self.horizontalFrame)
+        self.leftOvaryFrame.setObjectName(u"leftOvaryFrame")
+        sizePolicy4.setHeightForWidth(self.leftOvaryFrame.sizePolicy().hasHeightForWidth())
+        self.leftOvaryFrame.setSizePolicy(sizePolicy4)
+        self.leftOvaryFrame.setMinimumSize(QSize(0, 0))
+        self.verticalLayout_32 = QVBoxLayout(self.leftOvaryFrame)
+        self.verticalLayout_32.setObjectName(u"verticalLayout_32")
+        self.leftOvaryLabel = QLabel(self.leftOvaryFrame)
+        self.leftOvaryLabel.setObjectName(u"leftOvaryLabel")
+        sizePolicy8.setHeightForWidth(self.leftOvaryLabel.sizePolicy().hasHeightForWidth())
+        self.leftOvaryLabel.setSizePolicy(sizePolicy8)
+
+        self.verticalLayout_32.addWidget(self.leftOvaryLabel)
+
+        self.leftYellowBodyFrame = QFrame(self.leftOvaryFrame)
+        self.leftYellowBodyFrame.setObjectName(u"leftYellowBodyFrame")
+        self.horizontalLayout_15 = QHBoxLayout(self.leftYellowBodyFrame)
+        self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
+        self.horizontalLayout_15.setContentsMargins(10, -1, 1, -1)
+        self.label_3 = QLabel(self.leftYellowBodyFrame)
+        self.label_3.setObjectName(u"label_3")
+        sizePolicy8.setHeightForWidth(self.label_3.sizePolicy().hasHeightForWidth())
+        self.label_3.setSizePolicy(sizePolicy8)
+
+        self.horizontalLayout_15.addWidget(self.label_3)
+
+        self.leftYellowBodySiseSpinBox = QSpinBox(self.leftYellowBodyFrame)
+        self.leftYellowBodySiseSpinBox.setObjectName(u"leftYellowBodySiseSpinBox")
+        sizePolicy5.setHeightForWidth(self.leftYellowBodySiseSpinBox.sizePolicy().hasHeightForWidth())
+        self.leftYellowBodySiseSpinBox.setSizePolicy(sizePolicy5)
+        self.leftYellowBodySiseSpinBox.setMinimumSize(QSize(35, 0))
+        self.leftYellowBodySiseSpinBox.setButtonSymbols(QAbstractSpinBox.NoButtons)
+
+        self.horizontalLayout_15.addWidget(self.leftYellowBodySiseSpinBox)
+
+        self.label_5 = QLabel(self.leftYellowBodyFrame)
+        self.label_5.setObjectName(u"label_5")
+        sizePolicy11 = QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
+        sizePolicy11.setHorizontalStretch(0)
+        sizePolicy11.setVerticalStretch(0)
+        sizePolicy11.setHeightForWidth(self.label_5.sizePolicy().hasHeightForWidth())
+        self.label_5.setSizePolicy(sizePolicy11)
+
+        self.horizontalLayout_15.addWidget(self.label_5)
+
+
+        self.verticalLayout_32.addWidget(self.leftYellowBodyFrame)
+
+        self.leftDominanteFoliculCheckBox = QCheckBox(self.leftOvaryFrame)
+        self.leftDominanteFoliculCheckBox.setObjectName(u"leftDominanteFoliculCheckBox")
+        self.leftDominanteFoliculCheckBox.setFocusPolicy(Qt.NoFocus)
+
+        self.verticalLayout_32.addWidget(self.leftDominanteFoliculCheckBox)
+
+        self.leftCystCheckBox = QCheckBox(self.leftOvaryFrame)
+        self.leftCystCheckBox.setObjectName(u"leftCystCheckBox")
+        self.leftCystCheckBox.setFocusPolicy(Qt.NoFocus)
+
+        self.verticalLayout_32.addWidget(self.leftCystCheckBox)
+
+
+        self.horizontalLayout_14.addWidget(self.leftOvaryFrame)
+
+        self.horizontalSpacer_11 = QSpacerItem(40, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+
+        self.horizontalLayout_14.addItem(self.horizontalSpacer_11)
+
+        self.rightOvaryFrame = QFrame(self.horizontalFrame)
+        self.rightOvaryFrame.setObjectName(u"rightOvaryFrame")
+        self.verticalLayout_33 = QVBoxLayout(self.rightOvaryFrame)
+        self.verticalLayout_33.setObjectName(u"verticalLayout_33")
+        self.rightOvaryLabel = QLabel(self.rightOvaryFrame)
+        self.rightOvaryLabel.setObjectName(u"rightOvaryLabel")
+        sizePolicy8.setHeightForWidth(self.rightOvaryLabel.sizePolicy().hasHeightForWidth())
+        self.rightOvaryLabel.setSizePolicy(sizePolicy8)
+
+        self.verticalLayout_33.addWidget(self.rightOvaryLabel)
+
+        self.rightYellowBodyFrame = QFrame(self.rightOvaryFrame)
+        self.rightYellowBodyFrame.setObjectName(u"rightYellowBodyFrame")
+        self.horizontalLayout_16 = QHBoxLayout(self.rightYellowBodyFrame)
+        self.horizontalLayout_16.setObjectName(u"horizontalLayout_16")
+        self.horizontalLayout_16.setContentsMargins(10, -1, -1, -1)
+        self.label_4 = QLabel(self.rightYellowBodyFrame)
+        self.label_4.setObjectName(u"label_4")
+        sizePolicy8.setHeightForWidth(self.label_4.sizePolicy().hasHeightForWidth())
+        self.label_4.setSizePolicy(sizePolicy8)
+
+        self.horizontalLayout_16.addWidget(self.label_4)
+
+        self.rightYellowBodySiseSpinBox = QSpinBox(self.rightYellowBodyFrame)
+        self.rightYellowBodySiseSpinBox.setObjectName(u"rightYellowBodySiseSpinBox")
+        sizePolicy5.setHeightForWidth(self.rightYellowBodySiseSpinBox.sizePolicy().hasHeightForWidth())
+        self.rightYellowBodySiseSpinBox.setSizePolicy(sizePolicy5)
+        self.rightYellowBodySiseSpinBox.setMinimumSize(QSize(35, 0))
+        self.rightYellowBodySiseSpinBox.setButtonSymbols(QAbstractSpinBox.NoButtons)
+
+        self.horizontalLayout_16.addWidget(self.rightYellowBodySiseSpinBox)
+
+        self.label_6 = QLabel(self.rightYellowBodyFrame)
+        self.label_6.setObjectName(u"label_6")
+        sizePolicy11.setHeightForWidth(self.label_6.sizePolicy().hasHeightForWidth())
+        self.label_6.setSizePolicy(sizePolicy11)
+
+        self.horizontalLayout_16.addWidget(self.label_6)
+
+
+        self.verticalLayout_33.addWidget(self.rightYellowBodyFrame)
+
+        self.rightDominanteFoliculCheckBox = QCheckBox(self.rightOvaryFrame)
+        self.rightDominanteFoliculCheckBox.setObjectName(u"rightDominanteFoliculCheckBox")
+        self.rightDominanteFoliculCheckBox.setFocusPolicy(Qt.NoFocus)
+
+        self.verticalLayout_33.addWidget(self.rightDominanteFoliculCheckBox)
+
+        self.rightCystCheckBox = QCheckBox(self.rightOvaryFrame)
+        self.rightCystCheckBox.setObjectName(u"rightCystCheckBox")
+        self.rightCystCheckBox.setFocusPolicy(Qt.NoFocus)
+
+        self.verticalLayout_33.addWidget(self.rightCystCheckBox)
+
+
+        self.horizontalLayout_14.addWidget(self.rightOvaryFrame)
+
+        self.horizontalSpacer_12 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_14.addItem(self.horizontalSpacer_12)
+
+
+        self.verticalLayout_31.addWidget(self.horizontalFrame)
+
+        self.USIscrollArea.setWidget(self.USIscrollAreaWidget)
+
+        self.verticalLayout_29.addWidget(self.USIscrollArea)
 
         self.diagnosticStackedWidget.addWidget(self.USIPage)
         self.resultsPage = QWidget()
@@ -1742,6 +2069,9 @@ class Ui_MainWindow(object):
         self.verticalLayout_30.setContentsMargins(18, 18, 18, 18)
         self.pushButton_2 = QPushButton(self.resultsPage)
         self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setMouseTracking(True)
+        self.pushButton_2.setFocusPolicy(Qt.NoFocus)
+        self.pushButton_2.setFlat(False)
 
         self.verticalLayout_30.addWidget(self.pushButton_2)
 
@@ -1795,6 +2125,7 @@ class Ui_MainWindow(object):
         self.btn_reconnect.setMinimumSize(QSize(0, 45))
         self.btn_reconnect.setFont(font)
         self.btn_reconnect.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_reconnect.setFocusPolicy(Qt.NoFocus)
         self.btn_reconnect.setLayoutDirection(Qt.LeftToRight)
 
         self.verticalLayout_15.addWidget(self.btn_reconnect)
@@ -1806,6 +2137,7 @@ class Ui_MainWindow(object):
         self.btn_message.setMinimumSize(QSize(0, 45))
         self.btn_message.setFont(font)
         self.btn_message.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_message.setFocusPolicy(Qt.NoFocus)
         self.btn_message.setLayoutDirection(Qt.LeftToRight)
 
         self.verticalLayout_15.addWidget(self.btn_message)
@@ -1817,6 +2149,7 @@ class Ui_MainWindow(object):
         self.btn_print.setMinimumSize(QSize(0, 45))
         self.btn_print.setFont(font)
         self.btn_print.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_print.setFocusPolicy(Qt.NoFocus)
         self.btn_print.setLayoutDirection(Qt.LeftToRight)
 
         self.verticalLayout_15.addWidget(self.btn_print)
@@ -1828,6 +2161,7 @@ class Ui_MainWindow(object):
         self.btn_logout.setMinimumSize(QSize(0, 45))
         self.btn_logout.setFont(font)
         self.btn_logout.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_logout.setFocusPolicy(Qt.NoFocus)
         self.btn_logout.setLayoutDirection(Qt.LeftToRight)
 
         self.verticalLayout_15.addWidget(self.btn_logout)
@@ -1896,7 +2230,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(3)
         self.stackedWidget_2.setCurrentIndex(1)
         self.inspectionButton.setDefault(False)
         self.diagnosticStackedWidget.setCurrentIndex(2)
@@ -2039,10 +2373,36 @@ class Ui_MainWindow(object):
         self.dateTimeEdit.setDisplayFormat(QCoreApplication.translate("MainWindow", u"M/d/yyyy h:mm", None))
         self.cycleDayLabel.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0415\u041d\u042c \u0426\u0418\u041a\u041b\u0410", None))
         self.isCycleRadioBox.setText(QCoreApplication.translate("MainWindow", u"\u0426\u0418\u041a\u041b \u041e\u0422\u0421\u0423\u0422\u0421\u0422\u0412\u0423\u0415\u0422", None))
-        self.MECHOLabel.setText(QCoreApplication.translate("MainWindow", u"\u041c-\u042d\u0425\u041e", None))
+        self.MECHOlabel.setText(QCoreApplication.translate("MainWindow", u"\u041c-\u042d\u0425\u041e", None))
         self.spinBox_2.setSpecialValueText("")
         self.spinBox_2.setSuffix("")
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"\u041c\u041c", None))
+        self.structureLabel.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0422\u0420\u0423\u041a\u0422\u0423\u0420\u0410", None))
+        self.structuredButton.setText(QCoreApplication.translate("MainWindow", u"\u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439", None))
+        self.notStructuredButton.setText(QCoreApplication.translate("MainWindow", u"\u043d\u0435 \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439", None))
+        self.partlyStructuredButton.setText(QCoreApplication.translate("MainWindow", u"\u0447\u0430\u0441\u0442\u0438\u0447\u043d\u043e \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439", None))
+        self.phaseCoincidenceLabel.setText(QCoreApplication.translate("MainWindow", u"\u0421\u041e\u041e\u0422\u0412\u0415\u0422\u0421\u0422\u0412\u0418\u0415 \u0424\u0410\u0417\u0415 \u0426\u0418\u041a\u041b\u0410", None))
+        self.earlySecretoryPhaseButton.setText(QCoreApplication.translate("MainWindow", u"\u0440\u0430\u043d\u043d\u044f\u044f \u0441\u0435\u043a\u0440\u0442\u043e\u0440\u043d\u0430\u044f \u0444\u0430\u0437\u0430", None))
+        self.latePolyferativePhaseButton.setText(QCoreApplication.translate("MainWindow", u"\u043f\u043e\u0437\u0434\u043d\u044f\u044f \u043f\u043e\u043b\u0438\u0444\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u0430\u044f \u0444\u0430\u0437\u0430", None))
+        self.earlyPolyferativePhaseButton.setText(QCoreApplication.translate("MainWindow", u"\u0440\u0430\u043d\u043d\u044f\u044f \u043f\u043e\u043b\u0438\u0444\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u0430\u044f \u0444\u0430\u0437\u0430", None))
+        self.lateSecretoryPhaseButton.setText(QCoreApplication.translate("MainWindow", u"\u043f\u043e\u0437\u0434\u043d\u044f\u044f \u0441\u0435\u043a\u0440\u0442\u043e\u0440\u043d\u0430\u044f \u0444\u0430\u0437\u0430", None))
+        self.organicChangesLabel.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0420\u0413\u0410\u041d\u0418\u0427\u0415\u0421\u041a\u0418\u0415 \u0418\u0417\u041c\u0415\u041d\u0415\u041d\u0418\u042f", None))
+        self.checkBox_3.setText(QCoreApplication.translate("MainWindow", u"\u0443\u0437\u043b\u044b", None))
+        self.checkBox_6.setText(QCoreApplication.translate("MainWindow", u"\u043f\u043e\u043b\u0438\u043f", None))
+        self.checkBox_4.setText(QCoreApplication.translate("MainWindow", u"\u043a\u0438\u0441\u0442\u043e\u0437\u043d\u044b\u0435 \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u044f", None))
+        self.checkBox_2.setText(QCoreApplication.translate("MainWindow", u"\u0434\u0435\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f", None))
+        self.checkBox_5.setText(QCoreApplication.translate("MainWindow", u"\u0430\u0434\u0435\u043d\u043e\u043c\u0438\u043e\u0437", None))
+        self.checkBox_7.setText(QCoreApplication.translate("MainWindow", u"\u0433\u0438\u043f\u0435\u0440\u043f\u043b\u0430\u0437\u0438\u044f", None))
+        self.leftOvaryLabel.setText(QCoreApplication.translate("MainWindow", u"\u042f\u0418\u0427\u041d\u0418\u041a (\u041b\u0415\u0412\u042b\u0419)", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"\u0436\u0435\u043b\u0442\u043e\u0435 \u0442\u0435\u043b\u043e", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"\u041c\u041c", None))
+        self.leftDominanteFoliculCheckBox.setText(QCoreApplication.translate("MainWindow", u"\u0434\u043e\u043c\u0438\u043d\u0430\u043d\u0442\u043d\u044b\u0439 \u0444\u043e\u043b\u0438\u043a\u0443\u043b", None))
+        self.leftCystCheckBox.setText(QCoreApplication.translate("MainWindow", u"\u043a\u0438\u0441\u0442\u0430 \u0436\u0435\u043b\u0442\u043e\u0433\u043e \u0442\u0435\u043b\u0430", None))
+        self.rightOvaryLabel.setText(QCoreApplication.translate("MainWindow", u"\u042f\u0418\u0427\u041d\u0418\u041a (\u041f\u0420\u0410\u0412\u042b\u0419)", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"\u0436\u0435\u043b\u0442\u043e\u0435 \u0442\u0435\u043b\u043e", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"\u041c\u041c", None))
+        self.rightDominanteFoliculCheckBox.setText(QCoreApplication.translate("MainWindow", u"\u0434\u043e\u043c\u0438\u043d\u0430\u043d\u0442\u043d\u044b\u0439 \u0444\u043e\u043b\u0438\u043a\u0443\u043b", None))
+        self.rightCystCheckBox.setText(QCoreApplication.translate("MainWindow", u"\u043a\u0438\u0441\u0442\u0430 \u0436\u0435\u043b\u0442\u043e\u0433\u043e \u0442\u0435\u043b\u0430", None))
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
         self.btn_reconnect.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0435\u0440\u0435\u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0438\u0442\u044c\u0441\u044f", None))
         self.btn_message.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435", None))

@@ -8,7 +8,7 @@
     <x>0</x>
     <y>0</y>
     <width>940</width>
-    <height>593</height>
+    <height>654</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -718,11 +718,14 @@ Button */
              <property name="cursor">
               <cursorShape>PointingHandCursor</cursorShape>
              </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
              <property name="layoutDirection">
               <enum>Qt::LeftToRight</enum>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-image: url(:/icons/images/icons/icon_menu.png);</string>
+              <string notr="true">background-image: url(:/icons/images/icons/cil-chevron-right.png);</string>
              </property>
             </widget>
            </widget>
@@ -799,6 +802,9 @@ Button */
                   <property name="cursor">
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
                   <property name="layoutDirection">
                    <enum>Qt::LeftToRight</enum>
                   </property>
@@ -834,6 +840,9 @@ Button */
                   <property name="cursor">
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
                   <property name="layoutDirection">
                    <enum>Qt::LeftToRight</enum>
                   </property>
@@ -868,6 +877,9 @@ Button */
                   </property>
                   <property name="cursor">
                    <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
                   </property>
                   <property name="layoutDirection">
                    <enum>Qt::LeftToRight</enum>
@@ -1502,6 +1514,9 @@ p, li { white-space: pre-wrap; }
                   <property name="cursor">
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
                   <property name="toolTip">
                    <string>Settings</string>
                   </property>
@@ -1536,6 +1551,9 @@ p, li { white-space: pre-wrap; }
                   </property>
                   <property name="cursor">
                    <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
                   </property>
                   <property name="toolTip">
                    <string>Minimize</string>
@@ -1580,6 +1598,9 @@ p, li { white-space: pre-wrap; }
                   <property name="cursor">
                    <cursorShape>PointingHandCursor</cursorShape>
                   </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
                   <property name="toolTip">
                    <string>Maximize</string>
                   </property>
@@ -1614,6 +1635,9 @@ p, li { white-space: pre-wrap; }
                   </property>
                   <property name="cursor">
                    <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
                   </property>
                   <property name="toolTip">
                    <string>Close</string>
@@ -1717,7 +1741,7 @@ p, li { white-space: pre-wrap; }
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>0</number>
+                      <number>3</number>
                      </property>
                      <widget class="QWidget" name="anamnes">
                       <layout class="QVBoxLayout" name="verticalLayout_25">
@@ -1756,7 +1780,7 @@ p, li { white-space: pre-wrap; }
                               <x>0</x>
                               <y>0</y>
                               <width>820</width>
-                              <height>195</height>
+                              <height>256</height>
                              </rect>
                             </property>
                             <layout class="QVBoxLayout" name="verticalLayout_24">
@@ -2415,7 +2439,7 @@ p, li { white-space: pre-wrap; }
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>274</width>
+                                 <width>218</width>
                                  <height>218</height>
                                 </rect>
                                </property>
@@ -3009,6 +3033,9 @@ p, li { white-space: pre-wrap; }
                               <height>45</height>
                              </size>
                             </property>
+                            <property name="focusPolicy">
+                             <enum>Qt::NoFocus</enum>
+                            </property>
                             <property name="layoutDirection">
                              <enum>Qt::LeftToRight</enum>
                             </property>
@@ -3050,6 +3077,9 @@ p, li { white-space: pre-wrap; }
                               <height>45</height>
                              </size>
                             </property>
+                            <property name="focusPolicy">
+                             <enum>Qt::NoFocus</enum>
+                            </property>
                             <property name="text">
                              <string>2. Спектроскопия</string>
                             </property>
@@ -3068,6 +3098,9 @@ p, li { white-space: pre-wrap; }
                               <width>150</width>
                               <height>45</height>
                              </size>
+                            </property>
+                            <property name="focusPolicy">
+                             <enum>Qt::NoFocus</enum>
                             </property>
                             <property name="layoutDirection">
                              <enum>Qt::LeftToRight</enum>
@@ -3090,6 +3123,12 @@ p, li { white-space: pre-wrap; }
                               <width>150</width>
                               <height>45</height>
                              </size>
+                            </property>
+                            <property name="focusPolicy">
+                             <enum>Qt::NoFocus</enum>
+                            </property>
+                            <property name="acceptDrops">
+                             <bool>false</bool>
                             </property>
                             <property name="layoutDirection">
                              <enum>Qt::LeftToRight</enum>
@@ -3136,7 +3175,7 @@ p, li { white-space: pre-wrap; }
                          <property name="currentIndex">
                           <number>2</number>
                          </property>
-                         <widget class="QWidget" name="inspectionPage" native="true">
+                         <widget class="QWidget" name="inspectionPage">
                           <layout class="QVBoxLayout" name="verticalLayout_27">
                            <property name="leftMargin">
                             <number>18</number>
@@ -3234,12 +3273,21 @@ p, li { white-space: pre-wrap; }
                                <height>0</height>
                               </size>
                              </property>
+                             <property name="value">
+                              <number>0</number>
+                             </property>
                             </widget>
                            </item>
                            <item>
                             <widget class="QRadioButton" name="isCycleRadioBox">
+                             <property name="focusPolicy">
+                              <enum>Qt::NoFocus</enum>
+                             </property>
                              <property name="text">
                               <string>ЦИКЛ ОТСУТСТВУЕТ</string>
+                             </property>
+                             <property name="checked">
+                              <bool>false</bool>
                              </property>
                             </widget>
                            </item>
@@ -3292,20 +3340,20 @@ p, li { white-space: pre-wrap; }
                             <number>0</number>
                            </property>
                            <item>
-                            <widget class="QScrollArea" name="scrollArea_3">
+                            <widget class="QScrollArea" name="USIscrollArea">
                              <property name="frameShape">
                               <enum>QFrame::NoFrame</enum>
                              </property>
                              <property name="widgetResizable">
                               <bool>true</bool>
                              </property>
-                             <widget class="QWidget" name="mechoArea">
+                             <widget class="QWidget" name="USIscrollAreaWidget">
                               <property name="geometry">
                                <rect>
                                 <x>0</x>
-                                <y>0</y>
-                                <width>858</width>
-                                <height>65</height>
+                                <y>-149</y>
+                                <width>850</width>
+                                <height>655</height>
                                </rect>
                               </property>
                               <property name="sizePolicy">
@@ -3316,7 +3364,7 @@ p, li { white-space: pre-wrap; }
                               </property>
                               <layout class="QVBoxLayout" name="verticalLayout_31">
                                <item>
-                                <widget class="QLabel" name="MECHOLabel">
+                                <widget class="QLabel" name="MECHOlabel">
                                  <property name="sizePolicy">
                                   <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
                                    <horstretch>0</horstretch>
@@ -3329,7 +3377,7 @@ p, li { white-space: pre-wrap; }
                                 </widget>
                                </item>
                                <item>
-                                <widget class="QFrame" name="horizontalFrame_2">
+                                <widget class="QFrame" name="MECHOframe">
                                  <property name="sizePolicy">
                                   <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
                                    <horstretch>0</horstretch>
@@ -3337,6 +3385,9 @@ p, li { white-space: pre-wrap; }
                                   </sizepolicy>
                                  </property>
                                  <layout class="QHBoxLayout" name="horizontalLayout_10">
+                                  <property name="leftMargin">
+                                   <number>10</number>
+                                  </property>
                                   <item>
                                    <widget class="QSpinBox" name="spinBox_2">
                                     <property name="minimumSize">
@@ -3391,6 +3442,613 @@ p, li { white-space: pre-wrap; }
                                  </layout>
                                 </widget>
                                </item>
+                               <item>
+                                <spacer name="verticalSpacer_6">
+                                 <property name="orientation">
+                                  <enum>Qt::Vertical</enum>
+                                 </property>
+                                 <property name="sizeType">
+                                  <enum>QSizePolicy::Fixed</enum>
+                                 </property>
+                                 <property name="sizeHint" stdset="0">
+                                  <size>
+                                   <width>20</width>
+                                   <height>40</height>
+                                  </size>
+                                 </property>
+                                </spacer>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="structureLabel">
+                                 <property name="text">
+                                  <string>СТРУКТУРА</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QFrame" name="structureFrame">
+                                 <property name="sizePolicy">
+                                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                   <horstretch>0</horstretch>
+                                   <verstretch>0</verstretch>
+                                  </sizepolicy>
+                                 </property>
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>0</width>
+                                   <height>0</height>
+                                  </size>
+                                 </property>
+                                 <layout class="QHBoxLayout" name="horizontalLayout_13">
+                                  <property name="spacing">
+                                   <number>30</number>
+                                  </property>
+                                  <property name="leftMargin">
+                                   <number>10</number>
+                                  </property>
+                                  <property name="rightMargin">
+                                   <number>1</number>
+                                  </property>
+                                  <item>
+                                   <widget class="QRadioButton" name="structuredButton">
+                                    <property name="focusPolicy">
+                                     <enum>Qt::NoFocus</enum>
+                                    </property>
+                                    <property name="text">
+                                     <string>структурированный</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QRadioButton" name="notStructuredButton">
+                                    <property name="focusPolicy">
+                                     <enum>Qt::NoFocus</enum>
+                                    </property>
+                                    <property name="text">
+                                     <string>не структурированный</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <widget class="QRadioButton" name="partlyStructuredButton">
+                                    <property name="focusPolicy">
+                                     <enum>Qt::NoFocus</enum>
+                                    </property>
+                                    <property name="text">
+                                     <string>частично структурированный</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <spacer name="horizontalSpacer_8">
+                                    <property name="orientation">
+                                     <enum>Qt::Horizontal</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                     <size>
+                                      <width>40</width>
+                                      <height>20</height>
+                                     </size>
+                                    </property>
+                                   </spacer>
+                                  </item>
+                                 </layout>
+                                </widget>
+                               </item>
+                               <item>
+                                <spacer name="verticalSpacer_7">
+                                 <property name="orientation">
+                                  <enum>Qt::Vertical</enum>
+                                 </property>
+                                 <property name="sizeType">
+                                  <enum>QSizePolicy::Fixed</enum>
+                                 </property>
+                                 <property name="sizeHint" stdset="0">
+                                  <size>
+                                   <width>20</width>
+                                   <height>40</height>
+                                  </size>
+                                 </property>
+                                </spacer>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="phaseCoincidenceLabel">
+                                 <property name="text">
+                                  <string>СООТВЕТСТВИЕ ФАЗЕ ЦИКЛА</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QFrame" name="phaseCoincidenceFrame">
+                                 <property name="sizePolicy">
+                                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                                   <horstretch>0</horstretch>
+                                   <verstretch>0</verstretch>
+                                  </sizepolicy>
+                                 </property>
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>0</width>
+                                   <height>0</height>
+                                  </size>
+                                 </property>
+                                 <layout class="QGridLayout" name="gridLayout_3">
+                                  <property name="leftMargin">
+                                   <number>10</number>
+                                  </property>
+                                  <property name="horizontalSpacing">
+                                   <number>30</number>
+                                  </property>
+                                  <property name="verticalSpacing">
+                                   <number>6</number>
+                                  </property>
+                                  <item row="1" column="1">
+                                   <widget class="QRadioButton" name="earlySecretoryPhaseButton">
+                                    <property name="sizePolicy">
+                                     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                                      <horstretch>0</horstretch>
+                                      <verstretch>0</verstretch>
+                                     </sizepolicy>
+                                    </property>
+                                    <property name="focusPolicy">
+                                     <enum>Qt::NoFocus</enum>
+                                    </property>
+                                    <property name="text">
+                                     <string>ранняя секрторная фаза</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="6" column="0" alignment="Qt::AlignLeft|Qt::AlignBottom">
+                                   <widget class="QRadioButton" name="latePolyferativePhaseButton">
+                                    <property name="focusPolicy">
+                                     <enum>Qt::NoFocus</enum>
+                                    </property>
+                                    <property name="text">
+                                     <string>поздняя полиферативная фаза</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="1" column="0" alignment="Qt::AlignLeft|Qt::AlignTop">
+                                   <widget class="QRadioButton" name="earlyPolyferativePhaseButton">
+                                    <property name="focusPolicy">
+                                     <enum>Qt::NoFocus</enum>
+                                    </property>
+                                    <property name="text">
+                                     <string>ранняя полиферативная фаза</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="6" column="1">
+                                   <widget class="QRadioButton" name="lateSecretoryPhaseButton">
+                                    <property name="focusPolicy">
+                                     <enum>Qt::NoFocus</enum>
+                                    </property>
+                                    <property name="text">
+                                     <string>поздняя секрторная фаза</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="6" column="2">
+                                   <spacer name="horizontalSpacer_9">
+                                    <property name="orientation">
+                                     <enum>Qt::Horizontal</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                     <size>
+                                      <width>40</width>
+                                      <height>20</height>
+                                     </size>
+                                    </property>
+                                   </spacer>
+                                  </item>
+                                 </layout>
+                                </widget>
+                               </item>
+                               <item>
+                                <spacer name="verticalSpacer_8">
+                                 <property name="orientation">
+                                  <enum>Qt::Vertical</enum>
+                                 </property>
+                                 <property name="sizeType">
+                                  <enum>QSizePolicy::Fixed</enum>
+                                 </property>
+                                 <property name="sizeHint" stdset="0">
+                                  <size>
+                                   <width>20</width>
+                                   <height>40</height>
+                                  </size>
+                                 </property>
+                                </spacer>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="organicChangesLabel">
+                                 <property name="text">
+                                  <string>ОРГАНИЧЕСКИЕ ИЗМЕНЕНИЯ</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QFrame" name="organicChangesFrame">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>0</width>
+                                   <height>100</height>
+                                  </size>
+                                 </property>
+                                 <layout class="QGridLayout" name="gridLayout_4">
+                                  <property name="leftMargin">
+                                   <number>10</number>
+                                  </property>
+                                  <property name="horizontalSpacing">
+                                   <number>30</number>
+                                  </property>
+                                  <item row="2" column="0">
+                                   <widget class="QCheckBox" name="checkBox_3">
+                                    <property name="focusPolicy">
+                                     <enum>Qt::NoFocus</enum>
+                                    </property>
+                                    <property name="text">
+                                     <string>узлы</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="1" column="2">
+                                   <widget class="QCheckBox" name="checkBox_6">
+                                    <property name="sizePolicy">
+                                     <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                                      <horstretch>0</horstretch>
+                                      <verstretch>0</verstretch>
+                                     </sizepolicy>
+                                    </property>
+                                    <property name="focusPolicy">
+                                     <enum>Qt::NoFocus</enum>
+                                    </property>
+                                    <property name="text">
+                                     <string>полип</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="2" column="1">
+                                   <widget class="QCheckBox" name="checkBox_4">
+                                    <property name="sizePolicy">
+                                     <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                                      <horstretch>0</horstretch>
+                                      <verstretch>0</verstretch>
+                                     </sizepolicy>
+                                    </property>
+                                    <property name="focusPolicy">
+                                     <enum>Qt::NoFocus</enum>
+                                    </property>
+                                    <property name="text">
+                                     <string>кистозные включения</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="1" column="0">
+                                   <widget class="QCheckBox" name="checkBox_2">
+                                    <property name="sizePolicy">
+                                     <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                                      <horstretch>0</horstretch>
+                                      <verstretch>0</verstretch>
+                                     </sizepolicy>
+                                    </property>
+                                    <property name="focusPolicy">
+                                     <enum>Qt::NoFocus</enum>
+                                    </property>
+                                    <property name="text">
+                                     <string>деформация</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="1" column="1">
+                                   <widget class="QCheckBox" name="checkBox_5">
+                                    <property name="sizePolicy">
+                                     <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                                      <horstretch>0</horstretch>
+                                      <verstretch>0</verstretch>
+                                     </sizepolicy>
+                                    </property>
+                                    <property name="focusPolicy">
+                                     <enum>Qt::NoFocus</enum>
+                                    </property>
+                                    <property name="text">
+                                     <string>аденомиоз</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item row="2" column="3">
+                                   <spacer name="horizontalSpacer_10">
+                                    <property name="orientation">
+                                     <enum>Qt::Horizontal</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                     <size>
+                                      <width>40</width>
+                                      <height>20</height>
+                                     </size>
+                                    </property>
+                                   </spacer>
+                                  </item>
+                                  <item row="2" column="2">
+                                   <widget class="QCheckBox" name="checkBox_7">
+                                    <property name="focusPolicy">
+                                     <enum>Qt::NoFocus</enum>
+                                    </property>
+                                    <property name="text">
+                                     <string>гиперплазия</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                 </layout>
+                                </widget>
+                               </item>
+                               <item>
+                                <spacer name="verticalSpacer_9">
+                                 <property name="orientation">
+                                  <enum>Qt::Vertical</enum>
+                                 </property>
+                                 <property name="sizeType">
+                                  <enum>QSizePolicy::Fixed</enum>
+                                 </property>
+                                 <property name="sizeHint" stdset="0">
+                                  <size>
+                                   <width>20</width>
+                                   <height>40</height>
+                                  </size>
+                                 </property>
+                                </spacer>
+                               </item>
+                               <item>
+                                <widget class="QFrame" name="horizontalFrame">
+                                 <property name="sizePolicy">
+                                  <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                                   <horstretch>0</horstretch>
+                                   <verstretch>0</verstretch>
+                                  </sizepolicy>
+                                 </property>
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>0</width>
+                                   <height>0</height>
+                                  </size>
+                                 </property>
+                                 <layout class="QHBoxLayout" name="horizontalLayout_14">
+                                  <item>
+                                   <widget class="QFrame" name="leftOvaryFrame">
+                                    <property name="sizePolicy">
+                                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                      <horstretch>0</horstretch>
+                                      <verstretch>0</verstretch>
+                                     </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>0</width>
+                                      <height>0</height>
+                                     </size>
+                                    </property>
+                                    <layout class="QVBoxLayout" name="verticalLayout_32">
+                                     <item>
+                                      <widget class="QLabel" name="leftOvaryLabel">
+                                       <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                                         <horstretch>0</horstretch>
+                                         <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                       </property>
+                                       <property name="text">
+                                        <string>ЯИЧНИК (ЛЕВЫЙ)</string>
+                                       </property>
+                                      </widget>
+                                     </item>
+                                     <item>
+                                      <widget class="QFrame" name="leftYellowBodyFrame">
+                                       <layout class="QHBoxLayout" name="horizontalLayout_15">
+                                        <property name="leftMargin">
+                                         <number>10</number>
+                                        </property>
+                                        <property name="rightMargin">
+                                         <number>1</number>
+                                        </property>
+                                        <item>
+                                         <widget class="QLabel" name="label_3">
+                                          <property name="sizePolicy">
+                                           <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                           </sizepolicy>
+                                          </property>
+                                          <property name="text">
+                                           <string>желтое тело</string>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item>
+                                         <widget class="QSpinBox" name="leftYellowBodySiseSpinBox">
+                                          <property name="sizePolicy">
+                                           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                           </sizepolicy>
+                                          </property>
+                                          <property name="minimumSize">
+                                           <size>
+                                            <width>35</width>
+                                            <height>0</height>
+                                           </size>
+                                          </property>
+                                          <property name="buttonSymbols">
+                                           <enum>QAbstractSpinBox::NoButtons</enum>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item>
+                                         <widget class="QLabel" name="label_5">
+                                          <property name="sizePolicy">
+                                           <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                           </sizepolicy>
+                                          </property>
+                                          <property name="text">
+                                           <string>ММ</string>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                       </layout>
+                                      </widget>
+                                     </item>
+                                     <item>
+                                      <widget class="QCheckBox" name="leftDominanteFoliculCheckBox">
+                                       <property name="focusPolicy">
+                                        <enum>Qt::NoFocus</enum>
+                                       </property>
+                                       <property name="text">
+                                        <string>доминантный фоликул</string>
+                                       </property>
+                                      </widget>
+                                     </item>
+                                     <item>
+                                      <widget class="QCheckBox" name="leftCystCheckBox">
+                                       <property name="focusPolicy">
+                                        <enum>Qt::NoFocus</enum>
+                                       </property>
+                                       <property name="text">
+                                        <string>киста желтого тела</string>
+                                       </property>
+                                      </widget>
+                                     </item>
+                                    </layout>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <spacer name="horizontalSpacer_11">
+                                    <property name="orientation">
+                                     <enum>Qt::Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                     <enum>QSizePolicy::Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                     <size>
+                                      <width>40</width>
+                                      <height>20</height>
+                                     </size>
+                                    </property>
+                                   </spacer>
+                                  </item>
+                                  <item>
+                                   <widget class="QFrame" name="rightOvaryFrame">
+                                    <layout class="QVBoxLayout" name="verticalLayout_33">
+                                     <item>
+                                      <widget class="QLabel" name="rightOvaryLabel">
+                                       <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                                         <horstretch>0</horstretch>
+                                         <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                       </property>
+                                       <property name="text">
+                                        <string>ЯИЧНИК (ПРАВЫЙ)</string>
+                                       </property>
+                                      </widget>
+                                     </item>
+                                     <item>
+                                      <widget class="QFrame" name="rightYellowBodyFrame">
+                                       <layout class="QHBoxLayout" name="horizontalLayout_16">
+                                        <property name="leftMargin">
+                                         <number>10</number>
+                                        </property>
+                                        <item>
+                                         <widget class="QLabel" name="label_4">
+                                          <property name="sizePolicy">
+                                           <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                           </sizepolicy>
+                                          </property>
+                                          <property name="text">
+                                           <string>желтое тело</string>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item>
+                                         <widget class="QSpinBox" name="rightYellowBodySiseSpinBox">
+                                          <property name="sizePolicy">
+                                           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                           </sizepolicy>
+                                          </property>
+                                          <property name="minimumSize">
+                                           <size>
+                                            <width>35</width>
+                                            <height>0</height>
+                                           </size>
+                                          </property>
+                                          <property name="buttonSymbols">
+                                           <enum>QAbstractSpinBox::NoButtons</enum>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item>
+                                         <widget class="QLabel" name="label_6">
+                                          <property name="sizePolicy">
+                                           <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                           </sizepolicy>
+                                          </property>
+                                          <property name="text">
+                                           <string>ММ</string>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                       </layout>
+                                      </widget>
+                                     </item>
+                                     <item>
+                                      <widget class="QCheckBox" name="rightDominanteFoliculCheckBox">
+                                       <property name="focusPolicy">
+                                        <enum>Qt::NoFocus</enum>
+                                       </property>
+                                       <property name="text">
+                                        <string>доминантный фоликул</string>
+                                       </property>
+                                      </widget>
+                                     </item>
+                                     <item>
+                                      <widget class="QCheckBox" name="rightCystCheckBox">
+                                       <property name="focusPolicy">
+                                        <enum>Qt::NoFocus</enum>
+                                       </property>
+                                       <property name="text">
+                                        <string>киста желтого тела</string>
+                                       </property>
+                                      </widget>
+                                     </item>
+                                    </layout>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <spacer name="horizontalSpacer_12">
+                                    <property name="orientation">
+                                     <enum>Qt::Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                     <enum>QSizePolicy::Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                     <size>
+                                      <width>40</width>
+                                      <height>20</height>
+                                     </size>
+                                    </property>
+                                   </spacer>
+                                  </item>
+                                 </layout>
+                                </widget>
+                               </item>
                               </layout>
                              </widget>
                             </widget>
@@ -3413,8 +4071,17 @@ p, li { white-space: pre-wrap; }
                            </property>
                            <item>
                             <widget class="QPushButton" name="pushButton_2">
+                             <property name="mouseTracking">
+                              <bool>true</bool>
+                             </property>
+                             <property name="focusPolicy">
+                              <enum>Qt::NoFocus</enum>
+                             </property>
                              <property name="text">
                               <string>PushButton</string>
+                             </property>
+                             <property name="flat">
+                              <bool>false</bool>
                              </property>
                             </widget>
                            </item>
@@ -3538,6 +4205,9 @@ p, li { white-space: pre-wrap; }
                            <property name="cursor">
                             <cursorShape>PointingHandCursor</cursorShape>
                            </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::NoFocus</enum>
+                           </property>
                            <property name="layoutDirection">
                             <enum>Qt::LeftToRight</enum>
                            </property>
@@ -3569,6 +4239,9 @@ p, li { white-space: pre-wrap; }
                            </property>
                            <property name="cursor">
                             <cursorShape>PointingHandCursor</cursorShape>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::NoFocus</enum>
                            </property>
                            <property name="layoutDirection">
                             <enum>Qt::LeftToRight</enum>
@@ -3602,6 +4275,9 @@ p, li { white-space: pre-wrap; }
                            <property name="cursor">
                             <cursorShape>PointingHandCursor</cursorShape>
                            </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::NoFocus</enum>
+                           </property>
                            <property name="layoutDirection">
                             <enum>Qt::LeftToRight</enum>
                            </property>
@@ -3633,6 +4309,9 @@ p, li { white-space: pre-wrap; }
                            </property>
                            <property name="cursor">
                             <cursorShape>PointingHandCursor</cursorShape>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::NoFocus</enum>
                            </property>
                            <property name="layoutDirection">
                             <enum>Qt::LeftToRight</enum>
