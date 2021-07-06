@@ -8,7 +8,7 @@
     <x>0</x>
     <y>0</y>
     <width>940</width>
-    <height>654</height>
+    <height>652</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -809,7 +809,7 @@ Button */
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-home.png);</string>
+                   <string notr="true">background-image: url(:/icons/images/icons/cil-clipboard.png);</string>
                   </property>
                   <property name="text">
                    <string>Анамнез</string>
@@ -847,7 +847,7 @@ Button */
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-gamepad.png);</string>
+                   <string notr="true">background-image: url(:/icons/images/icons/cil-history.png);</string>
                   </property>
                   <property name="text">
                    <string>Визиты</string>
@@ -885,7 +885,7 @@ Button */
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-file.png);</string>
+                   <string notr="true">background-image: url(:/icons/images/icons/cil-chart.png);</string>
                   </property>
                   <property name="text">
                    <string>Диагностика</string>
@@ -1779,8 +1779,8 @@ p, li { white-space: pre-wrap; }
                              <rect>
                               <x>0</x>
                               <y>0</y>
-                              <width>820</width>
-                              <height>256</height>
+                              <width>92</width>
+                              <height>87</height>
                              </rect>
                             </property>
                             <layout class="QVBoxLayout" name="verticalLayout_24">
@@ -1834,8 +1834,11 @@ p, li { white-space: pre-wrap; }
                          <property name="minimumSize">
                           <size>
                            <width>200</width>
-                           <height>0</height>
+                           <height>30</height>
                           </size>
+                         </property>
+                         <property name="buttonSymbols">
+                          <enum>QAbstractSpinBox::NoButtons</enum>
                          </property>
                         </widget>
                        </item>
@@ -1873,7 +1876,7 @@ p, li { white-space: pre-wrap; }
                          <property name="minimumSize">
                           <size>
                            <width>200</width>
-                           <height>0</height>
+                           <height>30</height>
                           </size>
                          </property>
                          <item>
@@ -1976,7 +1979,7 @@ p, li { white-space: pre-wrap; }
                              <property name="minimumSize">
                               <size>
                                <width>120</width>
-                               <height>0</height>
+                               <height>30</height>
                               </size>
                              </property>
                              <property name="text">
@@ -2011,7 +2014,7 @@ p, li { white-space: pre-wrap; }
                              <property name="minimumSize">
                               <size>
                                <width>120</width>
-                               <height>0</height>
+                               <height>30</height>
                               </size>
                              </property>
                              <property name="text">
@@ -2054,21 +2057,33 @@ p, li { white-space: pre-wrap; }
                        </property>
                        <item>
                         <widget class="QFrame" name="verticalFrame">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
                          <layout class="QVBoxLayout" name="verticalLayout_14">
                           <property name="leftMargin">
-                           <number>100</number>
+                           <number>150</number>
                           </property>
                           <property name="topMargin">
-                           <number>200</number>
+                           <number>160</number>
                           </property>
                           <property name="rightMargin">
-                           <number>100</number>
+                           <number>150</number>
                           </property>
                           <property name="bottomMargin">
-                           <number>100</number>
+                           <number>1</number>
                           </property>
                           <item>
                            <widget class="QLineEdit" name="surnameLineEdit">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
                             <property name="placeholderText">
                              <string>Фамилия</string>
                             </property>
@@ -2076,6 +2091,12 @@ p, li { white-space: pre-wrap; }
                           </item>
                           <item>
                            <widget class="QLineEdit" name="nameLlineEdit">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
                             <property name="placeholderText">
                              <string>Имя</string>
                             </property>
@@ -2083,6 +2104,12 @@ p, li { white-space: pre-wrap; }
                           </item>
                           <item>
                            <widget class="QLineEdit" name="middlenameLineEdit">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
                             <property name="placeholderText">
                              <string>Отчество</string>
                             </property>
@@ -2090,6 +2117,12 @@ p, li { white-space: pre-wrap; }
                           </item>
                           <item>
                            <widget class="QDateEdit" name="birthdateLineEdit">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
                             <property name="displayFormat">
                              <string>dd/mm/yyyy</string>
                             </property>
@@ -2103,43 +2136,152 @@ p, li { white-space: pre-wrap; }
                           </item>
                           <item>
                            <widget class="QLineEdit" name="cardLineEdit">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
                             <property name="placeholderText">
                              <string>Номер карты</string>
                             </property>
                            </widget>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="btn_login">
-                            <property name="text">
-                             <string>Войти</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item>
-                           <widget class="QPushButton" name="btn_registration">
-                            <property name="text">
-                             <string>Регистрация</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item>
-                           <widget class="QLabel" name="sqlStatusLabel">
+                           <widget class="QFrame" name="horizontalFrame">
                             <property name="sizePolicy">
-                             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                               <horstretch>0</horstretch>
                               <verstretch>0</verstretch>
                              </sizepolicy>
                             </property>
-                            <property name="text">
-                             <string>TextLabel</string>
-                            </property>
-                            <property name="alignment">
-                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-                            </property>
+                            <layout class="QHBoxLayout" name="horizontalLayout_17">
+                             <item>
+                              <widget class="QLabel" name="sqlStatusLabel">
+                               <property name="sizePolicy">
+                                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                 <horstretch>0</horstretch>
+                                 <verstretch>0</verstretch>
+                                </sizepolicy>
+                               </property>
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <spacer name="horizontalSpacer_14">
+                               <property name="orientation">
+                                <enum>Qt::Horizontal</enum>
+                               </property>
+                               <property name="sizeType">
+                                <enum>QSizePolicy::Expanding</enum>
+                               </property>
+                               <property name="sizeHint" stdset="0">
+                                <size>
+                                 <width>40</width>
+                                 <height>20</height>
+                                </size>
+                               </property>
+                              </spacer>
+                             </item>
+                             <item>
+                              <widget class="QPushButton" name="btn_registration">
+                               <property name="sizePolicy">
+                                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                 <horstretch>0</horstretch>
+                                 <verstretch>0</verstretch>
+                                </sizepolicy>
+                               </property>
+                               <property name="minimumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>Регистрация</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <spacer name="horizontalSpacer_13">
+                               <property name="orientation">
+                                <enum>Qt::Horizontal</enum>
+                               </property>
+                               <property name="sizeType">
+                                <enum>QSizePolicy::Fixed</enum>
+                               </property>
+                               <property name="sizeHint" stdset="0">
+                                <size>
+                                 <width>40</width>
+                                 <height>20</height>
+                                </size>
+                               </property>
+                              </spacer>
+                             </item>
+                             <item>
+                              <widget class="QPushButton" name="btn_login">
+                               <property name="sizePolicy">
+                                <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                                 <horstretch>0</horstretch>
+                                 <verstretch>0</verstretch>
+                                </sizepolicy>
+                               </property>
+                               <property name="minimumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>30</height>
+                                </size>
+                               </property>
+                               <property name="sizeIncrement">
+                                <size>
+                                 <width>0</width>
+                                 <height>0</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>Войти</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <spacer name="horizontalSpacer_15">
+                               <property name="orientation">
+                                <enum>Qt::Horizontal</enum>
+                               </property>
+                               <property name="sizeType">
+                                <enum>QSizePolicy::Fixed</enum>
+                               </property>
+                               <property name="sizeHint" stdset="0">
+                                <size>
+                                 <width>40</width>
+                                 <height>20</height>
+                                </size>
+                               </property>
+                              </spacer>
+                             </item>
+                            </layout>
                            </widget>
                           </item>
                          </layout>
                         </widget>
+                       </item>
+                       <item>
+                        <spacer name="verticalSpacer_10">
+                         <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>20</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                        </spacer>
                        </item>
                       </layout>
                      </widget>
@@ -3029,8 +3171,8 @@ p, li { white-space: pre-wrap; }
                             </property>
                             <property name="minimumSize">
                              <size>
-                              <width>150</width>
-                              <height>45</height>
+                              <width>160</width>
+                              <height>60</height>
                              </size>
                             </property>
                             <property name="focusPolicy">
@@ -3073,8 +3215,8 @@ p, li { white-space: pre-wrap; }
                             </property>
                             <property name="minimumSize">
                              <size>
-                              <width>180</width>
-                              <height>45</height>
+                              <width>160</width>
+                              <height>60</height>
                              </size>
                             </property>
                             <property name="focusPolicy">
@@ -3095,8 +3237,8 @@ p, li { white-space: pre-wrap; }
                             </property>
                             <property name="minimumSize">
                              <size>
-                              <width>150</width>
-                              <height>45</height>
+                              <width>160</width>
+                              <height>60</height>
                              </size>
                             </property>
                             <property name="focusPolicy">
@@ -3120,8 +3262,8 @@ p, li { white-space: pre-wrap; }
                             </property>
                             <property name="minimumSize">
                              <size>
-                              <width>150</width>
-                              <height>45</height>
+                              <width>160</width>
+                              <height>60</height>
                              </size>
                             </property>
                             <property name="focusPolicy">
@@ -3161,7 +3303,7 @@ p, li { white-space: pre-wrap; }
                        <item>
                         <widget class="QStackedWidget" name="diagnosticStackedWidget">
                          <property name="sizePolicy">
-                          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
                            <horstretch>0</horstretch>
                            <verstretch>0</verstretch>
                           </sizepolicy>
@@ -3173,8 +3315,31 @@ p, li { white-space: pre-wrap; }
                           </size>
                          </property>
                          <property name="currentIndex">
-                          <number>2</number>
+                          <number>4</number>
                          </property>
+                         <widget class="QWidget" name="beginDiagnosticPage">
+                          <layout class="QHBoxLayout" name="horizontalLayout_18">
+                           <item>
+                            <widget class="QPushButton" name="beginDiagnosticButton">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>300</width>
+                               <height>30</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string>НАЧАТЬ ПРОЦЕДУРУ ДИАГНОСТИКИ</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
                          <widget class="QWidget" name="inspectionPage">
                           <layout class="QVBoxLayout" name="verticalLayout_27">
                            <property name="leftMargin">
@@ -3216,7 +3381,7 @@ p, li { white-space: pre-wrap; }
                              <property name="minimumSize">
                               <size>
                                <width>150</width>
-                               <height>0</height>
+                               <height>30</height>
                               </size>
                              </property>
                              <property name="currentSection">
@@ -3270,7 +3435,13 @@ p, li { white-space: pre-wrap; }
                              <property name="minimumSize">
                               <size>
                                <width>100</width>
-                               <height>0</height>
+                               <height>30</height>
+                              </size>
+                             </property>
+                             <property name="sizeIncrement">
+                              <size>
+                               <width>0</width>
+                               <height>30</height>
                               </size>
                              </property>
                              <property name="value">
@@ -3280,6 +3451,12 @@ p, li { white-space: pre-wrap; }
                            </item>
                            <item>
                             <widget class="QRadioButton" name="isCycleRadioBox">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>40</height>
+                              </size>
+                             </property>
                              <property name="focusPolicy">
                               <enum>Qt::NoFocus</enum>
                              </property>
@@ -3351,9 +3528,9 @@ p, li { white-space: pre-wrap; }
                               <property name="geometry">
                                <rect>
                                 <x>0</x>
-                                <y>-149</y>
-                                <width>850</width>
-                                <height>655</height>
+                                <y>0</y>
+                                <width>634</width>
+                                <height>832</height>
                                </rect>
                               </property>
                               <property name="sizePolicy">
@@ -3393,7 +3570,7 @@ p, li { white-space: pre-wrap; }
                                     <property name="minimumSize">
                                      <size>
                                       <width>120</width>
-                                      <height>0</height>
+                                      <height>30</height>
                                      </size>
                                     </property>
                                     <property name="wrapping">
@@ -3491,6 +3668,12 @@ p, li { white-space: pre-wrap; }
                                   </property>
                                   <item>
                                    <widget class="QRadioButton" name="structuredButton">
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>0</width>
+                                      <height>40</height>
+                                     </size>
+                                    </property>
                                     <property name="focusPolicy">
                                      <enum>Qt::NoFocus</enum>
                                     </property>
@@ -3501,6 +3684,12 @@ p, li { white-space: pre-wrap; }
                                   </item>
                                   <item>
                                    <widget class="QRadioButton" name="notStructuredButton">
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>0</width>
+                                      <height>40</height>
+                                     </size>
+                                    </property>
                                     <property name="focusPolicy">
                                      <enum>Qt::NoFocus</enum>
                                     </property>
@@ -3511,6 +3700,12 @@ p, li { white-space: pre-wrap; }
                                   </item>
                                   <item>
                                    <widget class="QRadioButton" name="partlyStructuredButton">
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>0</width>
+                                      <height>40</height>
+                                     </size>
+                                    </property>
                                     <property name="focusPolicy">
                                      <enum>Qt::NoFocus</enum>
                                     </property>
@@ -3590,6 +3785,12 @@ p, li { white-space: pre-wrap; }
                                       <verstretch>0</verstretch>
                                      </sizepolicy>
                                     </property>
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>0</width>
+                                      <height>40</height>
+                                     </size>
+                                    </property>
                                     <property name="focusPolicy">
                                      <enum>Qt::NoFocus</enum>
                                     </property>
@@ -3600,6 +3801,12 @@ p, li { white-space: pre-wrap; }
                                   </item>
                                   <item row="6" column="0" alignment="Qt::AlignLeft|Qt::AlignBottom">
                                    <widget class="QRadioButton" name="latePolyferativePhaseButton">
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>0</width>
+                                      <height>40</height>
+                                     </size>
+                                    </property>
                                     <property name="focusPolicy">
                                      <enum>Qt::NoFocus</enum>
                                     </property>
@@ -3610,6 +3817,12 @@ p, li { white-space: pre-wrap; }
                                   </item>
                                   <item row="1" column="0" alignment="Qt::AlignLeft|Qt::AlignTop">
                                    <widget class="QRadioButton" name="earlyPolyferativePhaseButton">
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>0</width>
+                                      <height>40</height>
+                                     </size>
+                                    </property>
                                     <property name="focusPolicy">
                                      <enum>Qt::NoFocus</enum>
                                     </property>
@@ -3620,6 +3833,12 @@ p, li { white-space: pre-wrap; }
                                   </item>
                                   <item row="6" column="1">
                                    <widget class="QRadioButton" name="lateSecretoryPhaseButton">
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>0</width>
+                                      <height>40</height>
+                                     </size>
+                                    </property>
                                     <property name="focusPolicy">
                                      <enum>Qt::NoFocus</enum>
                                     </property>
@@ -3684,6 +3903,12 @@ p, li { white-space: pre-wrap; }
                                   </property>
                                   <item row="2" column="0">
                                    <widget class="QCheckBox" name="checkBox_3">
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>0</width>
+                                      <height>40</height>
+                                     </size>
+                                    </property>
                                     <property name="focusPolicy">
                                      <enum>Qt::NoFocus</enum>
                                     </property>
@@ -3699,6 +3924,12 @@ p, li { white-space: pre-wrap; }
                                       <horstretch>0</horstretch>
                                       <verstretch>0</verstretch>
                                      </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>0</width>
+                                      <height>40</height>
+                                     </size>
                                     </property>
                                     <property name="focusPolicy">
                                      <enum>Qt::NoFocus</enum>
@@ -3716,6 +3947,12 @@ p, li { white-space: pre-wrap; }
                                       <verstretch>0</verstretch>
                                      </sizepolicy>
                                     </property>
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>0</width>
+                                      <height>40</height>
+                                     </size>
+                                    </property>
                                     <property name="focusPolicy">
                                      <enum>Qt::NoFocus</enum>
                                     </property>
@@ -3732,6 +3969,12 @@ p, li { white-space: pre-wrap; }
                                       <verstretch>0</verstretch>
                                      </sizepolicy>
                                     </property>
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>0</width>
+                                      <height>40</height>
+                                     </size>
+                                    </property>
                                     <property name="focusPolicy">
                                      <enum>Qt::NoFocus</enum>
                                     </property>
@@ -3747,6 +3990,12 @@ p, li { white-space: pre-wrap; }
                                       <horstretch>0</horstretch>
                                       <verstretch>0</verstretch>
                                      </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>0</width>
+                                      <height>40</height>
+                                     </size>
                                     </property>
                                     <property name="focusPolicy">
                                      <enum>Qt::NoFocus</enum>
@@ -3771,6 +4020,12 @@ p, li { white-space: pre-wrap; }
                                   </item>
                                   <item row="2" column="2">
                                    <widget class="QCheckBox" name="checkBox_7">
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>0</width>
+                                      <height>40</height>
+                                     </size>
+                                    </property>
                                     <property name="focusPolicy">
                                      <enum>Qt::NoFocus</enum>
                                     </property>
@@ -3799,7 +4054,7 @@ p, li { white-space: pre-wrap; }
                                 </spacer>
                                </item>
                                <item>
-                                <widget class="QFrame" name="horizontalFrame">
+                                <widget class="QFrame" name="OvaryFrame">
                                  <property name="sizePolicy">
                                   <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
                                    <horstretch>0</horstretch>
@@ -3874,7 +4129,7 @@ p, li { white-space: pre-wrap; }
                                           <property name="minimumSize">
                                            <size>
                                             <width>35</width>
-                                            <height>0</height>
+                                            <height>30</height>
                                            </size>
                                           </property>
                                           <property name="buttonSymbols">
@@ -3900,6 +4155,12 @@ p, li { white-space: pre-wrap; }
                                      </item>
                                      <item>
                                       <widget class="QCheckBox" name="leftDominanteFoliculCheckBox">
+                                       <property name="minimumSize">
+                                        <size>
+                                         <width>0</width>
+                                         <height>40</height>
+                                        </size>
+                                       </property>
                                        <property name="focusPolicy">
                                         <enum>Qt::NoFocus</enum>
                                        </property>
@@ -3910,6 +4171,12 @@ p, li { white-space: pre-wrap; }
                                      </item>
                                      <item>
                                       <widget class="QCheckBox" name="leftCystCheckBox">
+                                       <property name="minimumSize">
+                                        <size>
+                                         <width>0</width>
+                                         <height>40</height>
+                                        </size>
+                                       </property>
                                        <property name="focusPolicy">
                                         <enum>Qt::NoFocus</enum>
                                        </property>
@@ -3983,7 +4250,7 @@ p, li { white-space: pre-wrap; }
                                           <property name="minimumSize">
                                            <size>
                                             <width>35</width>
-                                            <height>0</height>
+                                            <height>30</height>
                                            </size>
                                           </property>
                                           <property name="buttonSymbols">
@@ -4009,6 +4276,12 @@ p, li { white-space: pre-wrap; }
                                      </item>
                                      <item>
                                       <widget class="QCheckBox" name="rightDominanteFoliculCheckBox">
+                                       <property name="minimumSize">
+                                        <size>
+                                         <width>0</width>
+                                         <height>40</height>
+                                        </size>
+                                       </property>
                                        <property name="focusPolicy">
                                         <enum>Qt::NoFocus</enum>
                                        </property>
@@ -4019,6 +4292,12 @@ p, li { white-space: pre-wrap; }
                                      </item>
                                      <item>
                                       <widget class="QCheckBox" name="rightCystCheckBox">
+                                       <property name="minimumSize">
+                                        <size>
+                                         <width>0</width>
+                                         <height>40</height>
+                                        </size>
+                                       </property>
                                        <property name="focusPolicy">
                                         <enum>Qt::NoFocus</enum>
                                        </property>
@@ -4087,6 +4366,77 @@ p, li { white-space: pre-wrap; }
                            </item>
                           </layout>
                          </widget>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QFrame" name="diagnosticsNavigationButtonsFrame">
+                         <layout class="QHBoxLayout" name="horizontalLayout_19">
+                          <item>
+                           <widget class="QPushButton" name="previousPageDiagnostic">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>Назад</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <spacer name="horizontalSpacer_16">
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="finishDiagnostics">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>Завершить</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <spacer name="horizontalSpacer_17">
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>20</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="naexPageDiagnostic">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <property name="text">
+                             <string>Далее</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
                         </widget>
                        </item>
                       </layout>

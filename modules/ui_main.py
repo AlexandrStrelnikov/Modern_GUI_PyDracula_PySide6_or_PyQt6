@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainFYwwMH.ui'
+## Form generated from reading UI file 'mainCPwotW.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.0
 ##
@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(940, 654)
+        MainWindow.resize(940, 652)
         MainWindow.setMinimumSize(QSize(940, 560))
         self.styleSheet = QWidget(MainWindow)
         self.styleSheet.setObjectName(u"styleSheet")
@@ -637,7 +637,7 @@ class Ui_MainWindow(object):
         self.btn_anamnes.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_anamnes.setFocusPolicy(Qt.NoFocus)
         self.btn_anamnes.setLayoutDirection(Qt.LeftToRight)
-        self.btn_anamnes.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-home.png);")
+        self.btn_anamnes.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-clipboard.png);")
 
         self.verticalLayout_8.addWidget(self.btn_anamnes)
 
@@ -650,7 +650,7 @@ class Ui_MainWindow(object):
         self.btn_visits.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_visits.setFocusPolicy(Qt.NoFocus)
         self.btn_visits.setLayoutDirection(Qt.LeftToRight)
-        self.btn_visits.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-gamepad.png);")
+        self.btn_visits.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-history.png);")
 
         self.verticalLayout_8.addWidget(self.btn_visits)
 
@@ -663,7 +663,7 @@ class Ui_MainWindow(object):
         self.btn_diagnostics.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_diagnostics.setFocusPolicy(Qt.NoFocus)
         self.btn_diagnostics.setLayoutDirection(Qt.LeftToRight)
-        self.btn_diagnostics.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-file.png);")
+        self.btn_diagnostics.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-chart.png);")
 
         self.verticalLayout_8.addWidget(self.btn_diagnostics)
 
@@ -1025,7 +1025,7 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollAreaWidgetContents_2 = QWidget()
         self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
-        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 820, 256))
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 92, 87))
         self.verticalLayout_24 = QVBoxLayout(self.scrollAreaWidgetContents_2)
         self.verticalLayout_24.setObjectName(u"verticalLayout_24")
         self.illnesHistoryText = QPlainTextEdit(self.scrollAreaWidgetContents_2)
@@ -1058,7 +1058,8 @@ class Ui_MainWindow(object):
         sizePolicy2.setVerticalStretch(0)
         sizePolicy2.setHeightForWidth(self.ECONumSpinBox.sizePolicy().hasHeightForWidth())
         self.ECONumSpinBox.setSizePolicy(sizePolicy2)
-        self.ECONumSpinBox.setMinimumSize(QSize(200, 0))
+        self.ECONumSpinBox.setMinimumSize(QSize(200, 30))
+        self.ECONumSpinBox.setButtonSymbols(QAbstractSpinBox.NoButtons)
 
         self.verticalLayout_25.addWidget(self.ECONumSpinBox)
 
@@ -1077,7 +1078,7 @@ class Ui_MainWindow(object):
         self.IGHComboBox.setObjectName(u"IGHComboBox")
         sizePolicy2.setHeightForWidth(self.IGHComboBox.sizePolicy().hasHeightForWidth())
         self.IGHComboBox.setSizePolicy(sizePolicy2)
-        self.IGHComboBox.setMinimumSize(QSize(200, 0))
+        self.IGHComboBox.setMinimumSize(QSize(200, 30))
 
         self.verticalLayout_25.addWidget(self.IGHComboBox)
 
@@ -1125,7 +1126,7 @@ class Ui_MainWindow(object):
         sizePolicy5.setVerticalStretch(0)
         sizePolicy5.setHeightForWidth(self.saveAnamnesButton.sizePolicy().hasHeightForWidth())
         self.saveAnamnesButton.setSizePolicy(sizePolicy5)
-        self.saveAnamnesButton.setMinimumSize(QSize(120, 0))
+        self.saveAnamnesButton.setMinimumSize(QSize(120, 30))
 
         self.horizontalLayout_7.addWidget(self.saveAnamnesButton)
 
@@ -1137,7 +1138,7 @@ class Ui_MainWindow(object):
         self.cancelAnamnesButton.setObjectName(u"cancelAnamnesButton")
         sizePolicy5.setHeightForWidth(self.cancelAnamnesButton.sizePolicy().hasHeightForWidth())
         self.cancelAnamnesButton.setSizePolicy(sizePolicy5)
-        self.cancelAnamnesButton.setMinimumSize(QSize(120, 0))
+        self.cancelAnamnesButton.setMinimumSize(QSize(120, 30))
 
         self.horizontalLayout_7.addWidget(self.cancelAnamnesButton)
 
@@ -1157,26 +1158,32 @@ class Ui_MainWindow(object):
         self.verticalLayout_23.setContentsMargins(18, 18, 18, 18)
         self.verticalFrame = QFrame(self.autorisation_page)
         self.verticalFrame.setObjectName(u"verticalFrame")
+        sizePolicy3.setHeightForWidth(self.verticalFrame.sizePolicy().hasHeightForWidth())
+        self.verticalFrame.setSizePolicy(sizePolicy3)
         self.verticalLayout_14 = QVBoxLayout(self.verticalFrame)
         self.verticalLayout_14.setObjectName(u"verticalLayout_14")
-        self.verticalLayout_14.setContentsMargins(100, 200, 100, 100)
+        self.verticalLayout_14.setContentsMargins(150, 160, 150, 1)
         self.surnameLineEdit = QLineEdit(self.verticalFrame)
         self.surnameLineEdit.setObjectName(u"surnameLineEdit")
+        self.surnameLineEdit.setMinimumSize(QSize(0, 30))
 
         self.verticalLayout_14.addWidget(self.surnameLineEdit)
 
         self.nameLlineEdit = QLineEdit(self.verticalFrame)
         self.nameLlineEdit.setObjectName(u"nameLlineEdit")
+        self.nameLlineEdit.setMinimumSize(QSize(0, 30))
 
         self.verticalLayout_14.addWidget(self.nameLlineEdit)
 
         self.middlenameLineEdit = QLineEdit(self.verticalFrame)
         self.middlenameLineEdit.setObjectName(u"middlenameLineEdit")
+        self.middlenameLineEdit.setMinimumSize(QSize(0, 30))
 
         self.verticalLayout_14.addWidget(self.middlenameLineEdit)
 
         self.birthdateLineEdit = QDateEdit(self.verticalFrame)
         self.birthdateLineEdit.setObjectName(u"birthdateLineEdit")
+        self.birthdateLineEdit.setMinimumSize(QSize(0, 30))
         self.birthdateLineEdit.setCalendarPopup(True)
         self.birthdateLineEdit.setCurrentSectionIndex(0)
 
@@ -1184,29 +1191,62 @@ class Ui_MainWindow(object):
 
         self.cardLineEdit = QLineEdit(self.verticalFrame)
         self.cardLineEdit.setObjectName(u"cardLineEdit")
+        self.cardLineEdit.setMinimumSize(QSize(0, 30))
 
         self.verticalLayout_14.addWidget(self.cardLineEdit)
 
-        self.btn_login = QPushButton(self.verticalFrame)
-        self.btn_login.setObjectName(u"btn_login")
-
-        self.verticalLayout_14.addWidget(self.btn_login)
-
-        self.btn_registration = QPushButton(self.verticalFrame)
-        self.btn_registration.setObjectName(u"btn_registration")
-
-        self.verticalLayout_14.addWidget(self.btn_registration)
-
-        self.sqlStatusLabel = QLabel(self.verticalFrame)
+        self.horizontalFrame = QFrame(self.verticalFrame)
+        self.horizontalFrame.setObjectName(u"horizontalFrame")
+        sizePolicy3.setHeightForWidth(self.horizontalFrame.sizePolicy().hasHeightForWidth())
+        self.horizontalFrame.setSizePolicy(sizePolicy3)
+        self.horizontalLayout_17 = QHBoxLayout(self.horizontalFrame)
+        self.horizontalLayout_17.setObjectName(u"horizontalLayout_17")
+        self.sqlStatusLabel = QLabel(self.horizontalFrame)
         self.sqlStatusLabel.setObjectName(u"sqlStatusLabel")
         sizePolicy4.setHeightForWidth(self.sqlStatusLabel.sizePolicy().hasHeightForWidth())
         self.sqlStatusLabel.setSizePolicy(sizePolicy4)
         self.sqlStatusLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignTop)
 
-        self.verticalLayout_14.addWidget(self.sqlStatusLabel)
+        self.horizontalLayout_17.addWidget(self.sqlStatusLabel)
+
+        self.horizontalSpacer_14 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_17.addItem(self.horizontalSpacer_14)
+
+        self.btn_registration = QPushButton(self.horizontalFrame)
+        self.btn_registration.setObjectName(u"btn_registration")
+        sizePolicy5.setHeightForWidth(self.btn_registration.sizePolicy().hasHeightForWidth())
+        self.btn_registration.setSizePolicy(sizePolicy5)
+        self.btn_registration.setMinimumSize(QSize(100, 30))
+
+        self.horizontalLayout_17.addWidget(self.btn_registration)
+
+        self.horizontalSpacer_13 = QSpacerItem(40, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+
+        self.horizontalLayout_17.addItem(self.horizontalSpacer_13)
+
+        self.btn_login = QPushButton(self.horizontalFrame)
+        self.btn_login.setObjectName(u"btn_login")
+        sizePolicy2.setHeightForWidth(self.btn_login.sizePolicy().hasHeightForWidth())
+        self.btn_login.setSizePolicy(sizePolicy2)
+        self.btn_login.setMinimumSize(QSize(100, 30))
+        self.btn_login.setSizeIncrement(QSize(0, 0))
+
+        self.horizontalLayout_17.addWidget(self.btn_login)
+
+        self.horizontalSpacer_15 = QSpacerItem(40, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+
+        self.horizontalLayout_17.addItem(self.horizontalSpacer_15)
+
+
+        self.verticalLayout_14.addWidget(self.horizontalFrame)
 
 
         self.verticalLayout_23.addWidget(self.verticalFrame)
+
+        self.verticalSpacer_10 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_23.addItem(self.verticalSpacer_10)
 
         self.stackedWidget.addWidget(self.autorisation_page)
         self.visits = QWidget()
@@ -1568,7 +1608,7 @@ class Ui_MainWindow(object):
         self.inspectionButton.setObjectName(u"inspectionButton")
         sizePolicy5.setHeightForWidth(self.inspectionButton.sizePolicy().hasHeightForWidth())
         self.inspectionButton.setSizePolicy(sizePolicy5)
-        self.inspectionButton.setMinimumSize(QSize(150, 45))
+        self.inspectionButton.setMinimumSize(QSize(160, 60))
         self.inspectionButton.setFocusPolicy(Qt.NoFocus)
         self.inspectionButton.setLayoutDirection(Qt.LeftToRight)
         icon6 = QIcon()
@@ -1584,7 +1624,7 @@ class Ui_MainWindow(object):
         self.spectroscopyButton.setObjectName(u"spectroscopyButton")
         sizePolicy5.setHeightForWidth(self.spectroscopyButton.sizePolicy().hasHeightForWidth())
         self.spectroscopyButton.setSizePolicy(sizePolicy5)
-        self.spectroscopyButton.setMinimumSize(QSize(180, 45))
+        self.spectroscopyButton.setMinimumSize(QSize(160, 60))
         self.spectroscopyButton.setFocusPolicy(Qt.NoFocus)
 
         self.horizontalLayout_8.addWidget(self.spectroscopyButton)
@@ -1593,7 +1633,7 @@ class Ui_MainWindow(object):
         self.USIButton.setObjectName(u"USIButton")
         sizePolicy5.setHeightForWidth(self.USIButton.sizePolicy().hasHeightForWidth())
         self.USIButton.setSizePolicy(sizePolicy5)
-        self.USIButton.setMinimumSize(QSize(150, 45))
+        self.USIButton.setMinimumSize(QSize(160, 60))
         self.USIButton.setFocusPolicy(Qt.NoFocus)
         self.USIButton.setLayoutDirection(Qt.LeftToRight)
 
@@ -1603,7 +1643,7 @@ class Ui_MainWindow(object):
         self.diagnosticsResultsButton.setObjectName(u"diagnosticsResultsButton")
         sizePolicy5.setHeightForWidth(self.diagnosticsResultsButton.sizePolicy().hasHeightForWidth())
         self.diagnosticsResultsButton.setSizePolicy(sizePolicy5)
-        self.diagnosticsResultsButton.setMinimumSize(QSize(150, 45))
+        self.diagnosticsResultsButton.setMinimumSize(QSize(160, 60))
         self.diagnosticsResultsButton.setFocusPolicy(Qt.NoFocus)
         self.diagnosticsResultsButton.setAcceptDrops(False)
         self.diagnosticsResultsButton.setLayoutDirection(Qt.LeftToRight)
@@ -1619,12 +1659,25 @@ class Ui_MainWindow(object):
 
         self.diagnosticStackedWidget = QStackedWidget(self.diagnostics)
         self.diagnosticStackedWidget.setObjectName(u"diagnosticStackedWidget")
-        sizePolicy7 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Expanding)
+        sizePolicy7 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Minimum)
         sizePolicy7.setHorizontalStretch(0)
         sizePolicy7.setVerticalStretch(0)
         sizePolicy7.setHeightForWidth(self.diagnosticStackedWidget.sizePolicy().hasHeightForWidth())
         self.diagnosticStackedWidget.setSizePolicy(sizePolicy7)
         self.diagnosticStackedWidget.setMinimumSize(QSize(0, 0))
+        self.beginDiagnosticPage = QWidget()
+        self.beginDiagnosticPage.setObjectName(u"beginDiagnosticPage")
+        self.horizontalLayout_18 = QHBoxLayout(self.beginDiagnosticPage)
+        self.horizontalLayout_18.setObjectName(u"horizontalLayout_18")
+        self.beginDiagnosticButton = QPushButton(self.beginDiagnosticPage)
+        self.beginDiagnosticButton.setObjectName(u"beginDiagnosticButton")
+        sizePolicy5.setHeightForWidth(self.beginDiagnosticButton.sizePolicy().hasHeightForWidth())
+        self.beginDiagnosticButton.setSizePolicy(sizePolicy5)
+        self.beginDiagnosticButton.setMinimumSize(QSize(300, 30))
+
+        self.horizontalLayout_18.addWidget(self.beginDiagnosticButton)
+
+        self.diagnosticStackedWidget.addWidget(self.beginDiagnosticPage)
         self.inspectionPage = QWidget()
         self.inspectionPage.setObjectName(u"inspectionPage")
         self.verticalLayout_27 = QVBoxLayout(self.inspectionPage)
@@ -1645,7 +1698,7 @@ class Ui_MainWindow(object):
         self.dateTimeEdit.setObjectName(u"dateTimeEdit")
         sizePolicy2.setHeightForWidth(self.dateTimeEdit.sizePolicy().hasHeightForWidth())
         self.dateTimeEdit.setSizePolicy(sizePolicy2)
-        self.dateTimeEdit.setMinimumSize(QSize(150, 0))
+        self.dateTimeEdit.setMinimumSize(QSize(150, 30))
         self.dateTimeEdit.setCurrentSection(QDateTimeEdit.MonthSection)
         self.dateTimeEdit.setCalendarPopup(True)
 
@@ -1666,13 +1719,15 @@ class Ui_MainWindow(object):
         self.cycleDaySpinBox.setObjectName(u"cycleDaySpinBox")
         sizePolicy2.setHeightForWidth(self.cycleDaySpinBox.sizePolicy().hasHeightForWidth())
         self.cycleDaySpinBox.setSizePolicy(sizePolicy2)
-        self.cycleDaySpinBox.setMinimumSize(QSize(100, 0))
+        self.cycleDaySpinBox.setMinimumSize(QSize(100, 30))
+        self.cycleDaySpinBox.setSizeIncrement(QSize(0, 30))
         self.cycleDaySpinBox.setValue(0)
 
         self.verticalLayout_27.addWidget(self.cycleDaySpinBox)
 
         self.isCycleRadioBox = QRadioButton(self.inspectionPage)
         self.isCycleRadioBox.setObjectName(u"isCycleRadioBox")
+        self.isCycleRadioBox.setMinimumSize(QSize(0, 40))
         self.isCycleRadioBox.setFocusPolicy(Qt.NoFocus)
         self.isCycleRadioBox.setChecked(False)
 
@@ -1705,7 +1760,7 @@ class Ui_MainWindow(object):
         self.USIscrollArea.setWidgetResizable(True)
         self.USIscrollAreaWidget = QWidget()
         self.USIscrollAreaWidget.setObjectName(u"USIscrollAreaWidget")
-        self.USIscrollAreaWidget.setGeometry(QRect(0, -149, 850, 655))
+        self.USIscrollAreaWidget.setGeometry(QRect(0, 0, 634, 832))
         sizePolicy8.setHeightForWidth(self.USIscrollAreaWidget.sizePolicy().hasHeightForWidth())
         self.USIscrollAreaWidget.setSizePolicy(sizePolicy8)
         self.verticalLayout_31 = QVBoxLayout(self.USIscrollAreaWidget)
@@ -1726,7 +1781,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_10.setContentsMargins(10, -1, -1, -1)
         self.spinBox_2 = QSpinBox(self.MECHOframe)
         self.spinBox_2.setObjectName(u"spinBox_2")
-        self.spinBox_2.setMinimumSize(QSize(120, 0))
+        self.spinBox_2.setMinimumSize(QSize(120, 30))
         self.spinBox_2.setWrapping(False)
         self.spinBox_2.setFrame(True)
         self.spinBox_2.setButtonSymbols(QAbstractSpinBox.NoButtons)
@@ -1767,18 +1822,21 @@ class Ui_MainWindow(object):
         self.horizontalLayout_13.setContentsMargins(10, -1, 1, -1)
         self.structuredButton = QRadioButton(self.structureFrame)
         self.structuredButton.setObjectName(u"structuredButton")
+        self.structuredButton.setMinimumSize(QSize(0, 40))
         self.structuredButton.setFocusPolicy(Qt.NoFocus)
 
         self.horizontalLayout_13.addWidget(self.structuredButton)
 
         self.notStructuredButton = QRadioButton(self.structureFrame)
         self.notStructuredButton.setObjectName(u"notStructuredButton")
+        self.notStructuredButton.setMinimumSize(QSize(0, 40))
         self.notStructuredButton.setFocusPolicy(Qt.NoFocus)
 
         self.horizontalLayout_13.addWidget(self.notStructuredButton)
 
         self.partlyStructuredButton = QRadioButton(self.structureFrame)
         self.partlyStructuredButton.setObjectName(u"partlyStructuredButton")
+        self.partlyStructuredButton.setMinimumSize(QSize(0, 40))
         self.partlyStructuredButton.setFocusPolicy(Qt.NoFocus)
 
         self.horizontalLayout_13.addWidget(self.partlyStructuredButton)
@@ -1819,24 +1877,28 @@ class Ui_MainWindow(object):
         sizePolicy10.setVerticalStretch(0)
         sizePolicy10.setHeightForWidth(self.earlySecretoryPhaseButton.sizePolicy().hasHeightForWidth())
         self.earlySecretoryPhaseButton.setSizePolicy(sizePolicy10)
+        self.earlySecretoryPhaseButton.setMinimumSize(QSize(0, 40))
         self.earlySecretoryPhaseButton.setFocusPolicy(Qt.NoFocus)
 
         self.gridLayout_3.addWidget(self.earlySecretoryPhaseButton, 1, 1, 1, 1)
 
         self.latePolyferativePhaseButton = QRadioButton(self.phaseCoincidenceFrame)
         self.latePolyferativePhaseButton.setObjectName(u"latePolyferativePhaseButton")
+        self.latePolyferativePhaseButton.setMinimumSize(QSize(0, 40))
         self.latePolyferativePhaseButton.setFocusPolicy(Qt.NoFocus)
 
         self.gridLayout_3.addWidget(self.latePolyferativePhaseButton, 6, 0, 1, 1, Qt.AlignLeft|Qt.AlignBottom)
 
         self.earlyPolyferativePhaseButton = QRadioButton(self.phaseCoincidenceFrame)
         self.earlyPolyferativePhaseButton.setObjectName(u"earlyPolyferativePhaseButton")
+        self.earlyPolyferativePhaseButton.setMinimumSize(QSize(0, 40))
         self.earlyPolyferativePhaseButton.setFocusPolicy(Qt.NoFocus)
 
         self.gridLayout_3.addWidget(self.earlyPolyferativePhaseButton, 1, 0, 1, 1, Qt.AlignLeft|Qt.AlignTop)
 
         self.lateSecretoryPhaseButton = QRadioButton(self.phaseCoincidenceFrame)
         self.lateSecretoryPhaseButton.setObjectName(u"lateSecretoryPhaseButton")
+        self.lateSecretoryPhaseButton.setMinimumSize(QSize(0, 40))
         self.lateSecretoryPhaseButton.setFocusPolicy(Qt.NoFocus)
 
         self.gridLayout_3.addWidget(self.lateSecretoryPhaseButton, 6, 1, 1, 1)
@@ -1866,6 +1928,7 @@ class Ui_MainWindow(object):
         self.gridLayout_4.setContentsMargins(10, -1, -1, -1)
         self.checkBox_3 = QCheckBox(self.organicChangesFrame)
         self.checkBox_3.setObjectName(u"checkBox_3")
+        self.checkBox_3.setMinimumSize(QSize(0, 40))
         self.checkBox_3.setFocusPolicy(Qt.NoFocus)
 
         self.gridLayout_4.addWidget(self.checkBox_3, 2, 0, 1, 1)
@@ -1874,6 +1937,7 @@ class Ui_MainWindow(object):
         self.checkBox_6.setObjectName(u"checkBox_6")
         sizePolicy2.setHeightForWidth(self.checkBox_6.sizePolicy().hasHeightForWidth())
         self.checkBox_6.setSizePolicy(sizePolicy2)
+        self.checkBox_6.setMinimumSize(QSize(0, 40))
         self.checkBox_6.setFocusPolicy(Qt.NoFocus)
 
         self.gridLayout_4.addWidget(self.checkBox_6, 1, 2, 1, 1)
@@ -1882,6 +1946,7 @@ class Ui_MainWindow(object):
         self.checkBox_4.setObjectName(u"checkBox_4")
         sizePolicy2.setHeightForWidth(self.checkBox_4.sizePolicy().hasHeightForWidth())
         self.checkBox_4.setSizePolicy(sizePolicy2)
+        self.checkBox_4.setMinimumSize(QSize(0, 40))
         self.checkBox_4.setFocusPolicy(Qt.NoFocus)
 
         self.gridLayout_4.addWidget(self.checkBox_4, 2, 1, 1, 1)
@@ -1890,6 +1955,7 @@ class Ui_MainWindow(object):
         self.checkBox_2.setObjectName(u"checkBox_2")
         sizePolicy2.setHeightForWidth(self.checkBox_2.sizePolicy().hasHeightForWidth())
         self.checkBox_2.setSizePolicy(sizePolicy2)
+        self.checkBox_2.setMinimumSize(QSize(0, 40))
         self.checkBox_2.setFocusPolicy(Qt.NoFocus)
 
         self.gridLayout_4.addWidget(self.checkBox_2, 1, 0, 1, 1)
@@ -1898,6 +1964,7 @@ class Ui_MainWindow(object):
         self.checkBox_5.setObjectName(u"checkBox_5")
         sizePolicy2.setHeightForWidth(self.checkBox_5.sizePolicy().hasHeightForWidth())
         self.checkBox_5.setSizePolicy(sizePolicy2)
+        self.checkBox_5.setMinimumSize(QSize(0, 40))
         self.checkBox_5.setFocusPolicy(Qt.NoFocus)
 
         self.gridLayout_4.addWidget(self.checkBox_5, 1, 1, 1, 1)
@@ -1908,6 +1975,7 @@ class Ui_MainWindow(object):
 
         self.checkBox_7 = QCheckBox(self.organicChangesFrame)
         self.checkBox_7.setObjectName(u"checkBox_7")
+        self.checkBox_7.setMinimumSize(QSize(0, 40))
         self.checkBox_7.setFocusPolicy(Qt.NoFocus)
 
         self.gridLayout_4.addWidget(self.checkBox_7, 2, 2, 1, 1)
@@ -1919,14 +1987,14 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_31.addItem(self.verticalSpacer_9)
 
-        self.horizontalFrame = QFrame(self.USIscrollAreaWidget)
-        self.horizontalFrame.setObjectName(u"horizontalFrame")
-        sizePolicy8.setHeightForWidth(self.horizontalFrame.sizePolicy().hasHeightForWidth())
-        self.horizontalFrame.setSizePolicy(sizePolicy8)
-        self.horizontalFrame.setMinimumSize(QSize(0, 0))
-        self.horizontalLayout_14 = QHBoxLayout(self.horizontalFrame)
+        self.OvaryFrame = QFrame(self.USIscrollAreaWidget)
+        self.OvaryFrame.setObjectName(u"OvaryFrame")
+        sizePolicy8.setHeightForWidth(self.OvaryFrame.sizePolicy().hasHeightForWidth())
+        self.OvaryFrame.setSizePolicy(sizePolicy8)
+        self.OvaryFrame.setMinimumSize(QSize(0, 0))
+        self.horizontalLayout_14 = QHBoxLayout(self.OvaryFrame)
         self.horizontalLayout_14.setObjectName(u"horizontalLayout_14")
-        self.leftOvaryFrame = QFrame(self.horizontalFrame)
+        self.leftOvaryFrame = QFrame(self.OvaryFrame)
         self.leftOvaryFrame.setObjectName(u"leftOvaryFrame")
         sizePolicy4.setHeightForWidth(self.leftOvaryFrame.sizePolicy().hasHeightForWidth())
         self.leftOvaryFrame.setSizePolicy(sizePolicy4)
@@ -1956,7 +2024,7 @@ class Ui_MainWindow(object):
         self.leftYellowBodySiseSpinBox.setObjectName(u"leftYellowBodySiseSpinBox")
         sizePolicy5.setHeightForWidth(self.leftYellowBodySiseSpinBox.sizePolicy().hasHeightForWidth())
         self.leftYellowBodySiseSpinBox.setSizePolicy(sizePolicy5)
-        self.leftYellowBodySiseSpinBox.setMinimumSize(QSize(35, 0))
+        self.leftYellowBodySiseSpinBox.setMinimumSize(QSize(35, 30))
         self.leftYellowBodySiseSpinBox.setButtonSymbols(QAbstractSpinBox.NoButtons)
 
         self.horizontalLayout_15.addWidget(self.leftYellowBodySiseSpinBox)
@@ -1976,12 +2044,14 @@ class Ui_MainWindow(object):
 
         self.leftDominanteFoliculCheckBox = QCheckBox(self.leftOvaryFrame)
         self.leftDominanteFoliculCheckBox.setObjectName(u"leftDominanteFoliculCheckBox")
+        self.leftDominanteFoliculCheckBox.setMinimumSize(QSize(0, 40))
         self.leftDominanteFoliculCheckBox.setFocusPolicy(Qt.NoFocus)
 
         self.verticalLayout_32.addWidget(self.leftDominanteFoliculCheckBox)
 
         self.leftCystCheckBox = QCheckBox(self.leftOvaryFrame)
         self.leftCystCheckBox.setObjectName(u"leftCystCheckBox")
+        self.leftCystCheckBox.setMinimumSize(QSize(0, 40))
         self.leftCystCheckBox.setFocusPolicy(Qt.NoFocus)
 
         self.verticalLayout_32.addWidget(self.leftCystCheckBox)
@@ -1993,7 +2063,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_14.addItem(self.horizontalSpacer_11)
 
-        self.rightOvaryFrame = QFrame(self.horizontalFrame)
+        self.rightOvaryFrame = QFrame(self.OvaryFrame)
         self.rightOvaryFrame.setObjectName(u"rightOvaryFrame")
         self.verticalLayout_33 = QVBoxLayout(self.rightOvaryFrame)
         self.verticalLayout_33.setObjectName(u"verticalLayout_33")
@@ -2020,7 +2090,7 @@ class Ui_MainWindow(object):
         self.rightYellowBodySiseSpinBox.setObjectName(u"rightYellowBodySiseSpinBox")
         sizePolicy5.setHeightForWidth(self.rightYellowBodySiseSpinBox.sizePolicy().hasHeightForWidth())
         self.rightYellowBodySiseSpinBox.setSizePolicy(sizePolicy5)
-        self.rightYellowBodySiseSpinBox.setMinimumSize(QSize(35, 0))
+        self.rightYellowBodySiseSpinBox.setMinimumSize(QSize(35, 30))
         self.rightYellowBodySiseSpinBox.setButtonSymbols(QAbstractSpinBox.NoButtons)
 
         self.horizontalLayout_16.addWidget(self.rightYellowBodySiseSpinBox)
@@ -2037,12 +2107,14 @@ class Ui_MainWindow(object):
 
         self.rightDominanteFoliculCheckBox = QCheckBox(self.rightOvaryFrame)
         self.rightDominanteFoliculCheckBox.setObjectName(u"rightDominanteFoliculCheckBox")
+        self.rightDominanteFoliculCheckBox.setMinimumSize(QSize(0, 40))
         self.rightDominanteFoliculCheckBox.setFocusPolicy(Qt.NoFocus)
 
         self.verticalLayout_33.addWidget(self.rightDominanteFoliculCheckBox)
 
         self.rightCystCheckBox = QCheckBox(self.rightOvaryFrame)
         self.rightCystCheckBox.setObjectName(u"rightCystCheckBox")
+        self.rightCystCheckBox.setMinimumSize(QSize(0, 40))
         self.rightCystCheckBox.setFocusPolicy(Qt.NoFocus)
 
         self.verticalLayout_33.addWidget(self.rightCystCheckBox)
@@ -2055,7 +2127,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_14.addItem(self.horizontalSpacer_12)
 
 
-        self.verticalLayout_31.addWidget(self.horizontalFrame)
+        self.verticalLayout_31.addWidget(self.OvaryFrame)
 
         self.USIscrollArea.setWidget(self.USIscrollAreaWidget)
 
@@ -2078,6 +2150,39 @@ class Ui_MainWindow(object):
         self.diagnosticStackedWidget.addWidget(self.resultsPage)
 
         self.verticalLayout_20.addWidget(self.diagnosticStackedWidget)
+
+        self.diagnosticsNavigationButtonsFrame = QFrame(self.diagnostics)
+        self.diagnosticsNavigationButtonsFrame.setObjectName(u"diagnosticsNavigationButtonsFrame")
+        self.horizontalLayout_19 = QHBoxLayout(self.diagnosticsNavigationButtonsFrame)
+        self.horizontalLayout_19.setObjectName(u"horizontalLayout_19")
+        self.previousPageDiagnostic = QPushButton(self.diagnosticsNavigationButtonsFrame)
+        self.previousPageDiagnostic.setObjectName(u"previousPageDiagnostic")
+        self.previousPageDiagnostic.setMinimumSize(QSize(100, 30))
+
+        self.horizontalLayout_19.addWidget(self.previousPageDiagnostic)
+
+        self.horizontalSpacer_16 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_19.addItem(self.horizontalSpacer_16)
+
+        self.finishDiagnostics = QPushButton(self.diagnosticsNavigationButtonsFrame)
+        self.finishDiagnostics.setObjectName(u"finishDiagnostics")
+        self.finishDiagnostics.setMinimumSize(QSize(100, 30))
+
+        self.horizontalLayout_19.addWidget(self.finishDiagnostics)
+
+        self.horizontalSpacer_17 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_19.addItem(self.horizontalSpacer_17)
+
+        self.naexPageDiagnostic = QPushButton(self.diagnosticsNavigationButtonsFrame)
+        self.naexPageDiagnostic.setObjectName(u"naexPageDiagnostic")
+        self.naexPageDiagnostic.setMinimumSize(QSize(100, 30))
+
+        self.horizontalLayout_19.addWidget(self.naexPageDiagnostic)
+
+
+        self.verticalLayout_20.addWidget(self.diagnosticsNavigationButtonsFrame)
 
         self.stackedWidget.addWidget(self.diagnostics)
 
@@ -2233,7 +2338,7 @@ class Ui_MainWindow(object):
         self.stackedWidget.setCurrentIndex(3)
         self.stackedWidget_2.setCurrentIndex(1)
         self.inspectionButton.setDefault(False)
-        self.diagnosticStackedWidget.setCurrentIndex(2)
+        self.diagnosticStackedWidget.setCurrentIndex(4)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -2295,9 +2400,9 @@ class Ui_MainWindow(object):
         self.middlenameLineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u041e\u0442\u0447\u0435\u0441\u0442\u0432\u043e", None))
         self.birthdateLineEdit.setDisplayFormat(QCoreApplication.translate("MainWindow", u"dd/mm/yyyy", None))
         self.cardLineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u043c\u0435\u0440 \u043a\u0430\u0440\u0442\u044b", None))
-        self.btn_login.setText(QCoreApplication.translate("MainWindow", u"\u0412\u043e\u0439\u0442\u0438", None))
-        self.btn_registration.setText(QCoreApplication.translate("MainWindow", u"\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f", None))
         self.sqlStatusLabel.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.btn_registration.setText(QCoreApplication.translate("MainWindow", u"\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f", None))
+        self.btn_login.setText(QCoreApplication.translate("MainWindow", u"\u0412\u043e\u0439\u0442\u0438", None))
         self.labelBoxBlenderInstalation.setText(QCoreApplication.translate("MainWindow", u"FILE BOX", None))
         self.lineEdit.setText("")
         self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Type here", None))
@@ -2369,6 +2474,7 @@ class Ui_MainWindow(object):
         self.USIButton.setText(QCoreApplication.translate("MainWindow", u"3. \u0423\u0437\u0438", None))
         self.diagnosticsResultsButton.setText(QCoreApplication.translate("MainWindow", u"4.\u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u044b\n"
 "\u0438 \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0430\u0446\u0438\u0438", None))
+        self.beginDiagnosticButton.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0410\u0427\u0410\u0422\u042c \u041f\u0420\u041e\u0426\u0415\u0414\u0423\u0420\u0423 \u0414\u0418\u0410\u0413\u041d\u041e\u0421\u0422\u0418\u041a\u0418", None))
         self.inspectionDatTimeLabel.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0410\u0422\u0410 \u0418 \u0412\u0420\u0415\u041c\u042f \u041e\u0421\u041c\u041e\u0422\u0420\u0410", None))
         self.dateTimeEdit.setDisplayFormat(QCoreApplication.translate("MainWindow", u"M/d/yyyy h:mm", None))
         self.cycleDayLabel.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0415\u041d\u042c \u0426\u0418\u041a\u041b\u0410", None))
@@ -2404,6 +2510,9 @@ class Ui_MainWindow(object):
         self.rightDominanteFoliculCheckBox.setText(QCoreApplication.translate("MainWindow", u"\u0434\u043e\u043c\u0438\u043d\u0430\u043d\u0442\u043d\u044b\u0439 \u0444\u043e\u043b\u0438\u043a\u0443\u043b", None))
         self.rightCystCheckBox.setText(QCoreApplication.translate("MainWindow", u"\u043a\u0438\u0441\u0442\u0430 \u0436\u0435\u043b\u0442\u043e\u0433\u043e \u0442\u0435\u043b\u0430", None))
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
+        self.previousPageDiagnostic.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0437\u0430\u0434", None))
+        self.finishDiagnostics.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0432\u0435\u0440\u0448\u0438\u0442\u044c", None))
+        self.naexPageDiagnostic.setText(QCoreApplication.translate("MainWindow", u"\u0414\u0430\u043b\u0435\u0435", None))
         self.btn_reconnect.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0435\u0440\u0435\u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0438\u0442\u044c\u0441\u044f", None))
         self.btn_message.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435", None))
         self.btn_print.setText(QCoreApplication.translate("MainWindow", u"\u041f\u0435\u0447\u0430\u0442\u044c", None))
