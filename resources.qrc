@@ -46,7 +46,6 @@
     <file>images/icons/cil-caret-top.png</file>
     <file>images/icons/cil-cart.png</file>
     <file>images/icons/cil-cast.png</file>
-    <file>images/icons/cil-chart.png</file>
     <file>images/icons/cil-chart-line.png</file>
     <file>images/icons/cil-chart-pie.png</file>
     <file>images/icons/cil-chat-bubble.png</file>
@@ -63,11 +62,8 @@
     <file>images/icons/cil-chevron-double-right.png</file>
     <file>images/icons/cil-chevron-double-up.png</file>
     <file>images/icons/cil-chevron-double-up-alt.png</file>
-    <file>images/icons/cil-chevron-left.png</file>
-    <file>images/icons/cil-chevron-right.png</file>
     <file>images/icons/cil-chevron-top.png</file>
     <file>images/icons/cil-circle.png</file>
-    <file>images/icons/cil-clipboard.png</file>
     <file>images/icons/cil-clock.png</file>
     <file>images/icons/cil-clone.png</file>
     <file>images/icons/cil-closed-captioning.png</file>
@@ -125,8 +121,17 @@
     <file>images/icons/cil-headphones.png</file>
     <file>images/icons/cil-heart.png</file>
     <file>images/icons/cil-highligt.png</file>
-    <file>images/icons/cil-history.png</file>
     <file>images/icons/cil-home.png</file>
+    <file>images/icons/cil-chart-black.png</file>
+    <file>images/icons/cil-chart-white.png</file>
+    <file>images/icons/cil-chevron-left-black.png</file>
+    <file>images/icons/cil-chevron-left-white.png</file>
+    <file>images/icons/cil-chevron-right-black.png</file>
+    <file>images/icons/cil-chevron-right-white.png</file>
+    <file>images/icons/cil-clipboard-black.png</file>
+    <file>images/icons/cil-clipboard-white.png</file>
+    <file>images/icons/cil-history-black.png</file>
+    <file>images/icons/cil-history-white.png</file>
     <file>images/icons/cil-house.png</file>
     <file>images/icons/cil-image1.png</file>
     <file>images/icons/cil-image-plus.png</file>

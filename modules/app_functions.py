@@ -49,3 +49,4 @@ class AppFunctions(MainWindow):
 
         self.ui.diagnosticButtonsFrame.setStyleSheet("background-color: #CFCFCF;")
 
+        self.ui.btn_diagnostics.setStyleSheet("background-image: url(:/icons/images/icons/cil-chart-black.png);")

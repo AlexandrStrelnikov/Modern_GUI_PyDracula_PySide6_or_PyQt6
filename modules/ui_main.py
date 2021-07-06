@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainCPwotW.ui'
+## Form generated from reading UI file 'mainPaxmvd.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.0
 ##
@@ -608,7 +608,7 @@ class Ui_MainWindow(object):
         self.toggleButton.setCursor(QCursor(Qt.PointingHandCursor))
         self.toggleButton.setFocusPolicy(Qt.NoFocus)
         self.toggleButton.setLayoutDirection(Qt.LeftToRight)
-        self.toggleButton.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-chevron-right.png);")
+        self.toggleButton.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-chevron-right-black.png);")
 
         self.verticalLayout_3.addWidget(self.topLogoInfo)
 
@@ -637,7 +637,7 @@ class Ui_MainWindow(object):
         self.btn_anamnes.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_anamnes.setFocusPolicy(Qt.NoFocus)
         self.btn_anamnes.setLayoutDirection(Qt.LeftToRight)
-        self.btn_anamnes.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-clipboard.png);")
+        self.btn_anamnes.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-clipboard-black.png);")
 
         self.verticalLayout_8.addWidget(self.btn_anamnes)
 
@@ -650,7 +650,7 @@ class Ui_MainWindow(object):
         self.btn_visits.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_visits.setFocusPolicy(Qt.NoFocus)
         self.btn_visits.setLayoutDirection(Qt.LeftToRight)
-        self.btn_visits.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-history.png);")
+        self.btn_visits.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-history-black.png);")
 
         self.verticalLayout_8.addWidget(self.btn_visits)
 
@@ -663,7 +663,7 @@ class Ui_MainWindow(object):
         self.btn_diagnostics.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_diagnostics.setFocusPolicy(Qt.NoFocus)
         self.btn_diagnostics.setLayoutDirection(Qt.LeftToRight)
-        self.btn_diagnostics.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-chart.png);")
+        self.btn_diagnostics.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-chart-black.png);")
 
         self.verticalLayout_8.addWidget(self.btn_diagnostics)
 

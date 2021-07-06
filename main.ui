@@ -725,7 +725,7 @@ Button */
               <enum>Qt::LeftToRight</enum>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-image: url(:/icons/images/icons/cil-chevron-right.png);</string>
+              <string notr="true">background-image: url(:/icons/images/icons/cil-chevron-right-black.png);</string>
              </property>
             </widget>
            </widget>
@@ -809,7 +809,7 @@ Button */
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-clipboard.png);</string>
+                   <string notr="true">background-image: url(:/icons/images/icons/cil-clipboard-black.png);</string>
                   </property>
                   <property name="text">
                    <string>Анамнез</string>
@@ -847,7 +847,7 @@ Button */
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-history.png);</string>
+                   <string notr="true">background-image: url(:/icons/images/icons/cil-history-black.png);</string>
                   </property>
                   <property name="text">
                    <string>Визиты</string>
@@ -885,7 +885,7 @@ Button */
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-chart.png);</string>
+                   <string notr="true">background-image: url(:/icons/images/icons/cil-chart-black.png);</string>
                   </property>
                   <property name="text">
                    <string>Диагностика</string>
